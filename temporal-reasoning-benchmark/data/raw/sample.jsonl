@@ -1,0 +1,56 @@
+{"id": 1, "question": "如果今天是 2021-01-01，3 天后是几号？", "gold": "2021-01-04", "category": "arithmetic"}
+{"id": 2, "question": "如果今天是 2021-02-10，10 天后是几号？", "gold": "2021-02-20", "category": "arithmetic"}
+{"id": 3, "question": "如果今天是 2020-02-27，3 天后是几号？（闰年）", "gold": "2020-03-01", "category": "arithmetic"}
+{"id": 4, "question": "如果今天是 2021-12-30，5 天后是几号？", "gold": "2022-01-04", "category": "arithmetic"}
+{"id": 5, "question": "如果今天是 2021-03-15，7 天后是几号？", "gold": "2021-03-22", "category": "arithmetic"}
+{"id": 6, "question": "如果今天是 2021-04-01，30 天后是几号？", "gold": "2021-05-01", "category": "arithmetic"}
+{"id": 7, "question": "如果今天是 2021-05-20，12 天后是几号？", "gold": "2021-06-01", "category": "arithmetic"}
+{"id": 8, "question": "如果今天是 2021-06-25，10 天后是几号？", "gold": "2021-07-05", "category": "arithmetic"}
+{"id": 9, "question": "如果今天是 2021-07-31，1 天后是几号？", "gold": "2021-08-01", "category": "arithmetic"}
+{"id": 10, "question": "如果今天是 2021-08-10，21 天后是几号？", "gold": "2021-08-31", "category": "arithmetic"}
+{"id": 11, "question": "如果今天是 2021-09-15，15 天后是几号？", "gold": "2021-09-30", "category": "arithmetic"}
+{"id": 12, "question": "如果今天是 2021-10-20，12 天后是几号？", "gold": "2021-11-01", "category": "arithmetic"}
+{"id": 13, "question": "如果今天是 2021-11-25，6 天后是几号？", "gold": "2021-12-01", "category": "arithmetic"}
+{"id": 14, "question": "如果今天是 2022-01-28，5 天后是几号？", "gold": "2022-02-02", "category": "arithmetic"}
+{"id": 15, "question": "如果今天是 2022-02-25，3 天后是几号？", "gold": "2022-02-28", "category": "arithmetic"}
+{"id": 16, "question": "如果今天是 2022-03-31，1 天后是几号？", "gold": "2022-04-01", "category": "arithmetic"}
+{"id": 17, "question": "如果今天是 2022-04-29，2 天后是几号？", "gold": "2022-05-01", "category": "arithmetic"}
+{"id": 18, "question": "如果今天是 2022-05-31，1 天后是几号？", "gold": "2022-06-01", "category": "arithmetic"}
+{"id": 19, "question": "如果今天是 2022-06-30，1 天后是几号？", "gold": "2022-07-01", "category": "arithmetic"}
+{"id": 20, "question": "如果今天是 2022-07-15，17 天后是几号？", "gold": "2022-08-01", "category": "arithmetic"}
+{"id": 21, "question": "会议从 14:20 到 16:05，持续多长时间？", "gold": "1 小时 45 分钟", "category": "duration"}
+{"id": 22, "question": "电影从 09:00 放到 10:30，时长是多少？", "gold": "1 小时 30 分钟", "category": "duration"}
+{"id": 23, "question": "课程从 13:15 到 15:00 持续多久？", "gold": "1 小时 45 分钟", "category": "duration"}
+{"id": 24, "question": "活动从 08:10 到 11:10 持续多久？", "gold": "3 小时", "category": "duration"}
+{"id": 25, "question": "比赛从 19:50 到 21:20，持续多长时间？", "gold": "1 小时 30 分钟", "category": "duration"}
+{"id": 26, "question": "旅程从 07:05 到 08:00，持续多久？", "gold": "55 分钟", "category": "duration"}
+{"id": 27, "question": "通话从 10:10 到 10:45，持续多久？", "gold": "35 分钟", "category": "duration"}
+{"id": 28, "question": "演讲从 15:30 到 16:10，持续多久？", "gold": "40 分钟", "category": "duration"}
+{"id": 29, "question": "从 2021-01-10 到 2021-01-15 共多少天（含首尾）？", "gold": "6 天", "category": "duration"}
+{"id": 30, "question": "从 2021-03-01 到 2021-03-07 共多少天（含首尾）？", "gold": "7 天", "category": "duration"}
+{"id": 31, "question": "事件A发生在 2019-05-20，事件B发生在 2019-05-18，哪个在前？", "gold": "事件B 在前", "category": "relation"}
+{"id": 32, "question": "事件X发生在 2020-10-01，事件Y发生在 2020-12-01，哪个在前？", "gold": "事件X 在前", "category": "relation"}
+{"id": 33, "question": "A: 2021-06-01；B: 2021-06-01，二者是什么关系？", "gold": "同时", "category": "relation"}
+{"id": 34, "question": "A: 2022-01-01；B: 2021-12-31，哪个在后？", "gold": "A 在后", "category": "relation"}
+{"id": 35, "question": "A 区间: 2021-01-01~2021-01-10；B: 2021-01-05~2021-01-06，关系？", "gold": "B 被 A 包含", "category": "relation"}
+{"id": 36, "question": "A: 2021-03-01；B: 2021-02-28，哪个更早？", "gold": "B 更早", "category": "relation"}
+{"id": 37, "question": "A: 2020-02-29；B: 2020-03-01，哪个更早？", "gold": "A 更早", "category": "relation"}
+{"id": 38, "question": "A: 2021-12-31；B: 2022-01-01，哪个在前？", "gold": "A 在前", "category": "relation"}
+{"id": 39, "question": "A 区间: 2021-05-01~2021-05-10；B: 2021-05-11~2021-05-20，关系？", "gold": "相邻且不重叠", "category": "relation"}
+{"id": 40, "question": "A: 2021-07-15；B: 2021-07-14，哪个在后？", "gold": "A 在后", "category": "relation"}
+{"id": 41, "question": "每周三开会，若本周三是 2022-06-08，则两周后会议日期？", "gold": "2022-06-22", "category": "frequency"}
+{"id": 42, "question": "每周一训练，若本周一是 2021-09-06，则下下周一日期？", "gold": "2021-09-20", "category": "frequency"}
+{"id": 43, "question": "每月 15 日发薪，若本月 15 日是 2021-01-15，则下个月发薪日期？", "gold": "2021-02-15", "category": "frequency"}
+{"id": 44, "question": "每两周一次的会议，若第一次是 2021-03-01，则第三次日期？", "gold": "2021-03-29", "category": "frequency"}
+{"id": 45, "question": "每天打卡，若今天 2021-08-01，则第五天打卡日期？", "gold": "2021-08-05", "category": "frequency"}
+{"id": 46, "question": "每周五发布报告，若这周五是 2021-10-01，则三周后日期？", "gold": "2021-10-22", "category": "frequency"}
+{"id": 47, "question": "每两天一次锻炼，若第一次是 2021-04-01，则第四次日期？", "gold": "2021-04-07", "category": "frequency"}
+{"id": 48, "question": "每月最后一天检查，若 2021-01-31 检查，则下一次是？", "gold": "2021-02-28", "category": "frequency"}
+{"id": 49, "question": "每季度第一天复盘，若本季度第一天是 2021-04-01，则下季度第一天？", "gold": "2021-07-01", "category": "frequency"}
+{"id": 50, "question": "每半年复查，若本次为 2021-06-15，则下一次日期？", "gold": "2021-12-15", "category": "frequency"}
+
+
+
+
+
+

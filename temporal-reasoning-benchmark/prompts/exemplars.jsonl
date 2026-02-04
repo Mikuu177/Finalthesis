@@ -1,0 +1,12 @@
+{"id":"ex1","question":"Alice 开始在 2020-01-10 到 2020-01-15 之间写日记，持续了多少天？","context":"","gold":"6 天","category":"duration","rationale":"从 1 月 10 日到 1 月 15 日，包含 10、11、12、13、14、15 共 6 天。"}
+{"id":"ex2","question":"如果今天是 2021-03-01，那么 10 天后是几号？","context":"","gold":"2021-03-11","category":"arithmetic","rationale":"2021-03-01 + 10 天 = 2021-03-11。"}
+{"id":"ex3","question":"事件A发生在 2019-05-20，事件B发生在 2019-05-18，哪个在前？","context":"","gold":"事件B 在前","category":"relation","rationale":"05-18 早于 05-20。"}
+{"id":"ex4","question":"每周三开会，若本周三是 2022-06-08，则两周后会议日期？","context":"","gold":"2022-06-22","category":"frequency","rationale":"每周一次，两周后 = +14 天。"}
+{"id":"ex5","question":"电影从 14:20 放映到 16:05，时长多少？","context":"","gold":"1 小时 45 分钟","category":"duration","rationale":"16:05 - 14:20 = 1:45。"}
+{"id":"ex6","question":"John 周一开始服药，需连续 7 天，每天一次，最后一天是哪天？（当周周一为 2023-04-03）","context":"","gold":"2023-04-09（周日）","category":"arithmetic","rationale":"4/3 到 4/9，共 7 天。"}
+
+
+
+
+
+

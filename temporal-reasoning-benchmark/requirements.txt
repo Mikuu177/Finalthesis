@@ -1,0 +1,12 @@
+pyyaml
+python-dotenv
+openai>=1.0.0
+pandas
+tqdm
+python-dateutil
+
+
+
+
+
+

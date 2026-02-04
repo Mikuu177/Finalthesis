@@ -1,0 +1,33 @@
+# TRAM pilot config (DeepSeek-only, CoT-0shot)
+run_name: pilot_tram_cot0
+seed: 42
+
+# 数据集（转换后统一 schema）
+dataset_path: data/raw/tram_arithmetic_mcq.jsonl
+subset_size: 0
+
+# Category filter & sampling
+filter_category: ["Hour Adjustment (24h)"]
+sample_size: 100
+
+# Prompt 配置
+prompt_mode: cot
+n_shots: 0
+prompt_dir: prompts
+prompt_version: v2.1
+
+# 模型
+models:
+  - deepseek_chat
+
+# 生成参数
+params:
+  temperature: 0.2
+  top_p: 0.9
+  max_tokens: 512
+  timeout: 60
+
+# 输出/缓存
+outputs_dir: outputs/runs
+cache_dir: .cache
+resume: true

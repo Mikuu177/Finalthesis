@@ -1,0 +1,12 @@
+# Prompt 模板与示例配置
+prompt_templates:
+  sp:
+    "0": sp_0shot.txt
+    "5": sp_5shot.txt
+  cot:
+    "0": cot_0shot.txt
+    "0_v22": cot_0shot_v22.txt
+    "5": cot_5shot.txt
+
+# few-shot 示例文件
+exemplars_path: exemplars.jsonl

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM 对比平台</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>LLM 复杂时间推理对比平台</h1>
+            <p>输入你的问题，查看不同模型的回答。</p>
+        </header>
+
+        <main>
+            <div class="prompt-section">
+                <textarea id="prompt-input" placeholder="在这里输入你的问题..."></textarea>
+                <button id="submit-btn">提交查询</button>
+            </div>
+
+            <div id="results-container" class="results-grid">
+                <div class="result-card" id="result-deepseek">
+                    <h2>DeepSeek</h2>
+                    <div class="response-content loading"></div>
+                </div>
+                <div class="result-card" id="result-qwen">
+                    <h2>Qwen (通义千问)</h2>
+                    <div class="response-content loading"></div>
+                </div>
+                <div class="result-card" id="result-openai">
+                    <h2>OpenAI</h2>
+                    <div class="response-content loading"></div>
+                </div>
+                <div class="result-card" id="result-doubao">
+                    <h2>Doubao (豆包)</h2>
+                    <div class="response-content loading"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

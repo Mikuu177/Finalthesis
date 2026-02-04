@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-01-03T16:59:38.480072Z",
+  "input_file": "C:\\Users\\Administrator\\Desktop\\毕业设计\\TRAM-Benchmark\\datasets\\arithmetic\\arithmetic_mcq.csv",
+  "input_encoding": "utf-8-sig",
+  "output_file": "C:\\Users\\Administrator\\Desktop\\毕业设计\\temporal-reasoning-benchmark\\data\\raw\\tram_arithmetic_subset.jsonl",
+  "task": "arithmetic",
+  "rows_total_in_file": 15584,
+  "rows_written": 15584,
+  "question_col": "Question",
+  "answer_col": "Answer",
+  "id_col": null,
+  "repo_root": "C:\\Users\\Administrator\\Desktop\\毕业设计\\temporal-reasoning-benchmark",
+  "cwd": "C:\\Users\\Administrator\\Desktop\\毕业设计\\temporal-reasoning-benchmark"
+}

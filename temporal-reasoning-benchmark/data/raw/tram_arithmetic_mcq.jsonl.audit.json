@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-01-03T17:29:01.666185Z",
+  "input_file": "C:\\Users\\Administrator\\Desktop\\毕业设计\\TRAM-Benchmark\\datasets\\arithmetic\\arithmetic_mcq.csv",
+  "input_encoding": "utf-8-sig",
+  "output_file": "C:\\Users\\Administrator\\Desktop\\毕业设计\\temporal-reasoning-benchmark\\data\\raw\\tram_arithmetic_mcq.jsonl",
+  "task": "arithmetic",
+  "rows_total_in_file": 15584,
+  "rows_written": 15584,
+  "question_col": "Question",
+  "answer_col": "Answer",
+  "id_col": null,
+  "repo_root": "C:\\Users\\Administrator\\Desktop\\毕业设计\\temporal-reasoning-benchmark",
+  "cwd": "C:\\Users\\Administrator\\Desktop\\毕业设计\\temporal-reasoning-benchmark",
+  "source_file_sha256": "fd9654ced9386469ca1fd71f99e6d1d64c4a71265217c4ff0a4074c337199571",
+  "jsonl_sha256": "69590966bf94ce9fff9207dfe317cc14317f4846532f39fc1f9f5b266d48148f",
+  "converter_git_commit": "unknown",
+  "category_distribution": {
+    "Hour Adjustment (24h)": 1495,
+    "Hour Adjustment (12h)": 1495,
+    "Year Shift": 1465,
+    "Month Shift": 135,
+    "Date Computation": 5995,
+    "Week Identification": 1492,
+    "Time Zone Conversion": 495,
+    "Time Computation": 975,
+    "Application": 2037
+  },
+  "gold_mode_distribution": {
+    "mcq_semantic": 15584
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "input": "TRAM-Benchmark\\datasets\\arithmetic\\arithmetic_saq.csv",
+  "output": "temporal-reasoning-benchmark\\data\\raw\\tram_arithmetic_subset.jsonl",
+  "task": "arithmetic",
+  "n_rows": 15584,
+  "columns": [
+    "Question",
+    "Answer",
+    "Category"
+  ],
+  "question_col": "Question",
+  "answer_col": "Answer",
+  "id_col": null
+}

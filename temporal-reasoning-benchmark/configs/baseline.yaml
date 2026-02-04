@@ -1,0 +1,29 @@
+# 基线运行配置
+run_name: baseline_sp0_0shot_small
+seed: 42
+
+# 数据集配置
+dataset_path: data/raw/sample.jsonl
+subset_size: 50  # 如果数据不足50，则自动取最小可用数量
+
+# Prompt 配置
+prompt_mode: sp    # sp | cot
+n_shots: 0         # 0 | 5
+prompt_dir: prompts
+
+# 模型列表（在 models.yaml 中定义具体细节）
+models:
+  - deepseek_chat
+
+# 生成参数（可被模型适配层按需裁剪/覆盖）
+params:
+  temperature: 0.2
+  top_p: 0.9
+  max_tokens: 512
+  timeout: 60
+
+# 输出目录
+outputs_dir: outputs/runs
+cache_dir: .cache
+resume: true  # 断点续跑
+

@@ -1,0 +1,26 @@
+# 模型适配配置（统一通过 OpenAI 兼容接口调用）
+# 可在此处新增/修改模型，runner 将自动读取并实例化适配器
+
+models:
+  deepseek_chat:
+    provider: openai_compatible
+    base_url: https://api.deepseek.com/v1
+    model: deepseek-chat
+    api_key_env: DEEPSEEK_API_KEY
+
+  doubao_chat:
+    provider: openai_compatible
+    base_url: https://api.doubao.com/v1  # 请按实际文档核实
+    model: doubao-pro                    # 请按实际文档核实
+    api_key_env: DOUBAO_API_KEY
+
+  openai_gpt:
+    provider: openai
+    model: gpt-4o-mini                   # 可替换为你有权限的模型
+    api_key_env: OPENAI_API_KEY
+
+
+
+
+
+

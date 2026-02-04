@@ -1,0 +1,17 @@
+# Environment secrets
+.env
+!.env.example
+
+# Caches and outputs
+.cache/
+outputs/
+
+# Python
+__pycache__/
+*.pyc
+
+
+
+
+
+
