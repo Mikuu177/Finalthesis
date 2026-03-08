@@ -1,0 +1,62 @@
+version: profile-v1
+frozen_date: 2026-03-07
+scope: temporal-reasoning-benchmark
+
+profile_fields:
+  model:
+    type: string
+    description: 模型唯一标识（来自 summary.csv 的 model 字段）
+
+  sample_count:
+    type: integer
+    description: 参与画像聚合的总样本数（按 summary.csv 的 n 加总）
+
+  run_count:
+    type: integer
+    description: 参与聚合的 run 数量（该模型在多少个 run 中出现）
+
+  overall_accuracy:
+    type: float
+    range: [0, 1]
+    formula: 对所有记录按 n 加权平均 accuracy
+
+  overall_parse_rate:
+    type: float
+    range: [0, 1]
+    formula: 对所有记录按 n 加权平均 parse_rate
+
+  overall_format_compliance:
+    type: float
+    range: [0, 1]
+    formula: 对所有记录按 n 加权平均 contract_rate（若缺失则跳过）
+
+  overall_latency_sec:
+    type: float|null
+    description: 平均每样本耗时（sec）
+    formula: sum(run_metadata.elapsed_sec) / sum(run_metadata.sample_size)
+
+  accuracy_std_across_runs:
+    type: float
+    description: 按 run 级总体准确率计算的标准差（稳定性）
+
+  category_accuracy:
+    type: object
+    description: 各题型准确率（按 n 加权）
+
+  category_parse_rate:
+    type: object
+    description: 各题型可解析率（按 n 加权）
+
+  prompt_mode_accuracy:
+    type: object
+    description: 按 prompt_mode 分组的准确率（如 sp/cot）
+
+  source:
+    type: object
+    description: 画像来源审计信息（runs_dir、生成时间、使用 run 列表）
+
+calculation_rules:
+  - 仅扫描 outputs/runs 下同时存在 summary.csv 的 run 目录
+  - 指标聚合统一使用样本数 n 加权
+  - 缺失列不报错，按“字段缺失跳过”处理
+  - 结果同时输出 JSON（协作系统读取）与 CSV（论文制表）
