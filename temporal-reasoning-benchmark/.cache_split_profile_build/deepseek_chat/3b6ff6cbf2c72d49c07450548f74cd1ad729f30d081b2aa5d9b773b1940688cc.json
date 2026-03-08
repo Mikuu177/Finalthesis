@@ -1,0 +1,1 @@
+{"text": "05:47 to 06:56 crosses an hour, so 06:56 is later than 05:47 on the same day.  \nBut \"A - B\" here means time-of-day subtraction with wrap-around:  \n(05:47 − 06:56) = (5:47 − 6:56) = −1:09 → add 24 hours → 22:51.  \n\nFINAL_ANSWER: 22:51", "latency": 5.50339937210083, "usage": {"prompt_tokens": 225, "completion_tokens": 94, "total_tokens": 319}, "error": null}

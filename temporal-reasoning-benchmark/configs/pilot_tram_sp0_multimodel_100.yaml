@@ -1,0 +1,28 @@
+# TRAM pilot config (multi-model, SP-0shot, 100 samples)
+run_name: pilot_tram_sp0_multimodel_100
+seed: 42
+
+dataset_path: data/raw/tram_arithmetic_mcq.jsonl
+subset_size: 0
+filter_category: ["Hour Adjustment (24h)"]
+sample_size: 100
+
+prompt_mode: sp
+n_shots: 0
+prompt_dir: prompts
+prompt_version: v2.1
+
+models:
+  - deepseek_chat
+  - openai_gpt
+  - doubao_chat
+
+params:
+  temperature: 0.2
+  top_p: 0.9
+  max_tokens: 512
+  timeout: 60
+
+outputs_dir: outputs/runs
+cache_dir: .cache
+resume: true

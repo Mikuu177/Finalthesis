@@ -1,0 +1,9 @@
+{
+  "dataset": "/Volumes/Mikuu-ultra/Git/Finalthesis/temporal-reasoning-benchmark/data/raw/tram_arithmetic_mcq.jsonl",
+  "category": "Time Zone Conversion",
+  "sample_n": 100,
+  "profile_build_n": 50,
+  "report_eval_n": 50,
+  "build_ratio": 0.5,
+  "seed": 42
+}

@@ -1,4 +1,5 @@
-import json, sys
+import json
+import sys
 from pathlib import Path
 from collections import defaultdict
 
@@ -24,13 +25,14 @@ with pred_path.open('r', encoding='utf-8') as f:
             continue
         row = json.loads(line)
         n_total += 1
-        if row.get('parsed'):
+        parsed = bool(row.get('parsed', row.get('extract_ok', False)))
+        if parsed:
             n_parsed += 1
         if row.get('correct'):
             n_correct += 1
         cat = row.get('category','unspecified')
         by_cat[cat]['n'] += 1
-        if row.get('parsed'):
+        if parsed:
             by_cat[cat]['parsed'] += 1
         if row.get('correct'):
             by_cat[cat]['correct'] += 1
@@ -47,7 +49,6 @@ for cat in sorted(by_cat.keys()):
     pr = g['parsed']/n if n else 0
     acc = g['correct']/n if n else 0
     print(f"  {cat:12s}  n={n:3d}  parse_rate={pr:.4f}  acc={acc:.4f}")
-
 
 
 

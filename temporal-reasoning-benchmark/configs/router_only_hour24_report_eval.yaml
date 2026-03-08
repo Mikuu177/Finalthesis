@@ -1,0 +1,25 @@
+run_name: router_only_hour24_report_eval
+seed: 42
+
+dataset_path: data/splits/hour24/report_eval.jsonl
+subset_size: 0
+sample_size: 0
+
+prompt_mode: sp
+n_shots: 0
+prompt_dir: prompts
+prompt_version: v2.1
+
+models:
+  - deepseek_chat
+  - doubao_chat
+
+profile_path: outputs/profiles/profiles_hour24_split.json
+
+params:
+  temperature: 0.2
+  max_tokens: 512
+  timeout: 60
+
+outputs_dir: outputs/runs
+cache_dir: .cache_split_report_router_only

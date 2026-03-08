@@ -1,0 +1,1 @@
+{"text": "12:48 + 11:34 = 24:22 → 24:22 is 00:22 next day.  \nFINAL_ANSWER: 00:22", "latency": 2.4552600383758545, "usage": {"prompt_tokens": 225, "completion_tokens": 36, "total_tokens": 261}, "error": null}

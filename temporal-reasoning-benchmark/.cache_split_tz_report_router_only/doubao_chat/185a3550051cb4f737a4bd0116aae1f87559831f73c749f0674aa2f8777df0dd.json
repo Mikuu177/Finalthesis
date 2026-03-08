@@ -1,0 +1,1 @@
+{"text": "US/Mountain is UTC - 7.\n8 PM (20:00) + 7 hours = 3 AM next day.\nFINAL_ANSWER: 03:00 on December 28, 1151", "latency": 1.9410631656646729, "usage": {"prompt_tokens": 266, "completion_tokens": 54, "total_tokens": 320}, "error": null}

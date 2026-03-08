@@ -1,0 +1,1 @@
+{"text": "Australia/Sydney is UTC + 10, Asia/Singapore is UTC + 8.\n2 PM (14:00) in Sydney - 2 hours = 12:00.\nFINAL_ANSWER: 12:00", "latency": 2.657796859741211, "usage": {"prompt_tokens": 269, "completion_tokens": 57, "total_tokens": 326}, "error": null}

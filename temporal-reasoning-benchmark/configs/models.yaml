@@ -10,16 +10,15 @@ models:
 
   doubao_chat:
     provider: openai_compatible
-    base_url: https://api.doubao.com/v1  # 请按实际文档核实
-    model: doubao-pro                    # 请按实际文档核实
+    base_url: https://ark.cn-beijing.volces.com/api/v3
+    model: doubao-1-5-pro-32k-250115
     api_key_env: DOUBAO_API_KEY
 
   openai_gpt:
-    provider: openai
-    model: gpt-4o-mini                   # 可替换为你有权限的模型
-    api_key_env: OPENAI_API_KEY
-
-
+    provider: openai_compatible
+    base_url: https://newroc.top/v1
+    model: gpt-5-mini
+    api_key_env: NEWROC_API_KEY
 
 
 

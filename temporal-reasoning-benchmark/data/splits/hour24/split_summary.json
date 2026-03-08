@@ -1,0 +1,9 @@
+{
+  "dataset": "/Volumes/Mikuu-ultra/Git/Finalthesis/temporal-reasoning-benchmark/data/raw/tram_arithmetic_mcq.jsonl",
+  "source_manifest": "/Volumes/Mikuu-ultra/Git/Finalthesis/temporal-reasoning-benchmark/outputs/runs/20260308-202422_pilot_tram_sp0_multimodel_100_pvv2.1/sample_manifest.jsonl",
+  "source_n": 100,
+  "profile_build_n": 50,
+  "report_eval_n": 50,
+  "build_ratio": 0.5,
+  "seed": 42
+}

@@ -1,0 +1,1 @@
+{"text": "12:49 to 24:00 is 11:11, plus 0:00 to 17:36 is 17:36, total 28:47.  \n28:47 mod 24 hours = 4:47.  \nFINAL_ANSWER: 04:47", "latency": 3.7154791355133057, "usage": {"prompt_tokens": 225, "completion_tokens": 60, "total_tokens": 285}, "error": null}

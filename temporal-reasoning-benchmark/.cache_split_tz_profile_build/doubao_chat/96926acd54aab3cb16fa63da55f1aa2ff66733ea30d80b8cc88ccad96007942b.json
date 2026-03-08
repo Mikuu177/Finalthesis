@@ -1,0 +1,1 @@
+{"text": "Asia/Kolkata is UTC+5:30, US/Mountain is UTC - 7:00.\n11 PM (23:00) - (5:30 + 7:00) = 23:00 - 12:30 = 10:30\nFINAL_ANSWER: 10:30", "latency": 2.6616461277008057, "usage": {"prompt_tokens": 270, "completion_tokens": 82, "total_tokens": 352}, "error": null}

@@ -1,0 +1,1 @@
+{"text": "05:47 - 06:56 = (5 hours 47 minutes) - (6 hours 56 minutes)  \n= (5*60 + 47) - (6*60 + 56) = 347 - 416 = -69 minutes  \n-69 minutes + 24 hours = 1440 - 69 = 1371 minutes = 22 hours 51 minutes  \n\nFINAL_ANSWER: 22:51", "latency": 4.771589279174805, "usage": {"prompt_tokens": 225, "completion_tokens": 90, "total_tokens": 315}, "error": null}

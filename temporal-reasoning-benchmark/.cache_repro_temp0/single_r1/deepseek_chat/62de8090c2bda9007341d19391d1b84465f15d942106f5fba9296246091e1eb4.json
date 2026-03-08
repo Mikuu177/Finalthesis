@@ -1,0 +1,1 @@
+{"text": "01:23 = 1 hour 23 minutes = 60 + 23 = 83 minutes.  \n13:52 = 13 hours 52 minutes = 13*60 + 52 = 832 minutes.  \n(83 - 832) mod 1440 = (83 - 832 + 1440) = 691 minutes = 11 hours 31 minutes.  \n\nFINAL_ANSWER: 11:31", "latency": 4.399354934692383, "usage": {"prompt_tokens": 225, "completion_tokens": 89, "total_tokens": 314}, "error": null}

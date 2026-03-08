@@ -1,0 +1,1 @@
+{"text": "Asia/Tokyo (UTC+9) and Asia/Kolkata (UTC+5:30) have a time difference of 9 - 5.5 = 3.5 hours.  \n5:00 in Tokyo is 5:00 - 3:30 = 1:30 on the same date in Kolkata.  \nFINAL_ANSWER: 1844-01-08 01:30", "latency": 3.9127869606018066, "usage": {"prompt_tokens": 246, "completion_tokens": 84, "total_tokens": 330}, "error": null}

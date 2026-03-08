@@ -1,0 +1,1 @@
+{"text": "12:49 to 24:00 is 11:11, plus 0:36 into next day is 11:47.  \nWrap-around: 11:47 + 24:00 = 35:47, minus 17:36 = 18:11.  \nFINAL_ANSWER: 18:11", "latency": 4.089583158493042, "usage": {"prompt_tokens": 225, "completion_tokens": 68, "total_tokens": 293}, "error": null}

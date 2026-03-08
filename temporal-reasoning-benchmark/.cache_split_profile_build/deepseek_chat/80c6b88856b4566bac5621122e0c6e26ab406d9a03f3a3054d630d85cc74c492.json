@@ -1,0 +1,1 @@
+{"text": "01:05 = 1 hour 5 minutes = 65 minutes.  \n12:48 = 12 hours 48 minutes = 768 minutes.  \n(65 - 768) minutes = -703 minutes ≡ (1440 - 703) minutes = 737 minutes = 12 hours 17 minutes.  \n\nFINAL_ANSWER: 12:17", "latency": 4.607579231262207, "usage": {"prompt_tokens": 225, "completion_tokens": 74, "total_tokens": 299}, "error": null}

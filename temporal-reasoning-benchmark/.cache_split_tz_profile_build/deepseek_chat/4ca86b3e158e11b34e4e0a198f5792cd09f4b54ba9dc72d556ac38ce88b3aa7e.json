@@ -1,0 +1,1 @@
+{"text": "Asia/Riyadh is UTC+3 (no DST).  \nAsia/Shanghai is UTC+8 (no DST).  \nRiyadh is 5 hours behind Shanghai.  \n5 PM (17:00) September 13, 1105 in Shanghai → 12:00 (noon) same day in Riyadh.  \n\nFINAL_ANSWER: 1105-09-13 12:00", "latency": 4.29826807975769, "usage": {"prompt_tokens": 247, "completion_tokens": 86, "total_tokens": 333}, "error": null}

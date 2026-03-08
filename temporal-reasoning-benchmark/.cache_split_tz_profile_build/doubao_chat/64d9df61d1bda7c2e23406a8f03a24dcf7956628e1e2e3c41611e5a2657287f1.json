@@ -1,0 +1,1 @@
+{"text": "Australia/Sydney is UTC + 10, Europe/London is UTC ± 0.\n9 PM (21:00) - 10 hours = 11:00 AM\nFINAL_ANSWER: 11:00", "latency": 2.6742782592773438, "usage": {"prompt_tokens": 267, "completion_tokens": 55, "total_tokens": 322}, "error": null}

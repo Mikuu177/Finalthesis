@@ -1,0 +1,1 @@
+{"text": "15:47 - 10:55 = (15 - 10) hours + (47 - 55) minutes\n= 5 hours - 8 minutes\n= 4:52\nFINAL_ANSWER: 4:52", "latency": 2.3833718299865723, "usage": {"prompt_tokens": 253, "completion_tokens": 60, "total_tokens": 313}, "error": null}

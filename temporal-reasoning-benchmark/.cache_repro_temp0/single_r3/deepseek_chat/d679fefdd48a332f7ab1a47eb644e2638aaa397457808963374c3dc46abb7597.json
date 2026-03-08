@@ -1,0 +1,1 @@
+{"text": "08:05 is 8 hours 5 minutes.  \n21:50 to midnight is 2 hours 10 minutes, plus 8 hours 5 minutes = 10 hours 15 minutes.  \n10:15 in 24-hour format is 10:15.  \n\nFINAL_ANSWER: 10:15", "latency": 3.5614840984344482, "usage": {"prompt_tokens": 225, "completion_tokens": 65, "total_tokens": 290}, "error": null}

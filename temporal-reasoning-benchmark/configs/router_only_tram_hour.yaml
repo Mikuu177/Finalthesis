@@ -1,0 +1,35 @@
+# Router-only config (profile-driven, multi-candidate)
+run_name: router_only_tram_hour
+seed: 42
+
+# Dataset
+dataset_path: data/raw/tram_arithmetic_mcq.jsonl
+subset_size: 0
+filter_category: ["Hour Adjustment (24h)"]
+sample_size: 100
+
+# Prompt
+prompt_mode: sp
+n_shots: 0
+prompt_dir: prompts
+prompt_version: v2.1
+
+# Candidate models for routing (must exist in configs/models.yaml + profiles_v1.json)
+models:
+  - deepseek_chat
+  - openai_gpt
+  - doubao_chat
+
+# Profile source
+profile_path: outputs/profiles/profiles_v1.json
+
+# Generation params
+params:
+  temperature: 0.2
+  top_p: 0.9
+  max_tokens: 512
+  timeout: 60
+
+# Output/cache
+outputs_dir: outputs/runs
+cache_dir: .cache

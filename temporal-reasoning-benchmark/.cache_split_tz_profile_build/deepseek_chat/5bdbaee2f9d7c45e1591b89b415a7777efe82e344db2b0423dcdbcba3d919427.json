@@ -1,0 +1,1 @@
+{"text": "Asia/Tokyo (UTC+9) vs Asia/Riyadh (UTC+3) means Riyadh is 6 hours behind Tokyo.  \n1:00 on Dec 12, 1801 in Tokyo → subtract 6 hours → 19:00 on Dec 11, 1801 in Riyadh.  \nFINAL_ANSWER: 19:00", "latency": 3.9889397621154785, "usage": {"prompt_tokens": 247, "completion_tokens": 75, "total_tokens": 322}, "error": null}

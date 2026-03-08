@@ -1,0 +1,1 @@
+{"text": "Asia/Tokyo is UTC+9.\n9:00 - 9 hours = 0:00\nFINAL_ANSWER: 00:00", "latency": 2.0462379455566406, "usage": {"prompt_tokens": 267, "completion_tokens": 37, "total_tokens": 304}, "error": null}

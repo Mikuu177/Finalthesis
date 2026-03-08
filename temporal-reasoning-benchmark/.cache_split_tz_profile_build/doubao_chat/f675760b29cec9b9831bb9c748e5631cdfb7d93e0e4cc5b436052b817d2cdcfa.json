@@ -1,0 +1,1 @@
+{"text": "Asia/Tokyo is UTC+9, Australia/Sydney is UTC+10.\n7:00 + (10 - 9) = 8:00\nFINAL_ANSWER: 08:00", "latency": 2.007528066635132, "usage": {"prompt_tokens": 269, "completion_tokens": 50, "total_tokens": 319}, "error": null}

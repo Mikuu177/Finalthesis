@@ -1,0 +1,1 @@
+{"text": "05:54 to 24:00 is 6 hours 6 minutes (06:06).  \nFrom 00:00 to 22:30 is 22 hours 30 minutes.  \nTotal difference = 06:06 + 22:30 = 28:36 → 28:36 - 24:00 = 04:36.  \n\nFINAL_ANSWER: 04:36", "latency": 5.521559000015259, "usage": {"prompt_tokens": 225, "completion_tokens": 83, "total_tokens": 308}, "error": null}

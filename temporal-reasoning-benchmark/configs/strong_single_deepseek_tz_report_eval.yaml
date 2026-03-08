@@ -1,0 +1,23 @@
+run_name: strong_single_deepseek_tz_report_eval
+seed: 42
+
+dataset_path: data/splits/tz/report_eval.jsonl
+subset_size: 0
+sample_size: 0
+
+prompt_mode: sp
+n_shots: 0
+prompt_dir: prompts
+prompt_version: v2.1
+
+models:
+  - deepseek_chat
+
+params:
+  temperature: 0.2
+  max_tokens: 512
+  timeout: 60
+
+outputs_dir: outputs/runs
+cache_dir: .cache_split_tz_report_single
+resume: true

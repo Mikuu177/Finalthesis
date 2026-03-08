@@ -1,0 +1,41 @@
+run_name: router_critic_tram_hour_clean_v2
+seed: 42
+
+dataset_path: data/raw/tram_arithmetic_mcq.jsonl
+subset_size: 0
+filter_category: ["Hour Adjustment (24h)"]
+sample_size: 100
+
+prompt_mode: sp
+n_shots: 0
+prompt_dir: prompts
+prompt_version: v2.1
+
+models:
+  - deepseek_chat
+  - openai_gpt
+  - doubao_chat
+
+critic_model: deepseek_chat
+profile_path: outputs/profiles/profiles_v1_clean.json
+
+params:
+  temperature: 0.2
+  top_p: 0.9
+  max_tokens: 512
+  timeout: 60
+
+critic_params:
+  temperature: 0.0
+  top_p: 1.0
+  max_tokens: 256
+  timeout: 60
+
+critic_gate:
+  route_score_lt: 0.98
+  on_contract_fail: true
+  on_extract_fail: true
+  on_error: true
+
+outputs_dir: outputs/runs
+cache_dir: .cache_router_critic_clean_v2

@@ -1,0 +1,1 @@
+{"text": "04:49 - 11:36 = (4:49) - (11:36)  \n= (4 + 49/60) - (11 + 36/60) = 4.8167 - 11.6 = -6.7833 hours  \n-6.7833 + 24 = 17.2167 hours = 17:13  \n\nFINAL_ANSWER: 17:13", "latency": 4.942712068557739, "usage": {"prompt_tokens": 225, "completion_tokens": 88, "total_tokens": 313}, "error": null}

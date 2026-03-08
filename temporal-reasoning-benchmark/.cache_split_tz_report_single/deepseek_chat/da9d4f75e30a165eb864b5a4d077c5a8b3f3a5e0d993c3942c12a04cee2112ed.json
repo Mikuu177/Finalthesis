@@ -1,0 +1,1 @@
+{"text": "Asia/Kolkata (IST) is UTC+5:30.  \nAsia/Tokyo (JST) is UTC+9.  \nTime difference = 9 - 5.5 = 3.5 hours ahead.  \n1:00 + 3.5 hours = 4:30 on June 8, 1793.  \n\nFINAL_ANSWER: 1793-06-08 04:30", "latency": 4.384241342544556, "usage": {"prompt_tokens": 246, "completion_tokens": 87, "total_tokens": 333}, "error": null}

@@ -1,0 +1,1 @@
+{"text": "First, subtract minutes: 44 - 17 = 27 minutes.  \nThen subtract hours: 19 - 0 = 19 hours.  \nNo wrap needed.  \n\nFINAL_ANSWER: 19:27", "latency": 3.2285709381103516, "usage": {"prompt_tokens": 225, "completion_tokens": 45, "total_tokens": 270}, "error": null}

@@ -1,0 +1,1 @@
+{"text": "13:40 + 15:55 = (13 + 15):(40 + 55) = 28:95 = 29:35 (since 95 minutes = 1 hour and 35 minutes)\n29:35 - 24:00 = 05:35\nFINAL_ANSWER: 05:35", "latency": 3.1749801635742188, "usage": {"prompt_tokens": 253, "completion_tokens": 92, "total_tokens": 345}, "error": null}

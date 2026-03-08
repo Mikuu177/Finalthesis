@@ -1,0 +1,37 @@
+run_name: router_critic_hour24_report_eval_v2
+seed: 42
+
+dataset_path: data/splits/hour24/report_eval.jsonl
+subset_size: 0
+sample_size: 0
+
+prompt_mode: sp
+n_shots: 0
+prompt_dir: prompts
+prompt_version: v2.1
+
+models:
+  - deepseek_chat
+  - doubao_chat
+
+critic_model: deepseek_chat
+profile_path: outputs/profiles/profiles_hour24_split.json
+
+params:
+  temperature: 0.2
+  max_tokens: 512
+  timeout: 60
+
+critic_params:
+  temperature: 0.0
+  max_tokens: 256
+  timeout: 60
+
+critic_gate:
+  route_score_lt: 0.98
+  on_contract_fail: true
+  on_extract_fail: true
+  on_error: true
+
+outputs_dir: outputs/runs
+cache_dir: .cache_split_report_router_critic_v2

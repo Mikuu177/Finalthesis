@@ -1,0 +1,1 @@
+{"text": "Asia/Kolkata is UTC+05:30 and US/Pacific is UTC-07:00.\n19:00 - 5:30 - 7:00 = 6:30\nFINAL_ANSWER: 06:30", "latency": 3.4493021965026855, "usage": {"prompt_tokens": 269, "completion_tokens": 62, "total_tokens": 331}, "error": null}

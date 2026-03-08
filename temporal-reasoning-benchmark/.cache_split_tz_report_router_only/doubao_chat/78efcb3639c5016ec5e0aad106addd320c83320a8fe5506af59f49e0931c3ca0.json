@@ -1,0 +1,1 @@
+{"text": "1. Determine the time zone offsets: Europe/Paris is UTC+1, Asia/Riyadh is UTC+3.\n2. Calculate the time difference: 3 - 1 = 2 hours ahead.\n3. Add the time difference to the given time: 01:00 + 02:00 = 03:00.\nFINAL_ANSWER: 03:00", "latency": 3.5739970207214355, "usage": {"prompt_tokens": 269, "completion_tokens": 90, "total_tokens": 359}, "error": null}

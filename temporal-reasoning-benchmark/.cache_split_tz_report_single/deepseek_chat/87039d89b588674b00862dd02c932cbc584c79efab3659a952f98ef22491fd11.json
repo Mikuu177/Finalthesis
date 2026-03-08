@@ -1,0 +1,1 @@
+{"text": "Asia/Riyadh is UTC+3 (no DST in 1960).  \nUS/Hawaii is UTC-10 (no DST in 1960).  \nTime difference: 3 - (-10) = 13 hours behind Riyadh.  \n4:00 - 13 hours = 15:00 previous day (November 5, 1960).  \n\nFINAL_ANSWER: 1960-11-05 15:00", "latency": 4.4073240756988525, "usage": {"prompt_tokens": 247, "completion_tokens": 94, "total_tokens": 341}, "error": null}

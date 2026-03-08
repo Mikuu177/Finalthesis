@@ -19,9 +19,17 @@ def build_adapter(name: str, cfg: Dict[str, Any]):
         return OpenAIAdapter(name=name, model=model, api_key=api_key)
     elif provider == 'openai_compatible':
         base_url = cfg.get('base_url')
+        default_headers = cfg.get('default_headers')
+        default_extra_body = cfg.get('default_extra_body')
         if not api_key:
             raise RuntimeError(f"API key not found for model '{name}'. Ensure {api_key_env} or OPENAI_API_KEY is set.")
-        return OpenAICompatAdapter(name=name, model=model, api_key=api_key, base_url=base_url)
+        return OpenAICompatAdapter(
+            name=name,
+            model=model,
+            api_key=api_key,
+            base_url=base_url,
+            default_headers=default_headers,
+            default_extra_body=default_extra_body,
+        )
     else:
         raise ValueError(f"Unknown provider: {provider}")
-

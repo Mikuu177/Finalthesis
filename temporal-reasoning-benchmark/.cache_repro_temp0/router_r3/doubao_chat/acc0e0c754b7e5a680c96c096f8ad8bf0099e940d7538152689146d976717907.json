@@ -1,0 +1,1 @@
+{"text": "56 + 55 = 111 min = 1 h 51 min\n05 h + 1 h = 06 h\nFINAL_ANSWER: 06:51", "latency": 2.3330631256103516, "usage": {"prompt_tokens": 253, "completion_tokens": 46, "total_tokens": 299}, "error": null}

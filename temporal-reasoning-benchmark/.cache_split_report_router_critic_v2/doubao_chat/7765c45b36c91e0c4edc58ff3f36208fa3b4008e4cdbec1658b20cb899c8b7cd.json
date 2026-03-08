@@ -1,0 +1,1 @@
+{"text": "08:24 + 16:19 = (08 + 16):(24 + 19) = 24:43 = 00:43\nFINAL_ANSWER: 00:43", "latency": 1.9651269912719727, "usage": {"prompt_tokens": 253, "completion_tokens": 56, "total_tokens": 309}, "error": null}

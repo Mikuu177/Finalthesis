@@ -1,0 +1,1 @@
+{"text": "Asia/Kolkata (IST) is UTC+5:30.  \nUS/Pacific (PDT in July) is UTC-7.  \nTime difference = -7 - 5.5 = -12.5 hours.  \n7 PM July 27, 1118 Kolkata → subtract 12.5 hours → 6:30 AM same date.  \n\nFINAL_ANSWER: 1118-07-27 06:30", "latency": 4.745656251907349, "usage": {"prompt_tokens": 245, "completion_tokens": 90, "total_tokens": 335}, "error": null}

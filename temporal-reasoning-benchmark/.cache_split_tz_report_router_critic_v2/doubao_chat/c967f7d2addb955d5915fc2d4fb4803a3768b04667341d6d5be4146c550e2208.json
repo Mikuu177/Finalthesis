@@ -1,0 +1,1 @@
+{"text": "2 PM UTC is 14:00. Europe/London is in UTC±0. So the time remains the same.\nFINAL_ANSWER: 14:00", "latency": 1.9690420627593994, "usage": {"prompt_tokens": 266, "completion_tokens": 40, "total_tokens": 306}, "error": null}

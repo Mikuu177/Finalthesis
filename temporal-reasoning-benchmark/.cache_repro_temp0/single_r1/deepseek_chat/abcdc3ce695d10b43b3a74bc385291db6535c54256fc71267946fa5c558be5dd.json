@@ -1,0 +1,1 @@
+{"text": "05:42 - 14:41 means going back from 05:42 to 14:41 previous day.  \n05:42 + 24:00 = 29:42.  \n29:42 - 14:41 = 15:01.  \n\nFINAL_ANSWER: 15:01", "latency": 3.6883299350738525, "usage": {"prompt_tokens": 225, "completion_tokens": 64, "total_tokens": 289}, "error": null}
