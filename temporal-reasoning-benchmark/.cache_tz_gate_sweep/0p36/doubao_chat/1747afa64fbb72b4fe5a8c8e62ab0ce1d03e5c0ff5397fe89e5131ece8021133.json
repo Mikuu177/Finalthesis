@@ -1,0 +1,1 @@
+{"text": "Europe/Paris is UTC+01:00.\n5:00 - 01:00 = 4:00\nFINAL_ANSWER: 04:00", "latency": 2.6587588787078857, "usage": {"prompt_tokens": 266, "completion_tokens": 43, "total_tokens": 309}, "error": null}

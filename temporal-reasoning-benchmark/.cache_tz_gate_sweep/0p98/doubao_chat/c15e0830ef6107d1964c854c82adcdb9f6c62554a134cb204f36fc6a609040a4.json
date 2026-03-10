@@ -1,0 +1,1 @@
+{"text": "1. The time zone offset of Europe/London is UTC±0, and the time zone offset of Asia/Riyadh is UTC+3.\n2. Add the time difference: 10:00 + 03:00 = 13:00.\nFINAL_ANSWER: 13:00", "latency": 3.2943201065063477, "usage": {"prompt_tokens": 270, "completion_tokens": 72, "total_tokens": 342}, "error": null}

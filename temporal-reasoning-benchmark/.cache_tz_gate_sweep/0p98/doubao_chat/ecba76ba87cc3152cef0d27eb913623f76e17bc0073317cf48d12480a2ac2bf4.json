@@ -1,0 +1,1 @@
+{"text": "US/Mountain is 1 hour ahead of US/Pacific.\n10 PM (22:00) - 1 hour = 21:00\nFINAL_ANSWER: 21:00", "latency": 2.556298017501831, "usage": {"prompt_tokens": 269, "completion_tokens": 48, "total_tokens": 317}, "error": null}

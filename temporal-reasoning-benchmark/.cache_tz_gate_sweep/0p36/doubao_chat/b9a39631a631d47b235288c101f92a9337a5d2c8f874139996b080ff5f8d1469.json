@@ -1,0 +1,1 @@
+{"text": "Asia/Tokyo is UTC+9, Asia/Riyadh is UTC+3.\n6 PM (18:00) - 6 hours = 12:00\nFINAL_ANSWER: 12:00", "latency": 2.55649471282959, "usage": {"prompt_tokens": 269, "completion_tokens": 52, "total_tokens": 321}, "error": null}

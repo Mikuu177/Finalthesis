@@ -1,0 +1,1 @@
+{"text": "Asia/Riyadh is UTC+3, Europe/Paris is UTC+1.\n11:00 - 2:00 = 09:00\nFINAL_ANSWER: 09:00", "latency": 3.166020154953003, "usage": {"prompt_tokens": 270, "completion_tokens": 49, "total_tokens": 319}, "error": null}

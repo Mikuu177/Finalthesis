@@ -1,0 +1,1 @@
+{"text": "Australia/Sydney is UTC + 10, US/Pacific is UTC - 8.\n3 PM (15:00) - 18 hours = 21:00 previous day.\nFINAL_ANSWER: 21:00 on February 23, 1083", "latency": 3.0601940155029297, "usage": {"prompt_tokens": 268, "completion_tokens": 68, "total_tokens": 336}, "error": null}

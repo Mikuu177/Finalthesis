@@ -1,0 +1,1 @@
+{"text": "Australia/Sydney is UTC +10, Europe/Paris is UTC +1 (in 1938).\n13:00 - 9 hours = 04:00\nFINAL_ANSWER: 04:00 on December 28, 1938", "latency": 3.373466968536377, "usage": {"prompt_tokens": 268, "completion_tokens": 65, "total_tokens": 333}, "error": null}

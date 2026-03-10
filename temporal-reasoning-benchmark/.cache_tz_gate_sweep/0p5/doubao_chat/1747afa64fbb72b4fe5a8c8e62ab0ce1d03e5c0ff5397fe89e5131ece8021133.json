@@ -1,0 +1,1 @@
+{"text": "Paris is UTC+1. So we subtract 1 hour from 05:00.\n05:00 - 01:00 = 04:00\nFINAL_ANSWER: 04:00", "latency": 2.5547149181365967, "usage": {"prompt_tokens": 266, "completion_tokens": 53, "total_tokens": 319}, "error": null}

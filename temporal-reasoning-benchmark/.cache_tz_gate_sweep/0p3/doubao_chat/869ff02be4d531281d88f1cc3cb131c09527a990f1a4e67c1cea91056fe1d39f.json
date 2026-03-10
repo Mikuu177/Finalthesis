@@ -1,0 +1,1 @@
+{"text": "Asia/Singapore is UTC+8.\n6:00 + 8:00 = 14:00\nFINAL_ANSWER: 14:00", "latency": 2.4681410789489746, "usage": {"prompt_tokens": 267, "completion_tokens": 40, "total_tokens": 307}, "error": null}

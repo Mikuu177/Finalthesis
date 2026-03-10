@@ -1,0 +1,1 @@
+{"text": "1. Determine the time difference: Asia/Riyadh is UTC+3 and Europe/London is UTC±0, so the time difference is 3 hours ahead.\n2. Add the time difference to the given time: 10:00 + 03:00 = 13:00\nFINAL_ANSWER: 13:00", "latency": 3.4808509349823, "usage": {"prompt_tokens": 270, "completion_tokens": 79, "total_tokens": 349}, "error": null}

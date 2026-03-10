@@ -1,0 +1,1 @@
+{"text": "US/Mountain is UTC - 7 and US/Hawaii is UTC - 10.\n10 - 7 = 3 hours behind.\n8 PM (20:00) - 3 hours = 17:00.\nFINAL_ANSWER: 17:00", "latency": 3.887568950653076, "usage": {"prompt_tokens": 269, "completion_tokens": 67, "total_tokens": 336}, "error": null}

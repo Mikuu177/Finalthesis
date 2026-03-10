@@ -1,0 +1,1 @@
+{"text": "1. Asia/Riyadh is UTC+3 and Europe/Paris is UTC+1.\n2. Subtract the time difference: 11:00 - (3 - 1) = 09:00.\nFINAL_ANSWER: 09:00", "latency": 3.3738222122192383, "usage": {"prompt_tokens": 270, "completion_tokens": 62, "total_tokens": 332}, "error": null}

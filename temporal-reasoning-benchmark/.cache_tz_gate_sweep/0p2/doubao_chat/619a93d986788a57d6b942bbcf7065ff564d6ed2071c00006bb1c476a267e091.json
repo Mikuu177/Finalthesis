@@ -1,0 +1,1 @@
+{"text": "US/Mountain is UTC - 7, Europe/Paris is UTC + 2.\n12:00 + (2 - (-7)) = 21:00\nFINAL_ANSWER: 21:00", "latency": 2.8339438438415527, "usage": {"prompt_tokens": 268, "completion_tokens": 51, "total_tokens": 319}, "error": null}

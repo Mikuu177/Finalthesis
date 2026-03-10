@@ -1,0 +1,1 @@
+{"text": "US/Mountain is UTC - 7, US/Hawaii is UTC - 10.\nSo we subtract 3 hours from 20:00. 20:00 - 3:00 = 17:00\nFINAL_ANSWER: 17:00", "latency": 4.166426181793213, "usage": {"prompt_tokens": 269, "completion_tokens": 67, "total_tokens": 336}, "error": null}

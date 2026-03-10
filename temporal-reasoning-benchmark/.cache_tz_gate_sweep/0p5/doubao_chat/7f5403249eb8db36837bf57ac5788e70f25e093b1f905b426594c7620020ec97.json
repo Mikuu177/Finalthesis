@@ -1,0 +1,1 @@
+{"text": "Asia/Shanghai is UTC+8, Europe/London is UTC+0.\n17:00 - 8 hours = 09:00\nFINAL_ANSWER: 09:00", "latency": 2.680712938308716, "usage": {"prompt_tokens": 267, "completion_tokens": 46, "total_tokens": 313}, "error": null}

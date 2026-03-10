@@ -1,0 +1,1 @@
+{"text": "Europe/Athens is UTC+3 and Europe/Paris is UTC+2.\n3 PM (15:00) - 1 hour = 14:00\nFINAL_ANSWER: 14:00", "latency": 2.7123210430145264, "usage": {"prompt_tokens": 268, "completion_tokens": 51, "total_tokens": 319}, "error": null}
