@@ -1,0 +1,1 @@
+{"text": "1996-05-20 + 12 months = 1997-05-20  \n1997-05-20 + 25 days = 1997-06-14  \n\nFINAL_ANSWER: 1997-06-14", "latency": 3.462455987930298, "usage": {"prompt_tokens": 242, "completion_tokens": 50, "total_tokens": 292}, "error": null}

@@ -1,0 +1,1 @@
+{"text": "First, convert 08-18-1436 to Gregorian date:  \nIslamic 1436-08-18 ≈ Gregorian 2015-05-07 (using approximate conversion).  \n\nSubtract 40 weeks 3 days = 283 days.  \n2015-05-07 minus 283 days = 2014-07-28.  \n\nFINAL_ANSWER: 2014-07-28", "latency": 5.004601716995239, "usage": {"prompt_tokens": 232, "completion_tokens": 86, "total_tokens": 318}, "error": null}

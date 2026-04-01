@@ -1,0 +1,1 @@
+{"text": "Asia/Singapore offset in 1956: UTC+7:30 (historical).  \nAsia/Riyadh offset: UTC+3.  \nTarget time = 05:00 + (3 - 7.5) = 05:00 + (-4.5) = 00:30 previous day.  \nCrosses midnight → March 23, 1956, 00:30.  \n\nFINAL_ANSWER: March 23, 1956, 00:30", "latency": 5.223206996917725, "usage": {"prompt_tokens": 401, "completion_tokens": 101, "total_tokens": 502}, "error": null}

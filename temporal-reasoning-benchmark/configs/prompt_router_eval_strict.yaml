@@ -1,0 +1,21 @@
+run_name: classifier_prompt_router_strict
+seed: 42
+
+dataset_path: data/splits/classifier_router/test.jsonl
+subset_size: 0
+sample_size: 400
+
+models:
+  - deepseek_chat
+
+classifier_model_path: outputs/classifier_strict/task_clf.joblib
+prompt_bank_path: configs/prompt_bank.yaml
+prompt_dir: prompts
+
+params:
+  temperature: 0.2
+  max_tokens: 512
+  timeout: 60
+
+outputs_dir: outputs/runs
+cache_dir: .cache_classifier_prompt_router_strict

@@ -1,0 +1,1 @@
+{"text": "04:21 = 4*60 + 21 = 261 minutes.  \n14:38 = 14*60 + 38 = 878 minutes.  \n(261 - 878) mod 1440 = (261 - 878 + 1440) = 823 minutes.  \n823 minutes = 13:43.  \n\nFINAL_ANSWER: 13:43", "latency": 4.278500080108643, "usage": {"prompt_tokens": 235, "completion_tokens": 79, "total_tokens": 314}, "error": null}

@@ -1,0 +1,1 @@
+{"text": "14:32 + 17:58 = 31:90 → 31 hours 90 minutes = 32 hours 30 minutes.  \n32 hours 30 minutes = 1 day 8 hours 30 minutes → 08:30 next day.  \n\nFINAL_ANSWER: 08:30", "latency": 3.3530330657958984, "usage": {"prompt_tokens": 225, "completion_tokens": 62, "total_tokens": 287}, "error": null}

@@ -1,0 +1,1 @@
+{"text": "06:54 to 24:00 is 17:06.  \n24:00 to 13:55 is -10:05 (since we go backwards).  \n17:06 + (-10:05) = 7:01 → 07:01 after wrap-around.\n\nFINAL_ANSWER: 07:01", "latency": 3.672079086303711, "usage": {"prompt_tokens": 225, "completion_tokens": 67, "total_tokens": 292}, "error": null}

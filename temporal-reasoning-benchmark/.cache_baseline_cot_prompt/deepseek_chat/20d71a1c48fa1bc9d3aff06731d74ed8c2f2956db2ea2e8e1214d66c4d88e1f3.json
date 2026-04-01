@@ -1,0 +1,1 @@
+{"text": "03-02-1454 means 1454-02-03.  \nSubtract 6 months: 1453-08-03.  \nSubtract 4 days: 1453-07-30.  \n\nFINAL_ANSWER: 1453-07-30", "latency": 3.60471773147583, "usage": {"prompt_tokens": 242, "completion_tokens": 58, "total_tokens": 300}, "error": null}

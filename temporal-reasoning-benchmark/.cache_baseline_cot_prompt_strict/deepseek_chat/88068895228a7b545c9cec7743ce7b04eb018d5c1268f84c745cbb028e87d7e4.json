@@ -1,0 +1,1 @@
+{"text": "Start date: 1334-05-01 (YYYY-MM-DD).  \nSubtract 10 months: 1333-07-01.  \nSubtract 3 days: 1333-06-28.  \n\nFINAL_ANSWER: 1333-06-28", "latency": 3.6516170501708984, "usage": {"prompt_tokens": 242, "completion_tokens": 59, "total_tokens": 301}, "error": null}

@@ -1,0 +1,1 @@
+{"text": "Step 1: Start date 2019-11-30.  \nStep 2: Add 11 months → 2020-10-30.  \nStep 3: Add 17 days → 2020-11-16.  \n\nFINAL_ANSWER: 2020-11-16", "latency": 3.5415279865264893, "usage": {"prompt_tokens": 242, "completion_tokens": 63, "total_tokens": 305}, "error": null}

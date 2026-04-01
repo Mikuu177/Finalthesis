@@ -1,0 +1,1 @@
+{"text": "Europe/London in 1723 used local mean time, effectively UTC+0.  \nAsia/Riyadh offset = +3.  \nTarget time = 11:00 + (3 - 0) = 14:00 same day.  \n\nFINAL_ANSWER: 14:00", "latency": 3.759580135345459, "usage": {"prompt_tokens": 400, "completion_tokens": 60, "total_tokens": 460}, "error": null}

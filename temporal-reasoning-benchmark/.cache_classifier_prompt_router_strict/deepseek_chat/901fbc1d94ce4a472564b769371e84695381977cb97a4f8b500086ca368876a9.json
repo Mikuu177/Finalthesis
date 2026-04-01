@@ -1,0 +1,1 @@
+{"text": "Subtracting 13 days from 1153-11-08:  \n1153-11-08 → back 8 days → 1153-10-31 → back 5 more days → 1153-10-26.  \n\nFINAL_ANSWER: 1153-10-26", "latency": 3.3736603260040283, "usage": {"prompt_tokens": 238, "completion_tokens": 62, "total_tokens": 300}, "error": null}

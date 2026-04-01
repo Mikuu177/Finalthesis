@@ -1,0 +1,1 @@
+{"text": "Step 1: Start date 1389-12-15.  \nStep 2: Add 3 months → 1390-03-15.  \nStep 3: Add 28 days → 1390-04-12.  \n\nFINAL_ANSWER: 1390-04-12", "latency": 3.672544002532959, "usage": {"prompt_tokens": 242, "completion_tokens": 63, "total_tokens": 305}, "error": null}

@@ -1,0 +1,16 @@
+seed: 42
+dataset_path: data/raw/tram_arithmetic_mcq.jsonl
+
+# Focus on categories used in current thesis phase, expandable later
+include_categories:
+  - Hour Adjustment (24h)
+  - Time Zone Conversion
+  - Date Computation
+  - Year Shift
+  - Month Shift
+
+test_size: 0.2
+min_samples_per_class: 30
+
+output_dir: outputs/classifier
+model_filename: task_clf.joblib

@@ -1,0 +1,1 @@
+{"text": "Subtract 6 months from 1770-02-28 → 1770-08-28? No, 6 months back: 1770-02-28 → 1769-08-28.  \nThen subtract 8 days: 1769-08-28 minus 8 days → 1769-08-20.  \nFINAL_ANSWER: 1769-08-20", "latency": 4.296003103256226, "usage": {"prompt_tokens": 242, "completion_tokens": 85, "total_tokens": 327}, "error": null}

@@ -1,0 +1,1 @@
+{"text": "Asia/Kolkata offset = +5:30.  \nUTC offset = 0.  \nTarget time = 02:00 + (0 - 5:30) = 02:00 - 5:30 = -3:30.  \nAdd 24 hours: -3:30 + 24:00 = 20:30 previous day (May 23, 1915).  \n\nFINAL_ANSWER: 20:30", "latency": 4.82318115234375, "usage": {"prompt_tokens": 397, "completion_tokens": 91, "total_tokens": 488}, "error": null}

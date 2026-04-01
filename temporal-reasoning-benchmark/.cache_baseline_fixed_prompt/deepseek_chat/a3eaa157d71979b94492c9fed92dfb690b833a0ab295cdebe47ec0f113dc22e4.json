@@ -1,0 +1,1 @@
+{"text": "Start: 1914-04-09  \nSubtract 4 months → 1913-12-09  \nSubtract 23 days:  \nDec 9 → back 9 days → Nov 30  \nRemaining 14 days → Nov 16  \n\nFINAL_ANSWER: 1913-11-16", "latency": 3.6780898571014404, "usage": {"prompt_tokens": 232, "completion_tokens": 66, "total_tokens": 298}, "error": null}

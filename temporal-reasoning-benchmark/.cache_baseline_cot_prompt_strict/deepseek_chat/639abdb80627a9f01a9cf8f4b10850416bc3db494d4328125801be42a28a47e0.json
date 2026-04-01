@@ -1,0 +1,1 @@
+{"text": "19:59 = 19 hours 59 minutes  \n07:31 = 7 hours 31 minutes  \nDifference = (19:59 - 7:31) = 12 hours 28 minutes  \nFINAL_ANSWER: 12:28", "latency": 3.4507691860198975, "usage": {"prompt_tokens": 235, "completion_tokens": 51, "total_tokens": 286}, "error": null}

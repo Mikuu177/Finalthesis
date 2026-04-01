@@ -1,0 +1,1 @@
+{"text": "Asia/Riyadh UTC offset: +3  \nUS/Mountain UTC offset: -7  \nDifference: (-7) - (+3) = -10 hours  \n\n12:00 (Riyadh) - 10 hours = 02:00 same day (24-hour wrap-around works normally here).  \n\nFINAL_ANSWER: 02:00", "latency": 5.548243999481201, "usage": {"prompt_tokens": 400, "completion_tokens": 71, "total_tokens": 471}, "error": null}

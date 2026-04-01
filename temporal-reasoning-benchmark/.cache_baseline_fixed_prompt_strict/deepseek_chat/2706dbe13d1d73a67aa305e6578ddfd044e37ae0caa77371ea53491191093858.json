@@ -1,0 +1,1 @@
+{"text": "First, subtract 3 months from 1287-12-07:  \n1287-12-07 → 1287-09-07.  \n\nThen subtract 15 days:  \n1287-09-07 → 1287-08-23 (since September has 30 days, 7 days back goes to August 31, then 8 more days back).  \n\nFINAL_ANSWER: 1287-08-23", "latency": 4.482547998428345, "usage": {"prompt_tokens": 232, "completion_tokens": 91, "total_tokens": 323}, "error": null}

@@ -1,0 +1,1 @@
+{"text": "Subtracting 9 months from 07-22-1232 gives 10-22-1231.  \nSubtracting 1 day from 10-22-1231 gives 10-21-1231.  \nFINAL_ANSWER: 1231-10-21", "latency": 3.395249128341675, "usage": {"prompt_tokens": 232, "completion_tokens": 58, "total_tokens": 290}, "error": null}

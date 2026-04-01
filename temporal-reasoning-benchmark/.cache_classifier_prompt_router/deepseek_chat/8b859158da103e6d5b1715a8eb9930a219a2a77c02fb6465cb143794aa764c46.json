@@ -1,0 +1,1 @@
+{"text": "1212-06-04  \nAdd 6 months → 1212-12-04  \nAdd 9 days → 1212-12-13  \n\nFINAL_ANSWER: 1212-12-13", "latency": 2.9613521099090576, "usage": {"prompt_tokens": 242, "completion_tokens": 45, "total_tokens": 287}, "error": null}

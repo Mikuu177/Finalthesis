@@ -1,0 +1,1 @@
+{"text": "Sydney (UTC+10) to US/Mountain (UTC-7) difference:  \ntarget_offset − source_offset = (-7) − (+10) = -17 hours.  \n8 PM (20:00) − 17 hours = 3:00 same day (April 6).  \nFINAL_ANSWER: 03:00", "latency": 3.8216230869293213, "usage": {"prompt_tokens": 389, "completion_tokens": 70, "total_tokens": 459}, "error": null}

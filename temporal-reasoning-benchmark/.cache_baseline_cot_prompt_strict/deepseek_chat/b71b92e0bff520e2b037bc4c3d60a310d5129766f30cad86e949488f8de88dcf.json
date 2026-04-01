@@ -1,0 +1,1 @@
+{"text": "12:09 is 12 hours 9 minutes.  \n04:42 is 4 hours 42 minutes.  \nSubtract: 12:09 - 04:42 = (12h 9m) - (4h 42m) = 11h 69m - 4h 42m = 7h 27m.  \nFINAL_ANSWER: 07:27", "latency": 4.116822957992554, "usage": {"prompt_tokens": 235, "completion_tokens": 84, "total_tokens": 319}, "error": null}

@@ -1,0 +1,46 @@
+{
+  "dataset": "/Volumes/Mikuu-ultra/Git/Finalthesis/temporal-reasoning-benchmark/data/raw/tram_arithmetic_mcq.jsonl",
+  "out_dir": "/Volumes/Mikuu-ultra/Git/Finalthesis/temporal-reasoning-benchmark/data/splits/classifier_router",
+  "seed": 42,
+  "ratios": {
+    "train": 0.7,
+    "dev": 0.1,
+    "test": 0.2
+  },
+  "categories": [
+    "Date Computation",
+    "Hour Adjustment (24h)",
+    "Month Shift",
+    "Time Zone Conversion",
+    "Year Shift"
+  ],
+  "n": {
+    "train": 6709,
+    "dev": 958,
+    "test": 1918,
+    "total": 9585
+  },
+  "dist": {
+    "train": {
+      "Date Computation": 4196,
+      "Year Shift": 1025,
+      "Hour Adjustment (24h)": 1046,
+      "Time Zone Conversion": 347,
+      "Month Shift": 95
+    },
+    "dev": {
+      "Date Computation": 599,
+      "Hour Adjustment (24h)": 150,
+      "Year Shift": 147,
+      "Time Zone Conversion": 49,
+      "Month Shift": 13
+    },
+    "test": {
+      "Date Computation": 1200,
+      "Hour Adjustment (24h)": 299,
+      "Year Shift": 293,
+      "Time Zone Conversion": 99,
+      "Month Shift": 27
+    }
+  }
+}

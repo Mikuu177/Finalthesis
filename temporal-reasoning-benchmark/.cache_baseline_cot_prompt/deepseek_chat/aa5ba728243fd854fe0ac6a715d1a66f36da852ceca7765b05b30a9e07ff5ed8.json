@@ -1,0 +1,1 @@
+{"text": "15:15 - 11:31 = (15*60 + 15) - (11*60 + 31) = 915 - 691 = 224 minutes.  \n224 minutes = 3 hours 44 minutes.  \nFINAL_ANSWER: 03:44", "latency": 3.285076856613159, "usage": {"prompt_tokens": 235, "completion_tokens": 58, "total_tokens": 293}, "error": null}

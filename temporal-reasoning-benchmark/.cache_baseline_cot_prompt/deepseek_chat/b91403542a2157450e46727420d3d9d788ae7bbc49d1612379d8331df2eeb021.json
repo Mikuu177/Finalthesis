@@ -1,0 +1,1 @@
+{"text": "Subtract 332 days from 2014-04-21.  \n2014 is not a leap year.  \n332 days = 365 - 33 = subtract 1 year (365 days) and add 33 days back.  \n2014-04-21 minus 1 year = 2013-04-21, plus 33 days = 2013-05-24.  \nFINAL_ANSWER: 2013-05-24", "latency": 4.692419767379761, "usage": {"prompt_tokens": 238, "completion_tokens": 94, "total_tokens": 332}, "error": null}

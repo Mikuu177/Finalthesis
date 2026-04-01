@@ -1,0 +1,1 @@
+{"text": "Step:  \nStart: 1134-07-14.  \nSubtract 1 month → 1134-06-14.  \nSubtract 22 days: June 14 back 22 days.  \nJune 14 → back 14 days to May 31 → back 8 more days to May 23.  \n\nFINAL_ANSWER: 1134-05-23", "latency": 3.9900259971618652, "usage": {"prompt_tokens": 242, "completion_tokens": 80, "total_tokens": 322}, "error": null}

@@ -1,0 +1,1 @@
+{"text": "London (UTC+0) to Tokyo (UTC+9) is +9 hours.  \n8:00 + 9 hours = 17:00 same day.  \nFINAL_ANSWER: 17:00", "latency": 3.224400758743286, "usage": {"prompt_tokens": 390, "completion_tokens": 44, "total_tokens": 434}, "error": null}

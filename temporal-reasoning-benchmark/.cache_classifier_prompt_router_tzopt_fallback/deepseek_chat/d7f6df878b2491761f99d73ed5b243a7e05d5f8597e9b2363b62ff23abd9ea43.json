@@ -1,0 +1,1 @@
+{"text": "Asia/Kolkata = +5:30 UTC.  \nEurope/London in 1585 would be UTC+0 (no DST).  \nTarget offset = 0, source offset = +5:30.  \nTarget time = 21:00 + (0 - 5:30) = 21:00 - 5:30 = 15:30 same day.  \n\nFINAL_ANSWER: 15:30", "latency": 4.625108242034912, "usage": {"prompt_tokens": 399, "completion_tokens": 88, "total_tokens": 487}, "error": null}

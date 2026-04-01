@@ -1,0 +1,1 @@
+{"text": "00:32 is 32 minutes after midnight.  \n23:00 to 00:00 is 1 hour, plus 32 minutes = 1 hour 32 minutes.  \nFINAL_ANSWER: 01:32", "latency": 2.972088098526001, "usage": {"prompt_tokens": 225, "completion_tokens": 46, "total_tokens": 271}, "error": null}

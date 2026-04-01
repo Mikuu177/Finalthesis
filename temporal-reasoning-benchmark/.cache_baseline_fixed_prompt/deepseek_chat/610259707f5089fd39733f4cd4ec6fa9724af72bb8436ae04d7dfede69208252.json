@@ -1,0 +1,1 @@
+{"text": "03:25 to 08:29 crosses midnight backward, so 03:25 is earlier on the next day relative to 08:29.  \n03:25 + 24:00 = 27:25.  \n27:25 - 08:29 = 18:56.  \n\nFINAL_ANSWER: 18:56", "latency": 3.8878750801086426, "usage": {"prompt_tokens": 225, "completion_tokens": 70, "total_tokens": 295}, "error": null}

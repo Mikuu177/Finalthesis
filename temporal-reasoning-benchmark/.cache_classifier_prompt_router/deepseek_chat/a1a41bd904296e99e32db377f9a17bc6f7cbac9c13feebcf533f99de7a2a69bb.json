@@ -1,0 +1,1 @@
+{"text": "Start: 1340-10-30  \nAdd 5 months → 1341-03-30 (since Oct + 5 months = March next year).  \nAdd 6 days → 1341-04-05.  \n\nFINAL_ANSWER: 1341-04-05", "latency": 3.6455352306365967, "usage": {"prompt_tokens": 242, "completion_tokens": 61, "total_tokens": 303}, "error": null}

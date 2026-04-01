@@ -1,0 +1,1 @@
+{"text": "12:09 is 12 hours 9 minutes.  \n04:42 is 4 hours 42 minutes.  \n12:09 - 04:42 = 11:69 - 04:42 = 07:27.  \n\nFINAL_ANSWER: 07:27", "latency": 3.6810250282287598, "usage": {"prompt_tokens": 225, "completion_tokens": 58, "total_tokens": 283}, "error": null}

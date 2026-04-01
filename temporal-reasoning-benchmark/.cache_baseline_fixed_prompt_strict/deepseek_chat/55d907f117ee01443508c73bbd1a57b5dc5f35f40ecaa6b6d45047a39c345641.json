@@ -1,0 +1,1 @@
+{"text": "Step: March 1987 + 5 years = March 1992.  \nMarch 1992 + 5 months = August 1992.  \n\nFINAL_ANSWER: 1992-08", "latency": 2.966545820236206, "usage": {"prompt_tokens": 222, "completion_tokens": 42, "total_tokens": 264}, "error": null}

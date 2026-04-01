@@ -1,0 +1,1 @@
+{"text": "Subtract 5 months from 12-30-1377 → 07-30-1377.  \nSubtract 20 days from 07-30-1377 → 07-10-1377.  \nFINAL_ANSWER: 1377-07-10", "latency": 3.536406993865967, "usage": {"prompt_tokens": 242, "completion_tokens": 58, "total_tokens": 300}, "error": null}

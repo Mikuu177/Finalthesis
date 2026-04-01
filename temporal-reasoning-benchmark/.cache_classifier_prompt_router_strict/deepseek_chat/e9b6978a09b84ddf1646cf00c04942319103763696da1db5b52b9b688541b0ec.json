@@ -1,0 +1,1 @@
+{"text": "14:32 - 18:24 = (14:32 + 24:00) - 18:24 = 38:32 - 18:24 = 20:08  \nFINAL_ANSWER: 20:08", "latency": 3.023070812225342, "usage": {"prompt_tokens": 225, "completion_tokens": 49, "total_tokens": 274}, "error": null}

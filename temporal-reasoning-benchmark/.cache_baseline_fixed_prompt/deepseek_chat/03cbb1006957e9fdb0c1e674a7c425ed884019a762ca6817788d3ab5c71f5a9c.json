@@ -1,0 +1,1 @@
+{"text": "20:00 = 20 hours 0 minutes  \n03:37 = 3 hours 37 minutes  \n20:00 - 03:37 = (19 hours 60 minutes) - (3 hours 37 minutes) = 16 hours 23 minutes  \n\nFINAL_ANSWER: 16:23", "latency": 3.439112901687622, "usage": {"prompt_tokens": 225, "completion_tokens": 63, "total_tokens": 288}, "error": null}

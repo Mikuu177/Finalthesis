@@ -1,0 +1,1 @@
+{"text": "First, add 38 years to June 1090:  \n1090 + 38 = 1128, still June.  \n\nThen add 4 months: June + 4 months = October 1128.  \n\nFINAL_ANSWER: 1128-10-01", "latency": 3.8847060203552246, "usage": {"prompt_tokens": 222, "completion_tokens": 57, "total_tokens": 279}, "error": null}

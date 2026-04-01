@@ -1,0 +1,1 @@
+{"text": "6 PM in 24-hour format is 18:00.  \nAsia/Kolkata offset = +5:30.  \nUTC offset = 0.  \nUTC time = 18:00 - 5:30 = 12:30 on same date.  \nFINAL_ANSWER: 12:30", "latency": 3.7421131134033203, "usage": {"prompt_tokens": 397, "completion_tokens": 63, "total_tokens": 460}, "error": null}

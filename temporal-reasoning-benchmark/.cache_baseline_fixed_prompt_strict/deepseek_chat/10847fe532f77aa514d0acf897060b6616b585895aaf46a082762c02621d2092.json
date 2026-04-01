@@ -1,0 +1,1 @@
+{"text": "Step: January 1949 + 35 years = January 1984.  \nThen + 3 months = April 1984.  \n\nFINAL_ANSWER: 1984-04-01", "latency": 3.4829559326171875, "usage": {"prompt_tokens": 222, "completion_tokens": 41, "total_tokens": 263}, "error": null}

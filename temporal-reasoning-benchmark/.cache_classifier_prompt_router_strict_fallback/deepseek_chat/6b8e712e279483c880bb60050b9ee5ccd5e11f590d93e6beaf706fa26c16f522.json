@@ -1,0 +1,1 @@
+{"text": "08:45 - 16:51 = (8*60 + 45) - (16*60 + 51) = 525 - 1011 = -486 minutes.  \n-486 mod 1440 = 1440 - 486 = 954 minutes.  \n954 minutes = 15 hours 54 minutes → 15:54.  \n\nFINAL_ANSWER: 15:54", "latency": 4.49072790145874, "usage": {"prompt_tokens": 225, "completion_tokens": 83, "total_tokens": 308}, "error": null}

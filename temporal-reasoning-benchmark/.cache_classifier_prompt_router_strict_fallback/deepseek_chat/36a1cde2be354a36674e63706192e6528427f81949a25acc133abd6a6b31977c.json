@@ -1,0 +1,1 @@
+{"text": "1062 is a common year (not divisible by 4).  \n360 days before 09-05-1062:  \nStep back 1 year (365 days) to 09-05-1061, then add back 5 days (since 365 - 360 = 5).  \nAdding 5 days to 09-05-1061 gives 1061-09-10.  \n\nFINAL_ANSWER: 1061-09-10", "latency": 4.754870653152466, "usage": {"prompt_tokens": 238, "completion_tokens": 96, "total_tokens": 334}, "error": null}

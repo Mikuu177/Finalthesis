@@ -1,0 +1,1 @@
+{"text": "10:35 to 13:13 is 2 hours 38 minutes ahead, so 10:35 minus 13:13 means going backward 2h38m from 10:35.  \n10:35 - 2h38m = 7:57.  \nWrap-around: 7:57 is within 0:00–23:59.  \n\nFINAL_ANSWER: 07:57", "latency": 4.667641878128052, "usage": {"prompt_tokens": 225, "completion_tokens": 86, "total_tokens": 311}, "error": null}

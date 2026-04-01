@@ -1,0 +1,1 @@
+{"text": "Asia/Riyadh is UTC+3 (no DST historically).  \nEurope/London in July 1510 would be UTC+0 (no DST).  \n4 PM Riyadh = 16:00 UTC+3 → UTC = 13:00.  \nUTC 13:00 in London = 13:00 same date.  \n\nFINAL_ANSWER: 1510-07-15 13:00", "latency": 4.525849103927612, "usage": {"prompt_tokens": 256, "completion_tokens": 87, "total_tokens": 343}, "error": null}

@@ -1,0 +1,1 @@
+{"text": "01:56 - 15:15 = (1 hour 56 minutes) - (15 hours 15 minutes).  \nThis is negative, so add 24 hours: 25:56 - 15:15 = 10:41.  \n\nFINAL_ANSWER: 10:41", "latency": 3.963034152984619, "usage": {"prompt_tokens": 225, "completion_tokens": 60, "total_tokens": 285}, "error": null}

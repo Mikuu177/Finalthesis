@@ -1,0 +1,1 @@
+{"text": "Start: 2000-09 (September 2000)  \nAdd 10 years → 2010-09  \nAdd 11 months → 2010-09 + 11 months = 2010-20 → 2011-08  \nFINAL_ANSWER: 2011-08", "latency": 3.932896852493286, "usage": {"prompt_tokens": 222, "completion_tokens": 62, "total_tokens": 284}, "error": null}

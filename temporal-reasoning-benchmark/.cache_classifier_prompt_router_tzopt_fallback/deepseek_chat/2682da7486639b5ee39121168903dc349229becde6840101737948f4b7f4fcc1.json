@@ -1,0 +1,1 @@
+{"text": "12 PM US/Pacific = 12:00 (UTC-8).  \nEurope/London in March 2018 is UTC+0 (no DST yet on March 19).  \nTarget time = 12:00 + (0 - (-8)) = 12:00 + 8 = 20:00.  \nFINAL_ANSWER: 20:00", "latency": 4.00492000579834, "usage": {"prompt_tokens": 399, "completion_tokens": 77, "total_tokens": 476}, "error": null}

@@ -1,0 +1,14 @@
+seed: 42
+train_dataset_path: data/splits/classifier_router/train.jsonl
+eval_dataset_path: data/splits/classifier_router/dev.jsonl
+
+include_categories:
+  - Hour Adjustment (24h)
+  - Time Zone Conversion
+  - Date Computation
+  - Year Shift
+  - Month Shift
+
+min_samples_per_class: 30
+output_dir: outputs/classifier_strict
+model_filename: task_clf.joblib

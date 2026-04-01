@@ -1,0 +1,1 @@
+{"text": "First, subtract 1 month from 1622-03-22 → 1622-02-22.  \nThen subtract 16 days: 1622-02-22 minus 16 days → 1622-02-06.  \n\nFINAL_ANSWER: 1622-02-06", "latency": 3.4533331394195557, "usage": {"prompt_tokens": 232, "completion_tokens": 63, "total_tokens": 295}, "error": null}

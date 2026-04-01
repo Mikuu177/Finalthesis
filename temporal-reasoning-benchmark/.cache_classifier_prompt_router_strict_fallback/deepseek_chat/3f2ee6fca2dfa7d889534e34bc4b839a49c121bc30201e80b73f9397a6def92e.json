@@ -1,0 +1,1 @@
+{"text": "00:32 to 24:00 is 23:28, plus 0:32 gives 24:00, so from 09:40 back to 00:00 is 9:40, total wrap = 24:00 - 9:40 = 14:20.  \n00:32 + 14:20 = 14:52.  \n\nFINAL_ANSWER: 14:52", "latency": 4.64836311340332, "usage": {"prompt_tokens": 225, "completion_tokens": 86, "total_tokens": 311}, "error": null}

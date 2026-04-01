@@ -1,0 +1,1 @@
+{"text": "12 AM September 24, 1884 in London (UTC+0) → target offset +3 for Riyadh.  \nTarget time = 00:00 + (3 - 0) = 03:00 same date.  \n\nFINAL_ANSWER: 03:00 September 24, 1884", "latency": 3.9916269779205322, "usage": {"prompt_tokens": 400, "completion_tokens": 65, "total_tokens": 465}, "error": null}

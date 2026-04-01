@@ -1,0 +1,1 @@
+{"text": "Subtract 3 months from 1287-12-07 → 1287-09-07.  \nSubtract 15 days: September has 30 days, so 07 - 15 = -8 → go back into August.  \nAugust has 31 days, so 31 - 8 = 23 → date is 1287-08-23.  \nFINAL_ANSWER: 1287-08-23", "latency": 4.43604040145874, "usage": {"prompt_tokens": 242, "completion_tokens": 90, "total_tokens": 332}, "error": null}

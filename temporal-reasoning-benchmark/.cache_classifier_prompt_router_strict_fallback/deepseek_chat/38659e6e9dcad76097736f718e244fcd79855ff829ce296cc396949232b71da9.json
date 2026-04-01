@@ -1,0 +1,1 @@
+{"text": "1259-08-10 minus 8 months → 1259-01-10.  \n1259-01-10 minus 7 days → 1259-01-03.  \nFINAL_ANSWER: 1259-01-03", "latency": 3.308814764022827, "usage": {"prompt_tokens": 242, "completion_tokens": 52, "total_tokens": 294}, "error": null}

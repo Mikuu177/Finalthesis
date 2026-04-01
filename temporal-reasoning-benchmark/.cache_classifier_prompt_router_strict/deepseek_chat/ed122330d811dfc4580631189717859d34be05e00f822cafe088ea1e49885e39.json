@@ -1,0 +1,1 @@
+{"text": "2013-12-28 minus 29 weeks = 2013-06-15 (since 29 weeks = 203 days, 28 days in June back from 28th gives June 15).  \nSubtract additional 5 days: 2013-06-15 minus 5 days = 2013-06-10.  \nFINAL_ANSWER: 2013-06-10", "latency": 4.4621570110321045, "usage": {"prompt_tokens": 242, "completion_tokens": 84, "total_tokens": 326}, "error": null}

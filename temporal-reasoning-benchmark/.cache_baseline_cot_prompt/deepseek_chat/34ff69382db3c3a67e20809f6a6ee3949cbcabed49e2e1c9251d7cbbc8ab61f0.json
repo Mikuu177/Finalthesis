@@ -1,0 +1,1 @@
+{"text": "Asia/Riyadh is UTC+3.  \nAsia/Kolkata is UTC+5:30.  \nKolkata is 2 hours 30 minutes ahead of Riyadh.  \n8:00 + 2:30 = 10:30 on October 20, 1442.  \n\nFINAL_ANSWER: 10:30", "latency": 4.096890211105347, "usage": {"prompt_tokens": 256, "completion_tokens": 68, "total_tokens": 324}, "error": null}

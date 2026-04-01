@@ -1,0 +1,1 @@
+{"text": "06:29 is 6 hours 29 minutes.  \n11:41 is 11 hours 41 minutes.  \n06:29 − 11:41 = (6:29 + 24:00) − 11:41 = 30:29 − 11:41 = 18:48.  \n\nFINAL_ANSWER: 18:48", "latency": 4.083834171295166, "usage": {"prompt_tokens": 225, "completion_tokens": 74, "total_tokens": 299}, "error": null}

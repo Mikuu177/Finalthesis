@@ -1,0 +1,1 @@
+{"text": "09:14 - 12:51 means time A minus time B.  \n09:14 is earlier in the day than 12:51, so direct subtraction gives negative.  \nWrap around 24 hours: 09:14 + 24:00 = 33:14.  \n33:14 - 12:51 = 20:23.  \n\nFINAL_ANSWER: 20:23", "latency": 4.628553867340088, "usage": {"prompt_tokens": 235, "completion_tokens": 83, "total_tokens": 318}, "error": null}

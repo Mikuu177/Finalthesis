@@ -1,0 +1,1 @@
+{"text": "2003-04-28 minus 12 months = 2002-04-28  \n2002-04-28 minus 21 days = 2002-04-07  \nFINAL_ANSWER: 2002-04-07", "latency": 2.9918038845062256, "usage": {"prompt_tokens": 242, "completion_tokens": 50, "total_tokens": 292}, "error": null}

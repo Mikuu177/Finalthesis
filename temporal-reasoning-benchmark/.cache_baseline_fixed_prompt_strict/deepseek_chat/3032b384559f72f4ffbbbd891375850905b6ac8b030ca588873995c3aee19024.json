@@ -1,0 +1,1 @@
+{"text": "14:32 to 24:00 is 9 hours 28 minutes.  \n24:00 to 18:24 is -6 hours 24 minutes (or +17 hours 36 minutes if wrapping forward).  \nWrap-around subtraction: (14:32 + 24:00) - 18:24 = 38:32 - 18:24 = 20:08.  \n\nFINAL_ANSWER: 20:08", "latency": 4.5994861125946045, "usage": {"prompt_tokens": 225, "completion_tokens": 90, "total_tokens": 315}, "error": null}

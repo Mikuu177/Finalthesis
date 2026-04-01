@@ -1,0 +1,1 @@
+{"text": "Step:  \nLondon (UTC+0) at 11:00. Riyadh UTC+3.  \nTarget time = 11:00 + (3 - 0) = 14:00 same day.  \n\nFINAL_ANSWER: 14:00", "latency": 3.4453258514404297, "usage": {"prompt_tokens": 400, "completion_tokens": 54, "total_tokens": 454}, "error": null}

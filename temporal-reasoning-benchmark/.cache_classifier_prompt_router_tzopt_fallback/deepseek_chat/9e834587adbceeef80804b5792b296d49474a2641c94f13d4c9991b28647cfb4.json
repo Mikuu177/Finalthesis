@@ -1,0 +1,1 @@
+{"text": "Asia/Riyadh = UTC+3, Europe/London = UTC+0 (standard time).  \nTarget time = 09:00 + (0 − 3) = 09:00 − 3 = 06:00 same day.  \nNo date change.  \n\nFINAL_ANSWER: 06:00", "latency": 3.844369888305664, "usage": {"prompt_tokens": 400, "completion_tokens": 66, "total_tokens": 466}, "error": null}

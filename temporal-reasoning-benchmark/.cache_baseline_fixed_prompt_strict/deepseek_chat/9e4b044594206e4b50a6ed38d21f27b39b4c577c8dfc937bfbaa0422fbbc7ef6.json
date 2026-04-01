@@ -1,0 +1,1 @@
+{"text": "First, subtract 10 months from 1152-02-14:  \n1152-02-14 → 1151-04-14 (since 10 months back from February goes into previous year).  \n\nThen subtract 5 days:  \n1151-04-14 minus 5 days → 1151-04-09.  \n\nFINAL_ANSWER: 1151-04-09", "latency": 4.397680759429932, "usage": {"prompt_tokens": 232, "completion_tokens": 83, "total_tokens": 315}, "error": null}

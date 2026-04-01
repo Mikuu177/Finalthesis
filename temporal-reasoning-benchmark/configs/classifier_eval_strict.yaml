@@ -1,0 +1,3 @@
+model_path: outputs/classifier_strict/task_clf.joblib
+eval_dataset_path: data/splits/classifier_router/test.jsonl
+output_dir: outputs/classifier_strict_eval

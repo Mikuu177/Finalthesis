@@ -1,0 +1,1 @@
+{"text": "07-11-1295 is November 7, 1295.  \nAdd 22 days:  \nNovember has 30 days, so from Nov 7 to Nov 30 is 23 days.  \n22 days is one day less than that, so Nov 7 + 22 days = Nov 29, 1295.  \n\nFINAL_ANSWER: 1295-11-29", "latency": 4.331341028213501, "usage": {"prompt_tokens": 238, "completion_tokens": 82, "total_tokens": 320}, "error": null}

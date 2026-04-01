@@ -1,0 +1,1 @@
+{"text": "1798-09-10 minus 12 months = 1797-09-10  \n1797-09-10 minus 20 days:  \nSeptember has 30 days, so 10 days back → 1797-08-31, then 10 more days back → 1797-08-21.  \n\nFINAL_ANSWER: 1797-08-21", "latency": 3.8826088905334473, "usage": {"prompt_tokens": 242, "completion_tokens": 79, "total_tokens": 321}, "error": null}

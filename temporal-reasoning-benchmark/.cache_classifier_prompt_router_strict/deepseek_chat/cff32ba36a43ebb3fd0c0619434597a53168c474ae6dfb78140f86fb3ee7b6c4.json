@@ -1,0 +1,1 @@
+{"text": "Subtract 4 months from 1636-08-31 → 1636-04-31 (April 31 invalid, adjust to April 30).  \nThen subtract 28 days → 1636-04-02.  \nFINAL_ANSWER: 1636-04-02", "latency": 3.3997621536254883, "usage": {"prompt_tokens": 242, "completion_tokens": 61, "total_tokens": 303}, "error": null}

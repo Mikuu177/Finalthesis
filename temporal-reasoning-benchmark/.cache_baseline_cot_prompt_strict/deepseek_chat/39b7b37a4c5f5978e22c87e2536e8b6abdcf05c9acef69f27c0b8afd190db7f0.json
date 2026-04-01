@@ -1,0 +1,1 @@
+{"text": "14:32 is earlier in the day than 18:24, so subtract 18:24 from 14:32 with wrap-around:  \n14:32 + 24:00 = 38:32.  \n38:32 - 18:24 = 20:08.  \n\nFINAL_ANSWER: 20:08", "latency": 3.5352399349212646, "usage": {"prompt_tokens": 235, "completion_tokens": 69, "total_tokens": 304}, "error": null}

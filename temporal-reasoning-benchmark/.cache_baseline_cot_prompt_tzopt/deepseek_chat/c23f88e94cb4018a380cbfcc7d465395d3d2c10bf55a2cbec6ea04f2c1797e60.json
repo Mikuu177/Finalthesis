@@ -1,0 +1,1 @@
+{"text": "12:00 + (3 - 0) = 15:00, same date.  \nFINAL_ANSWER: 15:00", "latency": 2.6937830448150635, "usage": {"prompt_tokens": 400, "completion_tokens": 29, "total_tokens": 429}, "error": null}

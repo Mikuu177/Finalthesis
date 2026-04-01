@@ -1,0 +1,1 @@
+{"text": "First, add 44 years to January 1294:  \n1294 + 44 = 1338, still January.  \n\nThen add 2 months: January + 2 months = March 1338.  \n\nFINAL_ANSWER: 1338-03-01", "latency": 3.708527088165283, "usage": {"prompt_tokens": 222, "completion_tokens": 57, "total_tokens": 279}, "error": null}

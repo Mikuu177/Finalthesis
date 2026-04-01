@@ -1,0 +1,1 @@
+{"text": "First, subtract 1 month from 1134-07-14:  \n1134-06-14 (since July 14 → June 14).  \n\nThen subtract 22 days from 1134-06-14:  \nJune 14 → back 14 days = June 0 → May 31.  \nRemaining 8 days back from May 31 → May 23.  \n\nFINAL_ANSWER: 1134-05-23", "latency": 5.29399299621582, "usage": {"prompt_tokens": 232, "completion_tokens": 94, "total_tokens": 326}, "error": null}

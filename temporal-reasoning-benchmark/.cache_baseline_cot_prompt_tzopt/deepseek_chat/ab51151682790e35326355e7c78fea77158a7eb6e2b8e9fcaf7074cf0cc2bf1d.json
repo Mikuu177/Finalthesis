@@ -1,0 +1,1 @@
+{"text": "Asia/Riyadh = UTC+3.  \nEurope/London in 1063 would be UTC+0 (no DST).  \n\n9:00 in Riyadh → UTC = 9:00 − 3 = 6:00 UTC.  \nUTC 6:00 → London = 6:00 same day.  \n\nFINAL_ANSWER: 06:00", "latency": 4.217945098876953, "usage": {"prompt_tokens": 400, "completion_tokens": 77, "total_tokens": 477}, "error": null}

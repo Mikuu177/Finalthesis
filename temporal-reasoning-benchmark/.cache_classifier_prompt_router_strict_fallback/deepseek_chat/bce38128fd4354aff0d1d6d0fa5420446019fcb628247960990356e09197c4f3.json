@@ -1,0 +1,1 @@
+{"text": "Subtracting 332 days from 2014-04-21:  \n2014-04-21 back 21 days → 2014-03-31.  \nRemaining 332 − 21 = 311 days earlier.  \n2014 is not a leap year, so go back 365−311 = 54 days into 2013 → 2013-11-08.  \n\nFINAL_ANSWER: 2013-11-08", "latency": 4.61544394493103, "usage": {"prompt_tokens": 238, "completion_tokens": 94, "total_tokens": 332}, "error": null}

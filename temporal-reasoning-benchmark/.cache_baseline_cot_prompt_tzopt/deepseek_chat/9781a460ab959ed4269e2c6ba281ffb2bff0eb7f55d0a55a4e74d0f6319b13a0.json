@@ -1,0 +1,1 @@
+{"text": "London (UTC+0) to Tokyo (UTC+9): target_time = 08:00 + (9 - 0) = 17:00 same day.  \nDate remains May 2, 1414.  \nFINAL_ANSWER: 1414-05-02 17:00", "latency": 3.5216851234436035, "usage": {"prompt_tokens": 400, "completion_tokens": 63, "total_tokens": 463}, "error": null}

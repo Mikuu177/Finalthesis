@@ -1,0 +1,1 @@
+{"text": "04-03-1754 is March 4, 1754.  \nAdd 3 months → June 4, 1754.  \nAdd 14 days → June 18, 1754.  \n\nFINAL_ANSWER: 1754-06-18", "latency": 3.5700581073760986, "usage": {"prompt_tokens": 242, "completion_tokens": 56, "total_tokens": 298}, "error": null}

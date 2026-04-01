@@ -1,0 +1,1 @@
+{"text": "Asia/Riyadh = UTC+3.  \nUS/Eastern = UTC-5 (standard time, no DST in 1767).  \n\nSource time: 18:00 (UTC+3) → UTC = 18:00 − 3 = 15:00.  \nTarget (US/Eastern) = 15:00 − 5 = 10:00 same day.  \n\nFINAL_ANSWER: 10:00", "latency": 4.916632175445557, "usage": {"prompt_tokens": 400, "completion_tokens": 91, "total_tokens": 491}, "error": null}

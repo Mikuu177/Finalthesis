@@ -1,0 +1,1 @@
+{"text": "US/Mountain offset = -7.  \nUTC offset = 0.  \nTarget UTC = 20:00 + (0 - (-7)) = 20:00 + 7 = 27:00 → 03:00 next day.  \nDate: December 28, 1151, 03:00 UTC.  \n\nFINAL_ANSWER: December 28, 1151, 03:00", "latency": 4.19600510597229, "usage": {"prompt_tokens": 397, "completion_tokens": 86, "total_tokens": 483}, "error": null}

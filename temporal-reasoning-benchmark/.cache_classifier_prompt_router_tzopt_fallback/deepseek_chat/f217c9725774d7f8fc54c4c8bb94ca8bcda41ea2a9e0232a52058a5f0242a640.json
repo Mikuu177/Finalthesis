@@ -1,0 +1,1 @@
+{"text": "Step:  \nLondon (Europe/London) in 1730 used local mean time ≈ UTC+0.  \nUS/Mountain offset = -7.  \nTarget time = 23:00 + (-7 - 0) = 23:00 - 7 = 16:00 same day.  \nNo date change needed for time-only wrap.  \n\nFINAL_ANSWER: 16:00", "latency": 4.463021993637085, "usage": {"prompt_tokens": 399, "completion_tokens": 82, "total_tokens": 481}, "error": null}

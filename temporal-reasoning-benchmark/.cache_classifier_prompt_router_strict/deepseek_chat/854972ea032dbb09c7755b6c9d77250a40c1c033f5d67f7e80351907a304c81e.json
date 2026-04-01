@@ -1,0 +1,1 @@
+{"text": "01:50 - 08:29 = (1 hour 50 minutes) - (8 hours 29 minutes)  \n= (1*60 + 50) - (8*60 + 29) = 110 - 509 = -399 minutes  \n-399 mod 1440 = 1041 minutes → 17 hours 21 minutes  \n\nFINAL_ANSWER: 17:21", "latency": 4.288025140762329, "usage": {"prompt_tokens": 225, "completion_tokens": 82, "total_tokens": 307}, "error": null}

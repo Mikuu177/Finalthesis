@@ -1,0 +1,1 @@
+{"text": "Subtract 332 days from 2014-04-21.  \n2014-04-21 minus 332 days:  \nBack up 21 days to 2014-03-31, then 311 days left.  \n2014 is not leap year, so back 311 days from 2014-03-31:  \n2013-05-24.  \n\nFINAL_ANSWER: 2013-05-24", "latency": 4.371529817581177, "usage": {"prompt_tokens": 238, "completion_tokens": 90, "total_tokens": 328}, "error": null}

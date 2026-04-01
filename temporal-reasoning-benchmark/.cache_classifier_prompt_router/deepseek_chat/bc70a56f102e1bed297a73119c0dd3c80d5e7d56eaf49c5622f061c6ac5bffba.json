@@ -1,0 +1,1 @@
+{"text": "10:14 to 24:00 is 13 hours 46 minutes.  \n24:00 to 16:17 is 16 hours 17 minutes.  \nTotal wrap-around difference: (13:46 + 16:17) = 30:03 → mod 24 = 6:03.  \n\nFINAL_ANSWER: 06:03", "latency": 4.103965759277344, "usage": {"prompt_tokens": 225, "completion_tokens": 74, "total_tokens": 299}, "error": null}

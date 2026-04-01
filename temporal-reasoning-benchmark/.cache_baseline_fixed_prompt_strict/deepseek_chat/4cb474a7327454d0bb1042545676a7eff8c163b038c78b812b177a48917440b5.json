@@ -1,0 +1,1 @@
+{"text": "Subtract 3 months: 2022-01-22 → 2021-10-22.  \nSubtract 14 days: 2021-10-22 → 2021-10-08.  \nFINAL_ANSWER: 2021-10-08", "latency": 3.882089138031006, "usage": {"prompt_tokens": 232, "completion_tokens": 58, "total_tokens": 290}, "error": null}

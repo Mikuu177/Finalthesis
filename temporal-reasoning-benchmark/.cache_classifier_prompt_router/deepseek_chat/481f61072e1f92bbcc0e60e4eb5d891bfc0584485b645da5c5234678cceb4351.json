@@ -1,0 +1,1 @@
+{"text": "07:27 - 18:42 = (7 hours 27 minutes) - (18 hours 42 minutes)  \n= (6 hours 87 minutes) - (18 hours 42 minutes) = (-12 hours 45 minutes)  \n(-12:45) mod 24 hours = 11:15  \n\nFINAL_ANSWER: 11:15", "latency": 4.107530832290649, "usage": {"prompt_tokens": 225, "completion_tokens": 74, "total_tokens": 299}, "error": null}

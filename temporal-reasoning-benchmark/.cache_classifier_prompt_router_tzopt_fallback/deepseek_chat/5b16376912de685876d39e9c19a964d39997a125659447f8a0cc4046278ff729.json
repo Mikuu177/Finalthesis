@@ -1,0 +1,1 @@
+{"text": "Step:  \nKolkata (IST) = UTC+5:30. Sydney = UTC+10.  \nDifference = 10 - 5.30 = 4.30 hours ahead.  \n8:00 PM (20:00) + 4:30 = 00:30 next day.  \nDate: December 13, 1427, time 00:30.\n\nFINAL_ANSWER: 00:30", "latency": 4.726732969284058, "usage": {"prompt_tokens": 399, "completion_tokens": 88, "total_tokens": 487}, "error": null}

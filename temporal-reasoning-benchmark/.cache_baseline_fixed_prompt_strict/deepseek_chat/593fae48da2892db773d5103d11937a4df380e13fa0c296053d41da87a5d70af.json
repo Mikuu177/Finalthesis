@@ -1,0 +1,1 @@
+{"text": "First, note that the question asks for a date, not a time of day.  \nJune 1083 + 20 years = June 1103.  \nJune 1103 + 10 months = April 1104.  \n\nFINAL_ANSWER: 1104-04-01", "latency": 3.993751049041748, "usage": {"prompt_tokens": 222, "completion_tokens": 60, "total_tokens": 282}, "error": null}

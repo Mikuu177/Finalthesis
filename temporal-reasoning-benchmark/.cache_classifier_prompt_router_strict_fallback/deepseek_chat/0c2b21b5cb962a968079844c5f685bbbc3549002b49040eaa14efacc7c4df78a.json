@@ -1,0 +1,1 @@
+{"text": "12:36 is 36 minutes past 12:00.  \n12:44 is 44 minutes past 12:00.  \n36 − 44 = −8 minutes → 24:00 − 0:08 = 23:52.  \n\nFINAL_ANSWER: 23:52", "latency": 4.370958089828491, "usage": {"prompt_tokens": 225, "completion_tokens": 62, "total_tokens": 287}, "error": null}

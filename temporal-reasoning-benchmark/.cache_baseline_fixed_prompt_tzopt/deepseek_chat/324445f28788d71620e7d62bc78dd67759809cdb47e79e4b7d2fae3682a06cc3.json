@@ -1,0 +1,1 @@
+{"text": "Asia/Riyadh UTC+3 → US/Pacific UTC-8.  \nDifference = (-8) - (+3) = -11 hours.  \n11:00 + (-11) = 00:00 same day (August 10).  \n\nFINAL_ANSWER: 00:00", "latency": 3.6152031421661377, "usage": {"prompt_tokens": 390, "completion_tokens": 60, "total_tokens": 450}, "error": null}

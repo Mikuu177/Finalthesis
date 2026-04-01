@@ -1,0 +1,1 @@
+{"text": "First, subtract 1 month from 1495-06-25 → 1495-05-25.  \nThen subtract 22 days: from 1495-05-25, go back 22 days.  \nMay has 31 days, so:  \n25 - 22 = 3 → 1495-05-03.  \n\nFINAL_ANSWER: 1495-05-03", "latency": 4.577960014343262, "usage": {"prompt_tokens": 232, "completion_tokens": 84, "total_tokens": 316}, "error": null}

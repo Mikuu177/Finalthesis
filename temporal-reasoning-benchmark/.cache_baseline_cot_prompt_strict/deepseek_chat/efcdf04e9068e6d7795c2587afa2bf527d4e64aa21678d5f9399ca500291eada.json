@@ -1,0 +1,1 @@
+{"text": "12:05 = 12:05  \n08:56 = 08:56  \n\nSubtract: 12:05 - 08:56 = (12 hours 5 minutes) - (8 hours 56 minutes)  \n= (11 hours 65 minutes) - (8 hours 56 minutes)  \n= 3 hours 9 minutes  \n\nFINAL_ANSWER: 03:09", "latency": 4.32736611366272, "usage": {"prompt_tokens": 235, "completion_tokens": 81, "total_tokens": 316}, "error": null}

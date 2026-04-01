@@ -1,0 +1,1 @@
+{"text": "London (UTC+0) to Tokyo (UTC+9) is +9 hours.  \n11:00 + 9 hours = 20:00 same day.  \nDate remains March 18, 1344.  \n\nFINAL_ANSWER: 1344-03-18 20:00", "latency": 3.6330277919769287, "usage": {"prompt_tokens": 400, "completion_tokens": 62, "total_tokens": 462}, "error": null}

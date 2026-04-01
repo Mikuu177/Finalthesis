@@ -1,0 +1,1 @@
+{"text": "Step: Add 12 months to 1996-05-20 → 1997-05-20.  \nThen add 25 days → 1997-05-20 + 25 days = 1997-06-14.  \n\nFINAL_ANSWER: 1997-06-14", "latency": 3.8259010314941406, "usage": {"prompt_tokens": 232, "completion_tokens": 63, "total_tokens": 295}, "error": null}

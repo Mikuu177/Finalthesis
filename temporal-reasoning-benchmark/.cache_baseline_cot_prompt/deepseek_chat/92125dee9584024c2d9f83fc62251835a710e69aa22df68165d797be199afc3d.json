@@ -1,0 +1,1 @@
+{"text": "10:25 to 24:00 is 13 hours 35 minutes.  \n24:00 to 23:26 is -1 hour 26 minutes (or 23:26 earlier).  \nTotal: 13h35m - 1h26m = 12h09m.  \nWrap-around: 12:09 is equivalent to 10:25 - 23:26.  \n\nFINAL_ANSWER: 12:09", "latency": 4.533538103103638, "usage": {"prompt_tokens": 235, "completion_tokens": 92, "total_tokens": 327}, "error": null}

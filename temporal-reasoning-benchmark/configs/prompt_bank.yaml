@@ -1,0 +1,26 @@
+default:
+  prompt_mode: sp
+  n_shots: 0
+  prompt_version: v2.1
+
+by_category:
+  Hour Adjustment (24h):
+    prompt_mode: sp
+    n_shots: 0
+    prompt_version: v2.1
+  Time Zone Conversion:
+    prompt_mode: cot
+    n_shots: 0
+    prompt_version: v2.1
+  Date Computation:
+    prompt_mode: cot
+    n_shots: 0
+    prompt_version: v2.1
+  Year Shift:
+    prompt_mode: cot
+    n_shots: 0
+    prompt_version: v2.1
+  Month Shift:
+    prompt_mode: cot
+    n_shots: 0
+    prompt_version: v2.1

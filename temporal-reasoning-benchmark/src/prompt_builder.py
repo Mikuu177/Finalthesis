@@ -44,7 +44,13 @@ def category_rules(category: str) -> str:
     if 'time zone conversion' in cat:
         return (
             "CATEGORY_RULES:\n"
-            "- Convert the given time to the target local time zone (apply the correct direction/sign).\n"
+            "- Convert the given time to the target local time zone using UTC-offset arithmetic.\n"
+            "- Use: target_time = source_time + (target_utc_offset - source_utc_offset).\n"
+            "- Apply correct sign/direction and wrap around 24 hours (mod 24).\n"
+            "- If the conversion crosses day boundary, keep arithmetic consistent, but final output is ONLY local HH:MM.\n"
+            "- Assume standard offsets (no DST) unless explicitly specified in question context.\n"
+            "- Reference offsets (hours): UTC=0, Asia/Riyadh=+3, Europe/Athens=+2, Asia/Kolkata=+5:30, "
+            "US/Mountain=-7, US/Pacific=-8, US/Hawaii=-10, Asia/Tokyo=+9, Australia/Sydney=+10.\n"
             "- Output ONLY the converted local time in HH:MM (24-hour).\n"
         )
     return ""

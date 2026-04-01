@@ -1,0 +1,1 @@
+{"text": "4 weeks = 28 days.  \n28 days + 7 days = 35 days.  \n1147-04-17 + 35 days = 1147-05-22.  \n\nFINAL_ANSWER: 1147-05-22", "latency": 3.2034530639648438, "usage": {"prompt_tokens": 232, "completion_tokens": 52, "total_tokens": 284}, "error": null}

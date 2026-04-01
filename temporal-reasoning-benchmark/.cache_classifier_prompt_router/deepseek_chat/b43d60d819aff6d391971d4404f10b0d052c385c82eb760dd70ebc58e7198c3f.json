@@ -1,0 +1,1 @@
+{"text": "6 PM in Kolkata (IST) is 12:30 UTC (since IST is UTC+5:30).  \nFebruary 28, 1915 18:00 Kolkata = February 28, 1915 12:30 UTC.  \nFINAL_ANSWER: 1915-02-28 12:30", "latency": 3.8850741386413574, "usage": {"prompt_tokens": 253, "completion_tokens": 67, "total_tokens": 320}, "error": null}

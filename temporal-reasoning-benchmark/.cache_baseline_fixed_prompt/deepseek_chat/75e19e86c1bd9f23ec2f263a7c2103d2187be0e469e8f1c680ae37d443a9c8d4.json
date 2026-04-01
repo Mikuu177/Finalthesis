@@ -1,0 +1,1 @@
+{"text": "12-14-1504 + 1 week = 12-21-1504  \n12-21-1504 + 6 days = 12-27-1504  \n\nFINAL_ANSWER: 1504-12-27", "latency": 3.3649721145629883, "usage": {"prompt_tokens": 232, "completion_tokens": 50, "total_tokens": 282}, "error": null}

@@ -1,0 +1,1 @@
+{"text": "Sydney: UTC+10 (since no DST mentioned).  \nRiyadh: UTC+3.  \nTarget time = 22:00 + (3 - 10) = 22:00 - 7 = 15:00 same day.  \nNo date change needed.  \n\nFINAL_ANSWER: 15:00", "latency": 4.04224705696106, "usage": {"prompt_tokens": 400, "completion_tokens": 68, "total_tokens": 468}, "error": null}

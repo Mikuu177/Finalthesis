@@ -1,0 +1,1 @@
+{"text": "Step 1: Start date: 1194-05 (May 1194).  \nStep 2: Add 26 years → 1194 + 26 = 1220 → 1220-05.  \nStep 3: Add 10 months → May + 10 months = March of next year.  \n1220-05 + 10 months = 1221-03.  \n\nFINAL_ANSWER: 1221-03", "latency": 5.629207134246826, "usage": {"prompt_tokens": 232, "completion_tokens": 93, "total_tokens": 325}, "error": null}

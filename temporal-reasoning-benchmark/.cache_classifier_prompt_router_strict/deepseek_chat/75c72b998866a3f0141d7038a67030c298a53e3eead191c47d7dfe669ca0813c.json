@@ -1,0 +1,1 @@
+{"text": "Start: 1923-11-01  \nAdd 3 months → 1924-02-01 (since Nov + 3 months = Feb, year increments because Nov to Dec, Jan, Feb).  \nAdd 20 days → 1924-02-21 (Feb 1 + 20 days = Feb 21).  \n\nFINAL_ANSWER: 1924-02-21", "latency": 4.532419204711914, "usage": {"prompt_tokens": 242, "completion_tokens": 82, "total_tokens": 324}, "error": null}

@@ -1,0 +1,1 @@
+{"text": "Step:  \nStart: 1152-02-14  \nSubtract 10 months: 1151-04-14  \nSubtract 5 days: 1151-04-09  \n\nFINAL_ANSWER: 1151-04-09", "latency": 3.173367977142334, "usage": {"prompt_tokens": 242, "completion_tokens": 53, "total_tokens": 295}, "error": null}

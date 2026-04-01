@@ -1,0 +1,1 @@
+{"text": "1975-04-17 minus 9 months → 1974-07-17 (since April minus 9 months = previous July).  \n1974-07-17 minus 10 days → 1974-07-07.  \nFINAL_ANSWER: 1974-07-07", "latency": 4.4218878746032715, "usage": {"prompt_tokens": 242, "completion_tokens": 62, "total_tokens": 304}, "error": null}

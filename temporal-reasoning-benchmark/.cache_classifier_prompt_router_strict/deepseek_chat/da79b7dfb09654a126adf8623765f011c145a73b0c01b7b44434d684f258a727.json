@@ -1,0 +1,1 @@
+{"text": "Start date: 1052-02-27  \nSubtract 11 months: 1051-03-27  \nSubtract 27 days: 1051-02-28 (since 1051 is not a leap year, March 27 minus 27 days = February 28)  \nFINAL_ANSWER: 1051-02-28", "latency": 4.414312839508057, "usage": {"prompt_tokens": 242, "completion_tokens": 74, "total_tokens": 316}, "error": null}

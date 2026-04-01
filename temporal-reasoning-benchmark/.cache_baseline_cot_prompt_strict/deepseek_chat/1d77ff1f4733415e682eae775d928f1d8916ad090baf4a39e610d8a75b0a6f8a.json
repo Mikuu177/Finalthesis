@@ -1,0 +1,1 @@
+{"text": "01:58 to 03:57 is 1 hour 59 minutes later.  \nSubtracting a later time from an earlier time under wrap-around:  \n(01:58 − 03:57) mod 24h = −1h59m = 24h − 1h59m = 22h01m.  \nFINAL_ANSWER: 22:01", "latency": 4.300903797149658, "usage": {"prompt_tokens": 235, "completion_tokens": 79, "total_tokens": 314}, "error": null}

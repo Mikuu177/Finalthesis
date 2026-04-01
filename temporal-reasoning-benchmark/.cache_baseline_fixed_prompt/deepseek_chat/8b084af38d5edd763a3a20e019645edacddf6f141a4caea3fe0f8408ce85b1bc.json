@@ -1,0 +1,1 @@
+{"text": "First, interpret 02-06-1297 as DD-MM-YYYY → 2 June 1297.  \nSubtract 4 months → 2 February 1297.  \nSubtract 15 days → 18 January 1297 (since February has 28 days in 1297, a non-leap year).  \n\nFINAL_ANSWER: 1297-01-18", "latency": 4.303951978683472, "usage": {"prompt_tokens": 232, "completion_tokens": 81, "total_tokens": 313}, "error": null}

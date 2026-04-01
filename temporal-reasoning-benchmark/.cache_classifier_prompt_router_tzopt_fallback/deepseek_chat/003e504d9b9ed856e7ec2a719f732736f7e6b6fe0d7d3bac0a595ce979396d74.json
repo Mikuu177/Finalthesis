@@ -1,0 +1,1 @@
+{"text": "Step:  \nUTC offset for Europe/London in 1140 (no DST, historically likely UTC±0) = 0.  \nSource time = 14:00 UTC.  \nTarget offset = 0.  \ntarget_time = 14:00 + (0 - 0) = 14:00.  \nDate unchanged.  \n\nFINAL_ANSWER: 14:00", "latency": 4.366781949996948, "usage": {"prompt_tokens": 397, "completion_tokens": 80, "total_tokens": 477}, "error": null}

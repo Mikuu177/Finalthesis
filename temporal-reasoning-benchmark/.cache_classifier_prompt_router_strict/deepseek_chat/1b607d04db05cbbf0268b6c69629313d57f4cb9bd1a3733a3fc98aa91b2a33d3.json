@@ -1,0 +1,1 @@
+{"text": "Step:  \n06-25-1495 minus 1 month → 05-25-1495.  \n05-25-1495 minus 22 days → 05-03-1495 (May has 31 days, so 25-22=3).  \n\nFINAL_ANSWER: 1495-05-03", "latency": 4.455598831176758, "usage": {"prompt_tokens": 242, "completion_tokens": 69, "total_tokens": 311}, "error": null}

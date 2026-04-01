@@ -1,0 +1,1 @@
+{"text": "First, convert 12-07-1440 (Hijri date) to Gregorian date.  \n12-07-1440 AH ≈ 2019-03-19 CE (using conversion).  \n\nAdd 27 weeks and 3 days = 27×7 + 3 = 192 days.  \n2019-03-19 + 192 days = 2019-09-27.  \n\nFINAL_ANSWER: 2019-09-27", "latency": 4.97079610824585, "usage": {"prompt_tokens": 232, "completion_tokens": 97, "total_tokens": 329}, "error": null}

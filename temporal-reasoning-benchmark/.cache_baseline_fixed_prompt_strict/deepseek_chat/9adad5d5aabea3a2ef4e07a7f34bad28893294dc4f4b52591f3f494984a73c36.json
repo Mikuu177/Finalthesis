@@ -1,0 +1,1 @@
+{"text": "First, convert 29 weeks and 5 days to days:  \n29 weeks × 7 days/week = 203 days  \n203 days + 5 days = 208 days  \n\nSubtract 208 days from 2013-12-28:  \n2013-12-28 minus 208 days → 2013-06-02  \n\nFINAL_ANSWER: 2013-06-02", "latency": 4.098460912704468, "usage": {"prompt_tokens": 232, "completion_tokens": 83, "total_tokens": 315}, "error": null}

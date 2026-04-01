@@ -1,0 +1,1 @@
+{"text": "1798-03-05 + 4 months = 1798-07-05  \n1798-07-05 + 9 days = 1798-07-14  \nFINAL_ANSWER: 1798-07-14", "latency": 3.19816517829895, "usage": {"prompt_tokens": 242, "completion_tokens": 50, "total_tokens": 292}, "error": null}

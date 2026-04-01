@@ -1,0 +1,1 @@
+{"text": "Start: 1498-08-27  \nAdd 6 months → 1499-02-27  \nAdd 25 days → 1499-02-27 + 25 days = 1499-03-24  \n\nFINAL_ANSWER: 1499-03-24", "latency": 4.163384199142456, "usage": {"prompt_tokens": 232, "completion_tokens": 60, "total_tokens": 292}, "error": null}

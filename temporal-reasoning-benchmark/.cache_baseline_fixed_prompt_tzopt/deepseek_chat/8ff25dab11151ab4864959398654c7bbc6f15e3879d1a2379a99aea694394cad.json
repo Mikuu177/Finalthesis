@@ -1,0 +1,1 @@
+{"text": "Asia/Kolkata offset = +5:30  \nUS/Mountain offset = -7  \nDifference = (-7) - (+5:30) = -12:30  \n\n6:00 PM = 18:00  \n18:00 + (-12:30) = 5:30 (same day)  \n\nFINAL_ANSWER: 05:30", "latency": 3.7920289039611816, "usage": {"prompt_tokens": 389, "completion_tokens": 73, "total_tokens": 462}, "error": null}

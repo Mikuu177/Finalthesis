@@ -1,0 +1,14 @@
+# reference only; run with CLI args in script
+seed: 42
+dataset: data/raw/tram_arithmetic_mcq.jsonl
+out_dir: data/splits/classifier_router
+categories:
+  - Hour Adjustment (24h)
+  - Time Zone Conversion
+  - Date Computation
+  - Year Shift
+  - Month Shift
+ratios:
+  train: 0.7
+  dev: 0.1
+  test: 0.2

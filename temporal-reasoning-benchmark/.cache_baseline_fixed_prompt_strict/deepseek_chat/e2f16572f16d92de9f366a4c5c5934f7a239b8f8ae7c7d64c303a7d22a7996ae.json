@@ -1,0 +1,1 @@
+{"text": "First, 12-15-1389 means December 15, 1389.  \nAdd 3 months: March 15, 1390.  \nAdd 28 days: March 15 + 28 days = April 12, 1390.  \n\nFINAL_ANSWER: 1390-04-12", "latency": 3.587580919265747, "usage": {"prompt_tokens": 232, "completion_tokens": 67, "total_tokens": 299}, "error": null}

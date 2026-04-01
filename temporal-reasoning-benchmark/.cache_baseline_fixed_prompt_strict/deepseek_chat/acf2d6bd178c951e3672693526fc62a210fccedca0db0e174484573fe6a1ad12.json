@@ -1,0 +1,1 @@
+{"text": "Subtract 360 days from 1062-05-09.  \n1062 is not a leap year (divisible by 2 but not by 4 or 400).  \n360 days before 1062-05-09:  \nBack 365 days = 1061-05-09, add 5 days forward → 1061-05-14.  \n\nFINAL_ANSWER: 1061-05-14", "latency": 4.513750076293945, "usage": {"prompt_tokens": 228, "completion_tokens": 90, "total_tokens": 318}, "error": null}

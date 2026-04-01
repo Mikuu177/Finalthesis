@@ -1,0 +1,1 @@
+{"text": "Step:  \nKolkata (IST) offset = +5:30.  \nLondon (GMT) offset = 0 (no DST in 1585).  \nTarget time = 21:00 + (0 − 5:30) = 21:00 − 5:30 = 15:30 same day.  \n\nFINAL_ANSWER: 15:30", "latency": 4.784236192703247, "usage": {"prompt_tokens": 399, "completion_tokens": 78, "total_tokens": 477}, "error": null}

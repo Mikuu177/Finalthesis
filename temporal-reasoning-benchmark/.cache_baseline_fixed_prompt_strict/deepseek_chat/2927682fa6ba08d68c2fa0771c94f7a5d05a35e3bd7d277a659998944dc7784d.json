@@ -1,0 +1,1 @@
+{"text": "First, add 10 months to August 1179:  \nAugust 1179 + 10 months = June 1180.  \n\nThen add 26 years to June 1180:  \n1180 + 26 = 1206, month stays June.  \n\nFINAL_ANSWER: 1206-06", "latency": 3.8870537281036377, "usage": {"prompt_tokens": 222, "completion_tokens": 65, "total_tokens": 287}, "error": null}

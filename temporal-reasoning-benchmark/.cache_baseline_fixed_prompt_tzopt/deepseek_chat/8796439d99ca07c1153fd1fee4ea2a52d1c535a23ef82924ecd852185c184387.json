@@ -1,0 +1,1 @@
+{"text": "First, note: Europe/London uses UTC+0 in standard time (no DST in 1140).  \nUTC time given: 14:00, November 27, 1140.  \nTarget offset = 0, source offset = 0.  \ntarget_time = 14:00 + (0 - 0) = 14:00.  \n\nFINAL_ANSWER: 14:00", "latency": 4.419151782989502, "usage": {"prompt_tokens": 387, "completion_tokens": 85, "total_tokens": 472}, "error": null}

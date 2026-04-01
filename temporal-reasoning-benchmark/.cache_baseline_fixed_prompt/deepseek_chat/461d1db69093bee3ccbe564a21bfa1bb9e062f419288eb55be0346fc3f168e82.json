@@ -1,0 +1,1 @@
+{"text": "01:56 to 24:00 is 2 hours 4 minutes (24:00 - 01:56 = 22:04? Let's compute directly: 15:15 earlier than 01:56 means going back in time across midnight.  \n01:56 + 24:00 = 25:56. 25:56 - 15:15 = 10:41.  \nFINAL_ANSWER: 10:41", "latency": 4.625997066497803, "usage": {"prompt_tokens": 225, "completion_tokens": 93, "total_tokens": 318}, "error": null}

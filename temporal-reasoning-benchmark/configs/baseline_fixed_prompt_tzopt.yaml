@@ -1,0 +1,25 @@
+run_name: baseline_fixed_prompt_tzopt
+seed: 42
+
+dataset_path: data/splits/classifier_router/test.jsonl
+subset_size: 0
+filter_category:
+  - Time Zone Conversion
+sample_size: 0
+
+prompt_mode: sp
+n_shots: 0
+prompt_dir: prompts
+prompt_version: v2.1
+
+models:
+  - deepseek_chat
+
+params:
+  temperature: 0.2
+  max_tokens: 512
+  timeout: 60
+
+outputs_dir: outputs/runs
+cache_dir: .cache_baseline_fixed_prompt_tzopt
+resume: true

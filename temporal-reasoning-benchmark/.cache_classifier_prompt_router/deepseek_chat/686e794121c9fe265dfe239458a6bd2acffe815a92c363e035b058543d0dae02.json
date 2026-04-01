@@ -1,0 +1,1 @@
+{"text": "1969-04-23 minus 6 months → 1968-10-23 (since April minus 6 months lands in October of previous year).  \n1968-10-23 minus 19 days → 1968-10-04.  \n\nFINAL_ANSWER: 1968-10-04", "latency": 3.8346240520477295, "usage": {"prompt_tokens": 242, "completion_tokens": 65, "total_tokens": 307}, "error": null}

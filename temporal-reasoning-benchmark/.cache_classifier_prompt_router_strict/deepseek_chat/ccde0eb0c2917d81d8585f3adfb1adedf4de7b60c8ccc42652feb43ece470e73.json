@@ -1,0 +1,1 @@
+{"text": "22:48 = 22 hours 48 minutes  \n07:52 = 7 hours 52 minutes  \n\nSubtract: (22:48) - (7:52) = (22*60 + 48) - (7*60 + 52) = (1368) - (472) = 896 minutes  \n896 minutes = 14 hours 56 minutes → 14:56  \n\nFINAL_ANSWER: 14:56", "latency": 4.605870008468628, "usage": {"prompt_tokens": 225, "completion_tokens": 92, "total_tokens": 317}, "error": null}

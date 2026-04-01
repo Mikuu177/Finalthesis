@@ -1,0 +1,1 @@
+{"text": "12:36 is 12 hours 36 minutes.  \n12:44 is 12 hours 44 minutes.  \n12:36 − 12:44 = −8 minutes.  \nWrap around 24 hours: 24:00 − 0:08 = 23:52.  \n\nFINAL_ANSWER: 23:52", "latency": 3.7805519104003906, "usage": {"prompt_tokens": 235, "completion_tokens": 69, "total_tokens": 304}, "error": null}

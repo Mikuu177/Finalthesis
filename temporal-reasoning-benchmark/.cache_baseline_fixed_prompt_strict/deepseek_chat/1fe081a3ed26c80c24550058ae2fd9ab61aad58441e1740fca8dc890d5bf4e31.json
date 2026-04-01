@@ -1,0 +1,1 @@
+{"text": "14:39 = 14 hours 39 minutes  \n02:57 = 2 hours 57 minutes  \n\nSubtract: (14:39) - (02:57) = 11 hours 42 minutes  \n\nFINAL_ANSWER: 11:42", "latency": 3.3013551235198975, "usage": {"prompt_tokens": 225, "completion_tokens": 53, "total_tokens": 278}, "error": null}

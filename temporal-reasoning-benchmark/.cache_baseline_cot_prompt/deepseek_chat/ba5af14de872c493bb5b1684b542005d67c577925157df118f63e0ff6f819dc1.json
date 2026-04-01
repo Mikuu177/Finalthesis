@@ -1,0 +1,1 @@
+{"text": "20:00 = 20:00, subtract 03:37.  \n20:00 - 3 hours = 17:00, subtract 37 minutes → 16:23.  \nFINAL_ANSWER: 16:23", "latency": 3.1685991287231445, "usage": {"prompt_tokens": 235, "completion_tokens": 49, "total_tokens": 284}, "error": null}

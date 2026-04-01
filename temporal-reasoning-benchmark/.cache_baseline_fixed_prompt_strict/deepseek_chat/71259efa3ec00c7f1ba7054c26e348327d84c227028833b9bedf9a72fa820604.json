@@ -1,0 +1,1 @@
+{"text": "First, subtract 10 months from 1334-05-01:  \n1334-05-01 → 1333-07-01 (since 10 months back from May is July of previous year).  \n\nThen subtract 3 days:  \n1333-07-01 → 1333-06-28 (June has 30 days).  \n\nFINAL_ANSWER: 1333-06-28", "latency": 4.41586709022522, "usage": {"prompt_tokens": 232, "completion_tokens": 86, "total_tokens": 318}, "error": null}
