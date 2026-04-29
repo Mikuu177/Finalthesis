@@ -1,0 +1,1082 @@
+{
+  "run_id": "suite-e350537d",
+  "suite_name": "temporal_core_suite",
+  "state": "completed",
+  "progress": 1.0,
+  "created_at": "2026-04-25T14:12:00.205638",
+  "updated_at": "2026-04-25T14:13:39.866487",
+  "payload": {
+    "categories": [
+      "Date Computation",
+      "Hour Adjustment (24h)",
+      "Time Zone Conversion",
+      "Year Shift",
+      "Month Shift"
+    ],
+    "limit_per_category": 3,
+    "threshold": 0.95,
+    "suite_name": "temporal_core_suite"
+  },
+  "rows": [
+    {
+      "sample_id": "row_6645_9c3accedc926",
+      "category": "Date Computation",
+      "question": "If you subtract 176 days to the date 10-15-1493, what will be the new date?",
+      "gold": "04-22-1493",
+      "outputs": {
+        "deepseek": {
+          "response": "To find the date that is 176 days before October 15, 1493, we subtract the days.\n\nLet’s do this step-by-step:\n\n1. **Start date**: October 15, 1493.\n2. **Days in October**: October has 31 days, so starting from October 15:\n   - October 15 to October 1 is 14 days back (15 - 1 = 14).  \n   - Subtract 14 days: October 15 – 14 days = October 1.\n\n   Remaining days to subtract: 176 - 14 = 162 days.\n\n3. **Go to September**: September has 30 days.\n   - Subtract all 30 days of September: October 1 → September 1.\n   - Remaining: 162 - 30 = 132 days.\n\n4. **Go to August**: August has 31 days.\n   - Subtract 31 days: September 1 → August 1.\n   - Remaining: 132 - 31 = 101 days.\n\n5. **Go to July**: July has 31 days.\n   - Subtract 31 days: August 1 → July 1.\n   - Remaining: 101 - 31 = 70 days.\n\n6. **Go to June**: June has 30 days.\n   - Subtract 30 days: July 1 → June 1.\n   - Remaining: 70 - 30 = 40 days.\n\n7. **Go to May**: May has 31 days.\n   - Subtract 31 days: June 1 → May 1.\n   - Remaining: 40 - 31 = 9 days.\n\n8. **Go to April**: April has 30 days, but we only need 9 days.\n   - Starting from May 1, subtract 9 days:  \n     May 1 – 9 days = April 22.\n\nThus, **176 days before October 15, 1493, is April 22, 1493**.\n\n**Answer**:  \n\\[\n\\boxed{04-22-1493}\n\\]",
+          "latency_ms": 5988.11,
+          "error": null,
+          "correct": false,
+          "parse_ok": true
+        },
+        "gpt5mini": {
+          "response": "",
+          "latency_ms": null,
+          "error": "API key not configured",
+          "correct": false,
+          "parse_ok": false
+        },
+        "doubao": {
+          "response": "To solve this problem, we'll work step - by - step, considering the number of days in each month.\n\n### Step 1: Analyze the starting date\nThe starting date is October 15, 1493.\n\n### Step 2: Calculate the number of days left in October\nOctober has 31 days. So, the number of days from October 15 to October 31 is \\(31 - 15=16\\) days.\n\n### Step 3: Subtract the days in October from the total days to subtract\nWe need to subtract 176 days. After accounting for the 16 days in October, we have \\(176 - 16 = 160\\) days left to subtract.\n\n### Step 4: Work through the previous months\n- September has 30 days. After subtracting September's 30 days from the remaining 160 days, we have \\(160 - 30=130\\) days left.\n- August has 31 days. Subtracting August's 31 days from the remaining 130 days gives \\(130 - 31 = 99\\) days left.\n- July has 31 days. Subtracting July's 31 days from the remaining 99 days gives \\(99 - 31=68\\) days left.\n- June has 30 days. Subtracting June's 30 days from the remaining 68 days gives \\(68 - 30 = 38\\) days left.\n- May has 31 days. Subtracting May's 31 days from the remaining 38 days gives \\(38 - 31 = 7\\) days left.\n\n### Step 5: Determine the new date\nSince we have 7 days left to subtract after going through May, we move back to April. April has 30 days. So the date will be April \\(30 - 7+1=24\\)\n\nThe new date is April 24, 1493. ",
+          "latency_ms": 16488.45,
+          "error": null,
+          "correct": false,
+          "parse_ok": true
+        },
+        "router": {
+          "response": "",
+          "latency_ms": null,
+          "error": "Missing temporal-reasoning-benchmark dependencies (prompt builder not importable): No module named 'dateutil'",
+          "correct": false,
+          "parse_ok": false
+        }
+      },
+      "router_meta": {
+        "predicted_category": null,
+        "confidence": null,
+        "threshold": 0.95,
+        "fallback_triggered": false,
+        "selected_prompt_mode": null,
+        "selected_prompt_version": null
+      }
+    },
+    {
+      "sample_id": "row_10149_6522297d4954",
+      "category": "Date Computation",
+      "question": "If you add 3 weeks and 4 days to the date 12-10-1968, what will be the new date?",
+      "gold": "1/4/1969",
+      "outputs": {
+        "deepseek": {
+          "response": "We start with the date **12 October 1968**.\n\n**Step 1 – Add the 3 weeks**  \n3 weeks = 21 days.  \nOctober 12 + 21 days = November 2, 1968.\n\n**Step 2 – Add the 4 days**  \nNovember 2 + 4 days = **November 6, 1968**.\n\n**Answer:**  \n\\[\n\\boxed{06-11-1968}\n\\]",
+          "latency_ms": 1835.24,
+          "error": null,
+          "correct": false,
+          "parse_ok": true
+        },
+        "gpt5mini": {
+          "response": "",
+          "latency_ms": null,
+          "error": "API key not configured",
+          "correct": false,
+          "parse_ok": false
+        },
+        "doubao": {
+          "response": "1. First, understand the number of days in 3 weeks and 4 days:\n   - Since 1 week has 7 days, 3 weeks have \\(3\\times7 = 21\\) days.\n   - Adding 4 more days, the total number of days to be added is \\(21 + 4=25\\) days.\n2. Analyze the given date:\n   - The given date is 12 - 10 - 1968, which means December 10, 1968.\n   - December has 31 days.\n3. Calculate the new date:\n   - Start with December 10. If we add 25 days to December 10, we first consider the number of days remaining in December.\n   - The number of days from December 10 to December 31 is \\(31 - 10=21\\) days.\n   - We have 25 days to add. After using 21 days in December, we still have \\(25 - 21 = 4\\) days left.\n   - So, we move to the next month, which is January 1969.\n   - The new date will be January 4, 1969.\n\n\nSo, when you add 3 weeks and 4 days to the date 12 - 10 - 1968, the new date is 01 - 04 - 1969. ",
+          "latency_ms": 9151.26,
+          "error": null,
+          "correct": false,
+          "parse_ok": true
+        },
+        "router": {
+          "response": "",
+          "latency_ms": null,
+          "error": "Missing temporal-reasoning-benchmark dependencies (prompt builder not importable): No module named 'dateutil'",
+          "correct": false,
+          "parse_ok": false
+        }
+      },
+      "router_meta": {
+        "predicted_category": null,
+        "confidence": null,
+        "threshold": 0.95,
+        "fallback_triggered": false,
+        "selected_prompt_mode": null,
+        "selected_prompt_version": null
+      }
+    },
+    {
+      "sample_id": "row_5932_9b1aedb203a2",
+      "category": "Date Computation",
+      "question": "What will be the time 27 years and 3 months after January 1771?",
+      "gold": "April1798",
+      "outputs": {
+        "deepseek": {
+          "response": "To find the date that is 27 years and 3 months after January 1771, we add the years and months step by step.\n\n**Step 1: Add the years.**\nStarting from January 1771:\n1771 + 27 = 1798\n\nSo, after 27 years, it is **January 1798**.\n\n**Step 2: Add the 3 months.**\nJanuary + 3 months = April.\n\nTherefore, the resulting date is **April 1798**.\n\n\\[\n\\boxed{1798}\n\\]",
+          "latency_ms": 2027.94,
+          "error": null,
+          "correct": false,
+          "parse_ok": true
+        },
+        "gpt5mini": {
+          "response": "",
+          "latency_ms": null,
+          "error": "API key not configured",
+          "correct": false,
+          "parse_ok": false
+        },
+        "doubao": {
+          "response": "1. First, add the years:\n   - Start with the year 1771. Add 27 years to it. So, \\(1771 + 27=1798\\).\n2. Then, add the months:\n   - We start from January. Add 3 months to January.\n   - January is the 1st month of the year. When we add 3 months to it (\\(1 + 3\\)), we get the 4th month of the year, which is April.\n\nSo, the time 27 years and 3 months after January 1771 is April 1798.",
+          "latency_ms": 4967.6,
+          "error": null,
+          "correct": true,
+          "parse_ok": true
+        },
+        "router": {
+          "response": "",
+          "latency_ms": null,
+          "error": "Missing temporal-reasoning-benchmark dependencies (prompt builder not importable): No module named 'dateutil'",
+          "correct": false,
+          "parse_ok": false
+        }
+      },
+      "router_meta": {
+        "predicted_category": null,
+        "confidence": null,
+        "threshold": 0.95,
+        "fallback_triggered": false,
+        "selected_prompt_mode": null,
+        "selected_prompt_version": null
+      }
+    },
+    {
+      "sample_id": "row_801_3f610e314f5f",
+      "category": "Hour Adjustment (24h)",
+      "question": "What is 20:53 - 08:24?",
+      "gold": "12:29",
+      "outputs": {
+        "deepseek": {
+          "response": "Let’s break this down.\n\nIf you mean the time duration from **08:24** to **20:53** on the same day:\n\n1. From **08:24 to 20:24** is exactly **12 hours**.\n2. Then from **20:24 to 20:53** is an additional **29 minutes**.\n\nSo the total is:\n\n**12 hours and 29 minutes.**  \n\nIf you meant something else (like subtracting times across midnight), let me know.",
+          "latency_ms": 1770.12,
+          "error": null,
+          "correct": false,
+          "parse_ok": true
+        },
+        "gpt5mini": {
+          "response": "",
+          "latency_ms": null,
+          "error": "API key not configured",
+          "correct": false,
+          "parse_ok": false
+        },
+        "doubao": {
+          "response": "1. First, subtract the minutes:\n   - We need to calculate \\(53 - 24\\).\n   - \\(53-24 = 29\\) minutes.\n2. Then, subtract the hours:\n   - Calculate \\(20 - 8\\).\n   - \\(20 - 8=12\\) hours.\n\n\nSo, \\(20:53−08:24 = 12\\) hours and \\(29\\) minutes.",
+          "latency_ms": 5009.65,
+          "error": null,
+          "correct": false,
+          "parse_ok": true
+        },
+        "router": {
+          "response": "",
+          "latency_ms": null,
+          "error": "Missing temporal-reasoning-benchmark dependencies (prompt builder not importable): No module named 'dateutil'",
+          "correct": false,
+          "parse_ok": false
+        }
+      },
+      "router_meta": {
+        "predicted_category": null,
+        "confidence": null,
+        "threshold": 0.95,
+        "fallback_triggered": false,
+        "selected_prompt_mode": null,
+        "selected_prompt_version": null
+      }
+    },
+    {
+      "sample_id": "row_1479_55e9e511087d",
+      "category": "Hour Adjustment (24h)",
+      "question": "What is 22:48 - 07:52?",
+      "gold": "14:56",
+      "outputs": {
+        "deepseek": {
+          "response": "Let’s calculate the difference between 22:48 and 07:52.\n\nWe assume this is a time span crossing midnight (from 22:48 one day to 07:52 the next day).\n\n**Step 1: Time from 22:48 to midnight**  \nFrom 22:48 to 00:00 (midnight) is:  \n60 − 48 = 12 minutes to 23:00,  \nthen 1 hour from 23:00 to 00:00.  \nSo, 1 hour and 12 minutes.\n\n**Step 2: Time from midnight to 07:52**  \nThat’s simply 7 hours and 52 minutes.\n\n**Step 3: Add them together**  \n1 hour 12 minutes + 7 hours 52 minutes =  \n8 hours and 64 minutes.\n\nSince 64 minutes = 1 hour 4 minutes,  \ntotal = **9 hours and 4 minutes**.\n\n\\[\n\\boxed{9\\text{ hours }4\\text{ minutes}}\n\\]",
+          "latency_ms": 2962.49,
+          "error": null,
+          "correct": false,
+          "parse_ok": true
+        },
+        "gpt5mini": {
+          "response": "",
+          "latency_ms": null,
+          "error": "API key not configured",
+          "correct": false,
+          "parse_ok": false
+        },
+        "doubao": {
+          "response": "1. First, convert the time subtraction into a subtraction of minutes and hours:\n   - 22 hours 48 minutes can be written as \\(22\\times60 + 48=1320 + 48 = 1368\\) minutes.\n   - 7 hours 52 minutes can be written as \\(7\\times60+52 = 420 + 52=472\\) minutes.\n2. Then, perform the subtraction of the two - converted values:\n   - Subtract the number of minutes: \\(1368−472 = 896\\) minutes.\n3. Next, convert the result back to hours and minutes:\n   - Divide the total number of minutes by 60 to get the number of hours and the remaining minutes.\n   - \\(896\\div60 = 14\\) (hours) with a remainder.\n   - \\(896=14\\times60 + 56\\).\n\n\nSo, \\(22:48−07:52 = 14\\) hours and 56 minutes.",
+          "latency_ms": 8518.44,
+          "error": null,
+          "correct": false,
+          "parse_ok": true
+        },
+        "router": {
+          "response": "",
+          "latency_ms": null,
+          "error": "Missing temporal-reasoning-benchmark dependencies (prompt builder not importable): No module named 'dateutil'",
+          "correct": false,
+          "parse_ok": false
+        }
+      },
+      "router_meta": {
+        "predicted_category": null,
+        "confidence": null,
+        "threshold": 0.95,
+        "fallback_triggered": false,
+        "selected_prompt_mode": null,
+        "selected_prompt_version": null
+      }
+    },
+    {
+      "sample_id": "row_648_6333fb036250",
+      "category": "Hour Adjustment (24h)",
+      "question": "What is 03:13 + 10:51?",
+      "gold": "14:04",
+      "outputs": {
+        "deepseek": {
+          "response": "Let’s break this down as a time addition (hours and minutes).\n\nWe have:  \n**03:13 + 10:51**\n\n1. **Add the minutes:**  \n13 + 51 = 64 minutes\n\n2. **Convert excess minutes to hours:**  \n64 minutes = 1 hour and 4 minutes.\n\n3. **Add the hours:**  \n3 + 10 = 13 hours  \nThen add the extra 1 hour = 14 hours.\n\nSo the result is **14:04**.\n\nIf you are treating this as a time of day (24-hour format),  \n03:13 + 10 hours 51 minutes = **14:04** (which is 2:04 PM).\n\n\\[\n\\boxed{14:04}\n\\]",
+          "latency_ms": 2254.56,
+          "error": null,
+          "correct": false,
+          "parse_ok": true
+        },
+        "gpt5mini": {
+          "response": "",
+          "latency_ms": null,
+          "error": "API key not configured",
+          "correct": false,
+          "parse_ok": false
+        },
+        "doubao": {
+          "response": "1. First, add the minutes:\n   - Add the minutes of the two times. We have \\(13\\) minutes and \\(51\\) minutes. So, \\(13 + 51=64\\) minutes.\n   - Since \\(60\\) minutes is equal to \\(1\\) hour, we can convert \\(64\\) minutes into hours and minutes. \\(64\\) minutes \\( = 1\\) hour and \\(4\\) minutes.\n2. Then, add the hours:\n   - Add the hours of the two times. We have \\(3\\) hours and \\(10\\) hours, and then add the extra \\(1\\) hour from the conversion of minutes. So, \\(3+10 + 1=14\\) hours.\n\n\nSo, \\(03:13+10:51 = 14:04\\).",
+          "latency_ms": 6768.27,
+          "error": null,
+          "correct": true,
+          "parse_ok": true
+        },
+        "router": {
+          "response": "",
+          "latency_ms": null,
+          "error": "Missing temporal-reasoning-benchmark dependencies (prompt builder not importable): No module named 'dateutil'",
+          "correct": false,
+          "parse_ok": false
+        }
+      },
+      "router_meta": {
+        "predicted_category": null,
+        "confidence": null,
+        "threshold": 0.95,
+        "fallback_triggered": false,
+        "selected_prompt_mode": null,
+        "selected_prompt_version": null
+      }
+    },
+    {
+      "sample_id": "row_12211_7bf711a4423c",
+      "category": "Time Zone Conversion",
+      "question": "If it's 9 PM on September 7, 1498 in Asia/Singapore, what's the date and time in Europe/Athens?",
+      "gold": "3PMonSeptember7,1498",
+      "outputs": {
+        "deepseek": {
+          "response": "To determine the date and time in Europe/Athens when it is 9 PM on September 7, 1498 in Asia/Singapore, we need to consider the historical time zone offsets. However, modern time zone definitions (like Asia/Singapore and Europe/Athens) are based on current standard time offsets, which did not exist in 1498. In the 15th century, local time was based on solar time, not standardized time zones. \n\nFor a practical modern-day conversion (ignoring historical calendar changes), we can use current offsets:\n- Asia/Singapore is UTC+8.\n- Europe/Athens is UTC+2 (or UTC+3 during daylight saving time, but DST was not observed in 1498).\n\nIf we assume no DST: \n9 PM Singapore = 13:00 UTC (since UTC+8 means 9 PM - 8 = 1 PM UTC).  \nThen Athens (UTC+2) would be 13:00 + 2 = 15:00 (3 PM) on the same day.  \n\nHowever, the Gregorian calendar wasn't in use in 1498 (it was introduced in 1582). The Julian calendar was used. But the problem likely expects a simple time zone conversion without calendar reform.  \n\nThus, **same date, 3 PM on September 7, 1498** in Athens.  \n\nBut note: This is a modern approximation; actual historical local times would differ.  \n\n**Answer:** September 7, 1498, 3:00 PM in Europe/Athens.",
+          "latency_ms": 4660.3,
+          "error": null,
+          "correct": false,
+          "parse_ok": true
+        },
+        "gpt5mini": {
+          "response": "",
+          "latency_ms": null,
+          "error": "API key not configured",
+          "correct": false,
+          "parse_ok": false
+        },
+        "doubao": {
+          "response": "### Step 1: Determine the time zones of Singapore and Athens\n- Singapore is in the Asia/Singapore time zone, which is UTC + 8. This means that Singapore time is 8 hours ahead of Coordinated Universal Time (UTC).\n- Athens is in the Europe/Athens time zone, which is UTC + 2. Athens time is 2 hours ahead of UTC.\n\n### Step 2: Calculate the time difference between Singapore and Athens\nTo find the time difference between Singapore and Athens, we subtract the UTC offset of Athens from the UTC offset of Singapore.\n\\[8 - 2=6\\]\nSo, Singapore is 6 hours ahead of Athens.\n\n### Step 3: Convert the time from Singapore to Athens\nThe time in Singapore is 9 PM on September 7, 1498. To find the time in Athens, we need to subtract 6 hours from the Singapore time.\n\\[9\\text{ PM}-6\\text{ hours} = 3\\text{ PM}\\]\n\nSince we are subtracting hours and not crossing any date - changing boundaries in this case (because we are just going back in time within the same day), the date remains the same.\n\nSo, the date and time in Europe/Athens is 3 PM on September 7, 1498. ",
+          "latency_ms": 8963.17,
+          "error": null,
+          "correct": true,
+          "parse_ok": true
+        },
+        "router": {
+          "response": "",
+          "latency_ms": null,
+          "error": "Missing temporal-reasoning-benchmark dependencies (prompt builder not importable): No module named 'dateutil'",
+          "correct": false,
+          "parse_ok": false
+        }
+      },
+      "router_meta": {
+        "predicted_category": null,
+        "confidence": null,
+        "threshold": 0.95,
+        "fallback_triggered": false,
+        "selected_prompt_mode": null,
+        "selected_prompt_version": null
+      }
+    },
+    {
+      "sample_id": "row_12487_64cd822b6bbf",
+      "category": "Time Zone Conversion",
+      "question": "If it's 7 AM on August 25, 1248 in US/Pacific, what's the date and time in Asia/Shanghai?",
+      "gold": "10PMonAugust25,1248",
+      "outputs": {
+        "deepseek": {
+          "response": "The time difference between US/Pacific and Asia/Shanghai depends on the specific historical context, but if we apply the current standard offset, US/Pacific (UTC-8) is 16 hours behind Asia/Shanghai (UTC+8) during standard time. Assuming standard time for both, then 7 AM US/Pacific on August 25, 1248, would be 11 PM on the same day in Shanghai. However, this assumes modern time zones were applied, which did not exist in 1248, so the answer is theoretical. \n\n**Answer:**  \n11 PM on August 25, 1248, in Asia/Shanghai.",
+          "latency_ms": 2278.48,
+          "error": null,
+          "correct": false,
+          "parse_ok": true
+        },
+        "gpt5mini": {
+          "response": "",
+          "latency_ms": null,
+          "error": "API key not configured",
+          "correct": false,
+          "parse_ok": false
+        },
+        "doubao": {
+          "response": "### Step 1: Determine the time difference between US/Pacific and Asia/Shanghai\nThe US/Pacific time zone (PT) is UTC - 8 (during standard time). Asia/Shanghai uses China Standard Time (CST), which is UTC + 8.\n\nThe time difference between Asia/Shanghai and US/Pacific is \\(8-(- 8)=16\\) hours. That is, Asia/Shanghai is 16 hours ahead of US/Pacific.\n\n### Step 2: Calculate the time in Asia/Shanghai\nWe start with the time in US/Pacific, which is 7 AM on August 25, 1248.\n\nIf we add 16 hours to 7 AM: \\(7 + 16=23\\) (in a 24 - hour clock system)\n\nThis means the time in Asia/Shanghai is 11 PM on August 25, 1248.\n\nSo, when it's 7 AM on August 25, 1248 in US/Pacific, it's 11 PM on August 25, 1248 in Asia/Shanghai. ",
+          "latency_ms": 10681.93,
+          "error": null,
+          "correct": false,
+          "parse_ok": true
+        },
+        "router": {
+          "response": "",
+          "latency_ms": null,
+          "error": "Missing temporal-reasoning-benchmark dependencies (prompt builder not importable): No module named 'dateutil'",
+          "correct": false,
+          "parse_ok": false
+        }
+      },
+      "router_meta": {
+        "predicted_category": null,
+        "confidence": null,
+        "threshold": 0.95,
+        "fallback_triggered": false,
+        "selected_prompt_mode": null,
+        "selected_prompt_version": null
+      }
+    },
+    {
+      "sample_id": "row_12536_95b30b7b1712",
+      "category": "Time Zone Conversion",
+      "question": "If it's 11 AM on March 18, 1344 in Europe/London, what's the date and time in Asia/Tokyo?",
+      "gold": "8PMonMarch18,1344",
+      "outputs": {
+        "deepseek": {
+          "response": "To answer this, we need to account for historical timekeeping differences, but since modern time zones and daylight saving rules didn’t exist in 1344, we apply the standard modern offsets for simplicity:\n\n- Europe/London is **UTC+0** (or UTC+1 in summer, but no DST back then).  \n- Asia/Tokyo is **UTC+9**.\n\n11 AM in London means the UTC time is also 11 AM (since London was at UTC+0).  \nAdding 9 hours gives **8 PM** (20:00) on the same day.\n\nSince March 18 in London is the same date in Tokyo (no date line crossing), the answer is:\n\n**March 18, 1344, at 8:00 PM (20:00) in Asia/Tokyo.**",
+          "latency_ms": 2865.47,
+          "error": null,
+          "correct": false,
+          "parse_ok": true
+        },
+        "gpt5mini": {
+          "response": "",
+          "latency_ms": null,
+          "error": "API key not configured",
+          "correct": false,
+          "parse_ok": false
+        },
+        "doubao": {
+          "response": "### 1. Determine the time - zone difference\n- London is in the Greenwich Mean Time (GMT) zone (ignoring daylight - saving time as it didn't exist in 1344). Tokyo is in the Japan Standard Time (JST) zone, which is UTC + 9.\n- The time - zone difference between Tokyo and London is 9 hours ahead.\n\n### 2. Calculate the time in Tokyo\n- Given the time in London is 11 AM on March 18, 1344.\n- To find the time in Tokyo, we add 9 hours to the London time.\n- 11 AM + 9 hours = 8 PM\n\n### 3. Determine the date\n- Since adding 9 hours to the time in London does not cross a day boundary (the sum of the hours does not exceed 24), the date in Tokyo is the same as in London, which is March 18, 1344.\n\n\nSo, the date and time in Asia/Tokyo is 8 PM on March 18, 1344. ",
+          "latency_ms": 9325.97,
+          "error": null,
+          "correct": true,
+          "parse_ok": true
+        },
+        "router": {
+          "response": "",
+          "latency_ms": null,
+          "error": "Missing temporal-reasoning-benchmark dependencies (prompt builder not importable): No module named 'dateutil'",
+          "correct": false,
+          "parse_ok": false
+        }
+      },
+      "router_meta": {
+        "predicted_category": null,
+        "confidence": null,
+        "threshold": 0.95,
+        "fallback_triggered": false,
+        "selected_prompt_mode": null,
+        "selected_prompt_version": null
+      }
+    },
+    {
+      "sample_id": "row_3606_31c4f588fc7f",
+      "category": "Year Shift",
+      "question": "Which year comes 2 years after 1969?",
+      "gold": "1971",
+      "outputs": {
+        "deepseek": {
+          "response": "The year that comes 2 years after 1969 is **1971**.",
+          "latency_ms": 789.54,
+          "error": null,
+          "correct": true,
+          "parse_ok": true
+        },
+        "gpt5mini": {
+          "response": "",
+          "latency_ms": null,
+          "error": "API key not configured",
+          "correct": false,
+          "parse_ok": false
+        },
+        "doubao": {
+          "response": "To find the year that comes 2 years after 1969, we simply add 2 to 1969.\n\n1969 + 2 = 1971\n\nSo, the year that comes 2 years after 1969 is 1971.",
+          "latency_ms": 2995.08,
+          "error": null,
+          "correct": true,
+          "parse_ok": true
+        },
+        "router": {
+          "response": "",
+          "latency_ms": null,
+          "error": "Missing temporal-reasoning-benchmark dependencies (prompt builder not importable): No module named 'dateutil'",
+          "correct": false,
+          "parse_ok": false
+        }
+      },
+      "router_meta": {
+        "predicted_category": null,
+        "confidence": null,
+        "threshold": 0.95,
+        "fallback_triggered": false,
+        "selected_prompt_mode": null,
+        "selected_prompt_version": null
+      }
+    },
+    {
+      "sample_id": "row_4161_6e6d4cef20fd",
+      "category": "Year Shift",
+      "question": "Which year comes 13 years after 1632?",
+      "gold": "1645",
+      "outputs": {
+        "deepseek": {
+          "response": "The year that comes 13 years after 1632 is:\n\n1632 + 13 = **1645**.",
+          "latency_ms": 647.44,
+          "error": null,
+          "correct": true,
+          "parse_ok": true
+        },
+        "gpt5mini": {
+          "response": "",
+          "latency_ms": null,
+          "error": "API key not configured",
+          "correct": false,
+          "parse_ok": false
+        },
+        "doubao": {
+          "response": "To find the year that comes 13 years after 1632, we simply add 13 to 1632.\n\n\\[1632 + 13=1645\\]\n\nSo the year is 1645.",
+          "latency_ms": 2989.32,
+          "error": null,
+          "correct": true,
+          "parse_ok": true
+        },
+        "router": {
+          "response": "",
+          "latency_ms": null,
+          "error": "Missing temporal-reasoning-benchmark dependencies (prompt builder not importable): No module named 'dateutil'",
+          "correct": false,
+          "parse_ok": false
+        }
+      },
+      "router_meta": {
+        "predicted_category": null,
+        "confidence": null,
+        "threshold": 0.95,
+        "fallback_triggered": false,
+        "selected_prompt_mode": null,
+        "selected_prompt_version": null
+      }
+    },
+    {
+      "sample_id": "row_3256_9397375f0770",
+      "category": "Year Shift",
+      "question": "Which year comes 10 years after 1344?",
+      "gold": "1354",
+      "outputs": {
+        "deepseek": {
+          "response": "The year that comes 10 years after 1344 is **1354**.",
+          "latency_ms": 623.93,
+          "error": null,
+          "correct": true,
+          "parse_ok": true
+        },
+        "gpt5mini": {
+          "response": "",
+          "latency_ms": null,
+          "error": "API key not configured",
+          "correct": false,
+          "parse_ok": false
+        },
+        "doubao": {
+          "response": "To find the year that comes 10 years after 1344, we simply add 10 to 1344.\n\n1344 + 10 = 1354\n\nSo, the year is 1354. ",
+          "latency_ms": 1987.99,
+          "error": null,
+          "correct": true,
+          "parse_ok": true
+        },
+        "router": {
+          "response": "",
+          "latency_ms": null,
+          "error": "Missing temporal-reasoning-benchmark dependencies (prompt builder not importable): No module named 'dateutil'",
+          "correct": false,
+          "parse_ok": false
+        }
+      },
+      "router_meta": {
+        "predicted_category": null,
+        "confidence": null,
+        "threshold": 0.95,
+        "fallback_triggered": false,
+        "selected_prompt_mode": null,
+        "selected_prompt_version": null
+      }
+    },
+    {
+      "sample_id": "row_4509_5c83485f2593",
+      "category": "Month Shift",
+      "question": "Which month comes 3 months after November?",
+      "gold": "February",
+      "outputs": {
+        "deepseek": {
+          "response": "Let’s think this through step by step.\n\n**Step 1: Starting month**  \nThe question starts with **November**.\n\n**Step 2: Count three months forward**  \n- 1 month after November is **December**.  \n- 2 months after November is **January**.  \n- 3 months after November is **February**.\n\n**Step 3: Conclusion**  \nThree months after November is **February**.\n\n\\[\n\\boxed{February}\n\\]",
+          "latency_ms": 1674.15,
+          "error": null,
+          "correct": false,
+          "parse_ok": true
+        },
+        "gpt5mini": {
+          "response": "",
+          "latency_ms": null,
+          "error": "API key not configured",
+          "correct": false,
+          "parse_ok": false
+        },
+        "doubao": {
+          "response": "1. First, understand the order of months in a year:\n   - The months of the year are January, February, March, April, May, June, July, August, September, October, November, and December.\n2. Then, start from November and count 3 months forward:\n   - November is the 11th month.\n   - One month after November is December (the 12th month).\n   - Two months after November is January (the 1st month of the next - year).\n   - Three months after November is February (the 2nd month of the next - year).\n\nSo, the month that comes 3 months after November is February.",
+          "latency_ms": 4073.64,
+          "error": null,
+          "correct": true,
+          "parse_ok": true
+        },
+        "router": {
+          "response": "",
+          "latency_ms": null,
+          "error": "Missing temporal-reasoning-benchmark dependencies (prompt builder not importable): No module named 'dateutil'",
+          "correct": false,
+          "parse_ok": false
+        }
+      },
+      "router_meta": {
+        "predicted_category": null,
+        "confidence": null,
+        "threshold": 0.95,
+        "fallback_triggered": false,
+        "selected_prompt_mode": null,
+        "selected_prompt_version": null
+      }
+    },
+    {
+      "sample_id": "row_4521_0a97d5a53434",
+      "category": "Month Shift",
+      "question": "Which month comes 6 months after January?",
+      "gold": "July",
+      "outputs": {
+        "deepseek": {
+          "response": "January plus 6 months is **July**.",
+          "latency_ms": 818.63,
+          "error": null,
+          "correct": true,
+          "parse_ok": true
+        },
+        "gpt5mini": {
+          "response": "",
+          "latency_ms": null,
+          "error": "API key not configured",
+          "correct": false,
+          "parse_ok": false
+        },
+        "doubao": {
+          "response": "We start with January. To find the month that comes 6 months after January, we simply count 6 months forward.\n\nJanuary is the 1st month.\nThe 2nd month is February.\nThe 3rd month is March.\nThe 4th month is April.\nThe 5th month is May.\nThe 6th month is June.\nThe 7th month is July.\n\nSo, the month that comes 6 months after January is July. ",
+          "latency_ms": 3279.9,
+          "error": null,
+          "correct": true,
+          "parse_ok": true
+        },
+        "router": {
+          "response": "",
+          "latency_ms": null,
+          "error": "Missing temporal-reasoning-benchmark dependencies (prompt builder not importable): No module named 'dateutil'",
+          "correct": false,
+          "parse_ok": false
+        }
+      },
+      "router_meta": {
+        "predicted_category": null,
+        "confidence": null,
+        "threshold": 0.95,
+        "fallback_triggered": false,
+        "selected_prompt_mode": null,
+        "selected_prompt_version": null
+      }
+    },
+    {
+      "sample_id": "row_4546_e3701320e22c",
+      "category": "Month Shift",
+      "question": "Which month was 6 months before January?",
+      "gold": "July",
+      "outputs": {
+        "deepseek": {
+          "response": "That would be **July** of the previous year.\n\nHere's why: Going backwards 6 months from January:\n- December (1 month back)\n- November (2)\n- October (3)\n- September (4)\n- August (5)\n- **July** (6)",
+          "latency_ms": 1164.65,
+          "error": null,
+          "correct": true,
+          "parse_ok": true
+        },
+        "gpt5mini": {
+          "response": "",
+          "latency_ms": null,
+          "error": "API key not configured",
+          "correct": false,
+          "parse_ok": false
+        },
+        "doubao": {
+          "response": "To find the month that is 6 months before January, we can count backwards.\n\nStarting from January and counting 6 months back:\n- January - 1 month = December\n- December - 1 month = November\n- November - 1 month = October\n- October - 1 month = September\n- September - 1 month = August\n- August - 1 month = July\n\nSo, the month that is 6 months before January is July.",
+          "latency_ms": 4206.97,
+          "error": null,
+          "correct": true,
+          "parse_ok": true
+        },
+        "router": {
+          "response": "",
+          "latency_ms": null,
+          "error": "Missing temporal-reasoning-benchmark dependencies (prompt builder not importable): No module named 'dateutil'",
+          "correct": false,
+          "parse_ok": false
+        }
+      },
+      "router_meta": {
+        "predicted_category": null,
+        "confidence": null,
+        "threshold": 0.95,
+        "fallback_triggered": false,
+        "selected_prompt_mode": null,
+        "selected_prompt_version": null
+      }
+    }
+  ],
+  "summary": {
+    "DeepSeek": {
+      "accuracy": 0.3333,
+      "parse_rate": 1.0,
+      "latency_ms": 2157.4,
+      "calls_per_query": 1.0,
+      "correct_count": 5,
+      "sample_count": 15
+    },
+    "GPT-5-mini": {
+      "accuracy": 0.0,
+      "parse_rate": 0.0,
+      "latency_ms": null,
+      "calls_per_query": 1.0,
+      "correct_count": 0,
+      "sample_count": 15
+    },
+    "Doubao": {
+      "accuracy": 0.6667,
+      "parse_rate": 1.0,
+      "latency_ms": 6627.18,
+      "calls_per_query": 1.0,
+      "correct_count": 10,
+      "sample_count": 15
+    },
+    "Classifier Router + Fallback": {
+      "accuracy": 0.0,
+      "parse_rate": 0.0,
+      "latency_ms": null,
+      "calls_per_query": 1.0,
+      "correct_count": 0,
+      "sample_count": 15
+    }
+  },
+  "duration_sec": 99.631,
+  "error": null,
+  "router_trigger_rate": 0.0,
+  "fallback_rate": 0.0,
+  "error_rows": [
+    {
+      "sample_id": "row_6645_9c3accedc926",
+      "category": "Date Computation",
+      "workflow": "DeepSeek",
+      "gold": "04-22-1493",
+      "pred": "\\]",
+      "error_type": "wrong_answer"
+    },
+    {
+      "sample_id": "row_6645_9c3accedc926",
+      "category": "Date Computation",
+      "workflow": "GPT-5-mini",
+      "gold": "04-22-1493",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_6645_9c3accedc926",
+      "category": "Date Computation",
+      "workflow": "Doubao",
+      "gold": "04-22-1493",
+      "pred": "The new date is April 24, 1493.",
+      "error_type": "wrong_answer"
+    },
+    {
+      "sample_id": "row_6645_9c3accedc926",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "04-22-1493",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_10149_6522297d4954",
+      "category": "Date Computation",
+      "workflow": "DeepSeek",
+      "gold": "1/4/1969",
+      "pred": "\\]",
+      "error_type": "wrong_answer"
+    },
+    {
+      "sample_id": "row_10149_6522297d4954",
+      "category": "Date Computation",
+      "workflow": "GPT-5-mini",
+      "gold": "1/4/1969",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_10149_6522297d4954",
+      "category": "Date Computation",
+      "workflow": "Doubao",
+      "gold": "1/4/1969",
+      "pred": "So, when you add 3 weeks and 4 days to the date 12 - 10 - 1968, the new date is 01 - 04 - 1969.",
+      "error_type": "wrong_answer"
+    },
+    {
+      "sample_id": "row_10149_6522297d4954",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "1/4/1969",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_5932_9b1aedb203a2",
+      "category": "Date Computation",
+      "workflow": "DeepSeek",
+      "gold": "April1798",
+      "pred": "\\]",
+      "error_type": "wrong_answer"
+    },
+    {
+      "sample_id": "row_5932_9b1aedb203a2",
+      "category": "Date Computation",
+      "workflow": "GPT-5-mini",
+      "gold": "April1798",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_5932_9b1aedb203a2",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "April1798",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_801_3f610e314f5f",
+      "category": "Hour Adjustment (24h)",
+      "workflow": "DeepSeek",
+      "gold": "12:29",
+      "pred": "If you meant something else (like subtracting times across midnight), let me know.",
+      "error_type": "wrong_answer"
+    },
+    {
+      "sample_id": "row_801_3f610e314f5f",
+      "category": "Hour Adjustment (24h)",
+      "workflow": "GPT-5-mini",
+      "gold": "12:29",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_801_3f610e314f5f",
+      "category": "Hour Adjustment (24h)",
+      "workflow": "Doubao",
+      "gold": "12:29",
+      "pred": "So, \\(20:53−08:24 = 12\\) hours and \\(29\\) minutes.",
+      "error_type": "wrong_answer"
+    },
+    {
+      "sample_id": "row_801_3f610e314f5f",
+      "category": "Hour Adjustment (24h)",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "12:29",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_1479_55e9e511087d",
+      "category": "Hour Adjustment (24h)",
+      "workflow": "DeepSeek",
+      "gold": "14:56",
+      "pred": "\\]",
+      "error_type": "wrong_answer"
+    },
+    {
+      "sample_id": "row_1479_55e9e511087d",
+      "category": "Hour Adjustment (24h)",
+      "workflow": "GPT-5-mini",
+      "gold": "14:56",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_1479_55e9e511087d",
+      "category": "Hour Adjustment (24h)",
+      "workflow": "Doubao",
+      "gold": "14:56",
+      "pred": "So, \\(22:48−07:52 = 14\\) hours and 56 minutes.",
+      "error_type": "wrong_answer"
+    },
+    {
+      "sample_id": "row_1479_55e9e511087d",
+      "category": "Hour Adjustment (24h)",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "14:56",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_648_6333fb036250",
+      "category": "Hour Adjustment (24h)",
+      "workflow": "DeepSeek",
+      "gold": "14:04",
+      "pred": "\\]",
+      "error_type": "wrong_answer"
+    },
+    {
+      "sample_id": "row_648_6333fb036250",
+      "category": "Hour Adjustment (24h)",
+      "workflow": "GPT-5-mini",
+      "gold": "14:04",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_648_6333fb036250",
+      "category": "Hour Adjustment (24h)",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "14:04",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_12211_7bf711a4423c",
+      "category": "Time Zone Conversion",
+      "workflow": "DeepSeek",
+      "gold": "3PMonSeptember7,1498",
+      "pred": "**Answer:** September 7, 1498, 3:00 PM in Europe/Athens.",
+      "error_type": "wrong_answer"
+    },
+    {
+      "sample_id": "row_12211_7bf711a4423c",
+      "category": "Time Zone Conversion",
+      "workflow": "GPT-5-mini",
+      "gold": "3PMonSeptember7,1498",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_12211_7bf711a4423c",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "3PMonSeptember7,1498",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_12487_64cd822b6bbf",
+      "category": "Time Zone Conversion",
+      "workflow": "DeepSeek",
+      "gold": "10PMonAugust25,1248",
+      "pred": "11 PM on August 25, 1248, in Asia/Shanghai.",
+      "error_type": "wrong_answer"
+    },
+    {
+      "sample_id": "row_12487_64cd822b6bbf",
+      "category": "Time Zone Conversion",
+      "workflow": "GPT-5-mini",
+      "gold": "10PMonAugust25,1248",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_12487_64cd822b6bbf",
+      "category": "Time Zone Conversion",
+      "workflow": "Doubao",
+      "gold": "10PMonAugust25,1248",
+      "pred": "So, when it's 7 AM on August 25, 1248 in US/Pacific, it's 11 PM on August 25, 1248 in Asia/Shanghai.",
+      "error_type": "wrong_answer"
+    },
+    {
+      "sample_id": "row_12487_64cd822b6bbf",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "10PMonAugust25,1248",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_12536_95b30b7b1712",
+      "category": "Time Zone Conversion",
+      "workflow": "DeepSeek",
+      "gold": "8PMonMarch18,1344",
+      "pred": "**March 18, 1344, at 8:00 PM (20:00) in Asia/Tokyo.**",
+      "error_type": "wrong_answer"
+    },
+    {
+      "sample_id": "row_12536_95b30b7b1712",
+      "category": "Time Zone Conversion",
+      "workflow": "GPT-5-mini",
+      "gold": "8PMonMarch18,1344",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_12536_95b30b7b1712",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "8PMonMarch18,1344",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_3606_31c4f588fc7f",
+      "category": "Year Shift",
+      "workflow": "GPT-5-mini",
+      "gold": "1971",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_3606_31c4f588fc7f",
+      "category": "Year Shift",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "1971",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_4161_6e6d4cef20fd",
+      "category": "Year Shift",
+      "workflow": "GPT-5-mini",
+      "gold": "1645",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_4161_6e6d4cef20fd",
+      "category": "Year Shift",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "1645",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_3256_9397375f0770",
+      "category": "Year Shift",
+      "workflow": "GPT-5-mini",
+      "gold": "1354",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_3256_9397375f0770",
+      "category": "Year Shift",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "1354",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_4509_5c83485f2593",
+      "category": "Month Shift",
+      "workflow": "DeepSeek",
+      "gold": "February",
+      "pred": "\\]",
+      "error_type": "wrong_answer"
+    },
+    {
+      "sample_id": "row_4509_5c83485f2593",
+      "category": "Month Shift",
+      "workflow": "GPT-5-mini",
+      "gold": "February",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_4509_5c83485f2593",
+      "category": "Month Shift",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "February",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_4521_0a97d5a53434",
+      "category": "Month Shift",
+      "workflow": "GPT-5-mini",
+      "gold": "July",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_4521_0a97d5a53434",
+      "category": "Month Shift",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "July",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_4546_e3701320e22c",
+      "category": "Month Shift",
+      "workflow": "GPT-5-mini",
+      "gold": "July",
+      "pred": "",
+      "error_type": "parse_error"
+    },
+    {
+      "sample_id": "row_4546_e3701320e22c",
+      "category": "Month Shift",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "July",
+      "pred": "",
+      "error_type": "parse_error"
+    }
+  ]
+}

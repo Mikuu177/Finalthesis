@@ -1,46 +1,358 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LLM 对比平台</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temporal Reasoning Workbench</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>LLM 复杂时间推理对比平台</h1>
-            <p>输入你的问题，查看不同模型的回答。</p>
-        </header>
+  <div id="build-debug-badge">BUILD 2026-04-28-r11</div>
+  <div class="app-shell">
+    <header class="hero">
+      <p class="kicker">Research System</p>
+      <h1 id="project-title">Research on Complex Temporal Reasoning</h1>
+      <p id="project-subtitle" class="subtitle"></p>
+      <p id="project-intro" class="intro"></p>
+      <div class="pipeline" id="overview-pipeline"></div>
+    </header>
 
-        <main>
-            <div class="prompt-section">
-                <textarea id="prompt-input" placeholder="在这里输入你的问题..."></textarea>
-                <button id="submit-btn">提交查询</button>
-            </div>
+    <nav class="top-nav">
+      <button class="tab-btn active" data-tab="train">A. Training Center</button>
+      <button class="tab-btn" data-tab="internals">B. Model Internals</button>
+      <button class="tab-btn" data-tab="test">C. Testing Center</button>
+      <button class="tab-btn" data-tab="analysis">D. Analysis Center</button>
+    </nav>
 
-            <div id="results-container" class="results-grid">
-                <div class="result-card" id="result-deepseek">
-                    <h2>DeepSeek</h2>
-                    <div class="response-content loading"></div>
-                </div>
-                <div class="result-card" id="result-qwen">
-                    <h2>Qwen (通义千问)</h2>
-                    <div class="response-content loading"></div>
-                </div>
-                <div class="result-card" id="result-openai">
-                    <h2>OpenAI</h2>
-                    <div class="response-content loading"></div>
-                </div>
-                <div class="result-card" id="result-doubao">
-                    <h2>Doubao (豆包)</h2>
-                    <div class="response-content loading"></div>
-                </div>
+    <main>
+      <section class="tab-page active" id="page-train">
+        <div class="section-head">
+          <h2>Training Center</h2>
+          <p>Train and evaluate the lightweight classifier with cache-hit tracking.</p>
+          <p class="purpose-line"><strong>Purpose:</strong> Show how the lightweight classifier is trained, whether it is reproducible, and whether performance is acceptable.</p>
+        </div>
+
+        <article class="panel">
+          <h3>Training Task Card</h3>
+          <p class="panel-purpose">This module proves that training inputs and protocol settings are explicit and traceable.</p>
+          <div id="train-spec-card" class="status-box">Loading training specification...</div>
+        </article>
+
+        <div class="grid two-col">
+          <article class="panel">
+            <h3>Train Configuration</h3>
+            <p class="panel-purpose">This module proves that training parameters are controllable and directly affect cache hits and model versioning.</p>
+            <label>Categories</label>
+            <p class="action-hint">Click "View Data" beside each category to inspect paginated train/dev/test samples.</p>
+            <div id="train-categories" class="checklist"></div>
+            <div class="inline-row">
+              <div>
+                <label>Min Samples / Class</label>
+                <input id="train-min-samples" type="number" min="1" value="20">
+              </div>
+              <div>
+                <label>Seed</label>
+                <input id="train-seed" type="number" value="42">
+              </div>
             </div>
-        </main>
+            <button id="btn-train-start" class="primary-btn">Start One-Click Training</button>
+            <p class="action-hint">After clicking, you get queue status, running stage, cache-hit explanation, artifact paths, and metrics.</p>
+          </article>
+
+          <article class="panel">
+            <h3>Train Status</h3>
+            <p class="panel-purpose">This module proves the training process has stage-by-stage feedback, not a black-box button.</p>
+            <div id="train-status" class="status-box">No job yet.</div>
+            <div id="train-metrics" class="metrics-grid"></div>
+            <div class="link-stack">
+              <div id="train-model-path"></div>
+              <div id="train-report-path"></div>
+              <div id="train-conf-path"></div>
+            </div>
+            <details class="details-box">
+              <summary>Classification Report Preview</summary>
+              <pre id="train-report-preview" class="log-pre">(empty)</pre>
+            </details>
+            <details class="details-box">
+              <summary>Train Log Tail</summary>
+              <pre id="train-log-tail" class="log-pre">(empty)</pre>
+            </details>
+            <article class="panel nested-panel">
+              <h4>Training Detail Results</h4>
+              <p class="panel-purpose">Sample-level correctness comes from independent evaluation predictions, not self-evaluation on training data.</p>
+              <div class="inline-row">
+                <div>
+                  <label>Correct Filter</label>
+                  <select id="eval-correct-filter">
+                    <option value="all">all</option>
+                    <option value="true">true</option>
+                    <option value="false">false</option>
+                  </select>
+                </div>
+                <div>
+                  <label>Category Filter</label>
+                  <select id="eval-category-filter">
+                    <option value="all">all</option>
+                  </select>
+                </div>
+              </div>
+              <div id="eval-stats-box" class="status-box">Run training first to load eval detail rows.</div>
+              <div class="table-wrap"><table id="eval-detail-table"></table></div>
+              <div class="inline-row">
+                <button id="eval-prev-page" class="mini-link-btn">Prev</button>
+                <span id="eval-page-indicator" class="muted">Page 1</span>
+                <button id="eval-next-page" class="mini-link-btn">Next</button>
+              </div>
+            </article>
+            <p class="interpret-hint">How to read: check stage and cache reason first, then accuracy/macro_f1, then verify model version and logs.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="tab-page" id="page-internals">
+        <div class="section-head">
+          <h2>Model Internals</h2>
+          <p>Step-by-step visualization of how the lightweight classifier transforms a question into category probabilities.</p>
+          <p class="purpose-line"><strong>Purpose:</strong> Make the small model understandable: text input, tokenization, TF-IDF vectorization, feature weights, and final category prediction.</p>
+        </div>
+
+        <article class="panel">
+          <h3>Interactive Classifier Walkthrough</h3>
+          <p class="panel-purpose">This is a pedagogical visualization. It uses fixed demo weights to show the same logic as the real TF-IDF + Logistic Regression classifier.</p>
+          <textarea id="internals-question" rows="3"></textarea>
+          <div class="inline-row">
+            <button id="btn-internals-run" class="primary-btn">Run Step-by-Step Visualization</button>
+            <button id="btn-internals-reset" class="mini-link-btn">Reset Demo Question</button>
+            <span class="status-pill">Demo only, not live model inference</span>
+          </div>
+        </article>
+
+        <div class="internals-flow">
+          <article class="panel internals-step">
+            <div class="step-number">1</div>
+            <h3>Text Normalization</h3>
+            <p class="panel-purpose">Lowercase text and keep the meaningful words/numbers for feature extraction.</p>
+            <div id="norm-output" class="code-box"></div>
+            <p class="interpret-hint">How to read: the model does not understand grammar like a human; it converts text into a feature-friendly form.</p>
+          </article>
+
+          <article class="panel internals-step">
+            <div class="step-number">2</div>
+            <h3>Tokenization and Bigrams</h3>
+            <p class="panel-purpose">The classifier uses unigram and bigram features, matching the real setting `ngram_range=(1, 2)`.</p>
+            <div id="token-output" class="chip-grid"></div>
+            <p class="interpret-hint">How to read: single words and adjacent word pairs can both become features.</p>
+          </article>
+
+          <article class="panel internals-step">
+            <div class="step-number">3</div>
+            <h3>TF-IDF Vectorization</h3>
+            <p class="panel-purpose">Tokens are converted into a sparse numeric vector. Higher TF-IDF means the feature is more informative.</p>
+            <div class="table-wrap"><table id="tfidf-table"></table></div>
+            <p class="interpret-hint">Formula shown here: TF-IDF = term frequency × inverse document frequency.</p>
+          </article>
+
+          <article class="panel internals-step">
+            <div class="step-number">4</div>
+            <h3>Feature Contributions</h3>
+            <p class="panel-purpose">Logistic Regression assigns category-specific weights to features. Positive contribution pushes the sample toward that category.</p>
+            <div class="table-wrap"><table id="contribution-table"></table></div>
+            <p class="interpret-hint">How to read: this table explains why the predicted category receives a high score.</p>
+          </article>
+
+          <article class="panel internals-step">
+            <div class="step-number">5</div>
+            <h3>Category Probabilities</h3>
+            <p class="panel-purpose">The category scores are converted into probabilities. Confidence is the largest probability.</p>
+            <div id="probability-chart" class="prob-chart"></div>
+            <div id="internals-decision" class="status-box"></div>
+            <p class="interpret-hint">How to read: if confidence is below the fallback threshold, the online system would use the safer fallback prompt.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="tab-page" id="page-test">
+        <div class="section-head">
+          <h2>Testing Center</h2>
+          <p>Understand temporal problem types, inspect dataset examples, then run one-click suite and real-time comparisons.</p>
+          <p class="build-tag">UI Build: 2026-04-28-r11</p>
+          <p class="purpose-line"><strong>Purpose:</strong> Show how online questions are classified, routed, optionally fallback-handled, and answered.</p>
+        </div>
+
+        <article class="panel">
+          <h3>Temporal Problem Types</h3>
+          <p class="panel-purpose">This module proves temporal categories have different risks and should not use a single prompt blindly.</p>
+          <div id="problem-type-grid" class="cards-grid"></div>
+        </article>
+
+        <article class="panel">
+          <h3>Category Examples (TRAM split)</h3>
+          <div class="inline-row">
+            <div>
+              <label>Category</label>
+              <select id="example-category"></select>
+            </div>
+            <div>
+              <label>Examples per Category</label>
+              <input id="suite-limit" type="number" min="1" max="10" value="3">
+            </div>
+            <div>
+              <label>Router Threshold</label>
+              <input id="suite-threshold" type="number" min="0" max="1" step="0.01" value="0.95">
+            </div>
+          </div>
+          <div id="category-examples" class="examples-list"></div>
+        </article>
+
+        <article class="panel">
+          <h3>Question Type Classifier (Real-Time)</h3>
+          <p class="muted">This is online classification for user input. It does not rely on training cache for prediction decisions.</p>
+          <p class="panel-purpose">This module proves user input is classified in real time, not guessed from cache.</p>
+          <textarea id="classify-prompt" rows="3" placeholder="Type a temporal question to predict its category..."></textarea>
+          <div class="inline-row">
+            <div>
+              <label>Top-K Probabilities</label>
+              <input id="classify-topk" type="number" min="1" max="10" value="5">
+            </div>
+            <button id="btn-classify-run" class="primary-btn">Classify Question</button>
+          </div>
+          <div id="classify-result" class="status-box">No classification yet.</div>
+          <div class="table-wrap"><table id="classify-prob-table"></table></div>
+          <p class="interpret-hint">How to read: focus on predicted_category and confidence; low-confidence samples are more likely to trigger fallback.</p>
+        </article>
+
+        <article class="panel">
+          <h3>One-Click Suite Test</h3>
+          <p class="panel-purpose">This module proves performance and mechanism differences across four systems on the same sample set.</p>
+          <div class="inline-row">
+            <button id="btn-run-suite" class="primary-btn">Run Suite (3 models + Router)</button>
+            <div id="suite-status" class="status-pill">Idle</div>
+          </div>
+          <div id="suite-summary" class="table-wrap"></div>
+          <div id="suite-mechanism" class="status-box"></div>
+          <div id="suite-error-links" class="inline-row"></div>
+          <p class="interpret-hint">How to read: check accuracy first, then router_trigger_rate/fallback_rate to judge whether mechanism intervention is reasonable.</p>
+        </article>
+
+        <article class="panel">
+          <h3>Real-Time Single Question</h3>
+          <p class="panel-purpose">This module proves input/output differences on the same question across all four routes.</p>
+          <textarea id="live-prompt" rows="4" placeholder="Type one temporal question here..."></textarea>
+          <button id="btn-live-run" class="primary-btn">Run Real-Time 4-Route Comparison</button>
+          <div class="grid four-col" id="live-cards"></div>
+          <p class="interpret-hint">How to read: compare outputs and latency across routes to see whether Router is more stable on hard questions.</p>
+        </article>
+      </section>
+
+      <section class="tab-page" id="page-analysis">
+        <div class="section-head">
+          <h2>Analysis Center (Evidence Panel)</h2>
+          <p>Real-time evidence panel for corrected summary, category-wise changes, and remaining error diagnosis.</p>
+          <p class="purpose-line"><strong>Purpose:</strong> Serve as a live evidence panel to verify corrected summary, category-wise changes, and remaining error diagnosis.</p>
+        </div>
+
+        <article class="panel">
+          <h3>Scoring Policy (Base vs Corrected)</h3>
+          <p class="panel-purpose">This module proves scoring policy is transparent. Base is the original strict criterion; Corrected is category-normalized re-evaluation.</p>
+          <div id="analysis-policy" class="status-box">Loading analysis policy...</div>
+        </article>
+
+        <div class="grid two-col">
+          <article class="panel">
+            <h3>Main Workflow Results (Corrected Highlight)</h3>
+            <div id="workflow-chart" class="bar-chart"></div>
+          </article>
+          <article class="panel">
+            <h3>Workflow Table (Base + Corrected)</h3>
+            <div class="table-wrap"><table id="workflow-table"></table></div>
+          </article>
+        </div>
+
+        <article class="panel oracle-panel">
+          <h3>Oracle Prompt Upper Bound</h3>
+          <p class="panel-purpose">This module proves the improvement gap between the theoretical upper bound and current online policy.</p>
+          <div id="oracle-box"></div>
+        </article>
+
+        <div class="grid two-col">
+          <article class="panel">
+            <h3>Category-wise Boundary (Corrected Highlight)</h3>
+            <div id="category-chart" class="grouped-chart"></div>
+          </article>
+          <article class="panel">
+            <h3>Category Table (Base → Corrected)</h3>
+            <div class="table-wrap"><table id="category-table"></table></div>
+          </article>
+        </div>
+
+        <article class="panel">
+          <h3>Error Samples</h3>
+          <p class="panel-purpose">This module proves failures are localizable, attributable, and reviewable.</p>
+          <div class="inline-row">
+            <div>
+              <label>Filter Category</label>
+              <select id="error-filter"></select>
+            </div>
+            <div>
+              <label>Filter Workflow</label>
+              <select id="error-workflow-filter"></select>
+            </div>
+            <div>
+              <label>Corrected Match</label>
+              <select id="error-corrected-filter">
+                <option value="all">all</option>
+                <option value="true">true</option>
+                <option value="false">false</option>
+              </select>
+            </div>
+          </div>
+          <div class="table-wrap"><table id="error-table"></table></div>
+          <div class="inline-row">
+            <button id="error-prev-page" class="mini-link-btn">Prev</button>
+            <span id="error-page-indicator" class="muted">Page 1</span>
+            <button id="error-next-page" class="mini-link-btn">Next</button>
+          </div>
+          <p class="interpret-hint">How to read: filter by category and workflow to locate whether errors come from routing, parsing, or reasoning.</p>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <div id="dataset-modal" class="modal-backdrop hidden">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="dataset-modal-title">Category Dataset Viewer</h3>
+        <button id="dataset-modal-close" class="mini-link-btn">Close</button>
+      </div>
+      <div class="inline-row">
+        <div>
+          <label>Split</label>
+          <select id="dataset-modal-split">
+            <option value="train">train</option>
+            <option value="dev">dev</option>
+            <option value="test">test</option>
+          </select>
+        </div>
+        <div>
+          <label>Page Size</label>
+          <select id="dataset-modal-page-size">
+            <option value="10">10</option>
+            <option value="20" selected>20</option>
+            <option value="50">50</option>
+          </select>
+        </div>
+        <div id="dataset-modal-meta" class="status-pill">-</div>
+      </div>
+      <div class="table-wrap"><table id="dataset-modal-table"></table></div>
+      <div class="inline-row">
+        <button id="dataset-modal-prev" class="mini-link-btn">Prev</button>
+        <span id="dataset-modal-page-indicator" class="muted">Page 1</span>
+        <button id="dataset-modal-next" class="mini-link-btn">Next</button>
+      </div>
     </div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="data/researchData.js?v=20260428r11"></script>
+  <script src="script.js?v=20260428r11"></script>
 </body>
 </html>
-

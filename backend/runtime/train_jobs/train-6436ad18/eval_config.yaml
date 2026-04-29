@@ -1,0 +1,3 @@
+model_path: outputs/workbench_train/59f4559cb44276b5/task_clf.joblib
+eval_dataset_path: data/splits/classifier_router/test.jsonl
+output_dir: outputs/workbench_train/59f4559cb44276b5/eval

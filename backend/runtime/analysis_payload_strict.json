@@ -1,0 +1,5624 @@
+{
+  "source": {
+    "strict_runs": [
+      "20260325-220652_baseline_fixed_prompt_strict_pvv2.1",
+      "20260325-220652_baseline_cot_prompt_strict_pvv2.1",
+      "20260325-220653_classifier_prompt_router_strict_pvv2.1",
+      "20260325-220653_classifier_prompt_router_strict_fallback_pvv2.1"
+    ],
+    "comparison_table": "/Volumes/Mikuu-ultra/Git/Finalthesis/temporal-reasoning-benchmark/outputs/tables/prompt_routing_comparison_strict.csv",
+    "split_test": "/Volumes/Mikuu-ultra/Git/Finalthesis/temporal-reasoning-benchmark/data/splits/classifier_router/test.jsonl"
+  },
+  "ruleset_version": "v1.1",
+  "generated_at": "2026-04-25T15:09:05.513855",
+  "workflow_summary": [
+    {
+      "workflow": "Fixed Prompt",
+      "run_id": "20260325-220652_baseline_fixed_prompt_strict_pvv2.1",
+      "sample_count": 400,
+      "base_accuracy": 0.63,
+      "corrected_accuracy": 0.7575,
+      "delta": 0.1275,
+      "parse_rate": 0.8925,
+      "format_compliance": 0.965,
+      "latency_sec_per_query": 5.3711,
+      "calls_per_query": 1.0
+    },
+    {
+      "workflow": "CoT Prompt",
+      "run_id": "20260325-220652_baseline_cot_prompt_strict_pvv2.1",
+      "sample_count": 400,
+      "base_accuracy": 0.62,
+      "corrected_accuracy": 0.77,
+      "delta": 0.15,
+      "parse_rate": 0.9175,
+      "format_compliance": 0.9725,
+      "latency_sec_per_query": 5.2518,
+      "calls_per_query": 1.0
+    },
+    {
+      "workflow": "Classifier Router",
+      "run_id": "20260325-220653_classifier_prompt_router_strict_pvv2.1",
+      "sample_count": 400,
+      "base_accuracy": 0.6075,
+      "corrected_accuracy": 0.7575,
+      "delta": 0.15,
+      "parse_rate": 0.92,
+      "format_compliance": 0.9675,
+      "latency_sec_per_query": 5.2627,
+      "calls_per_query": 1.0
+    },
+    {
+      "workflow": "Classifier Router + Fallback",
+      "run_id": "20260325-220653_classifier_prompt_router_strict_fallback_pvv2.1",
+      "sample_count": 400,
+      "base_accuracy": 0.625,
+      "corrected_accuracy": 0.775,
+      "delta": 0.15,
+      "parse_rate": 0.9075,
+      "format_compliance": 0.9675,
+      "latency_sec_per_query": 5.3329,
+      "calls_per_query": 1.0
+    }
+  ],
+  "category_summary": [
+    {
+      "category": "Date Computation",
+      "fixed_base": 0.5265,
+      "fixed_corrected": 0.7008,
+      "cot_base": 0.5076,
+      "cot_corrected": 0.7159,
+      "router_base": 0.5038,
+      "router_corrected": 0.7045,
+      "router_fallback_base": 0.5265,
+      "router_fallback_corrected": 0.7235,
+      "fixed_delta": 0.1743,
+      "cot_delta": 0.2083,
+      "router_delta": 0.2007,
+      "router_fallback_delta": 0.197,
+      "insight_tag": "Recovered by fallback"
+    },
+    {
+      "category": "Hour Adjustment (24h)",
+      "fixed_base": 0.9545,
+      "fixed_corrected": 0.9545,
+      "cot_base": 0.9773,
+      "cot_corrected": 0.9773,
+      "router_base": 0.8864,
+      "router_corrected": 0.8864,
+      "router_fallback_base": 0.9318,
+      "router_fallback_corrected": 0.9318,
+      "fixed_delta": 0.0,
+      "cot_delta": 0.0,
+      "router_delta": 0.0,
+      "router_fallback_delta": 0.0,
+      "insight_tag": "Prompt gap remains"
+    },
+    {
+      "category": "Month Shift",
+      "fixed_base": 0.875,
+      "fixed_corrected": 1.0,
+      "cot_base": 0.875,
+      "cot_corrected": 1.0,
+      "router_base": 0.875,
+      "router_corrected": 1.0,
+      "router_fallback_base": 0.75,
+      "router_fallback_corrected": 1.0,
+      "fixed_delta": 0.125,
+      "cot_delta": 0.125,
+      "router_delta": 0.125,
+      "router_fallback_delta": 0.25,
+      "insight_tag": "Ceiling category"
+    },
+    {
+      "category": "Time Zone Conversion",
+      "fixed_base": 0.0,
+      "fixed_corrected": 0.2,
+      "cot_base": 0.0,
+      "cot_corrected": 0.2,
+      "router_base": 0.0,
+      "router_corrected": 0.3,
+      "router_fallback_base": 0.0,
+      "router_fallback_corrected": 0.3,
+      "fixed_delta": 0.2,
+      "cot_delta": 0.2,
+      "router_delta": 0.3,
+      "router_fallback_delta": 0.3,
+      "insight_tag": "Recovered by fallback"
+    },
+    {
+      "category": "Year Shift",
+      "fixed_base": 1.0,
+      "fixed_corrected": 1.0,
+      "cot_base": 1.0,
+      "cot_corrected": 1.0,
+      "router_base": 1.0,
+      "router_corrected": 1.0,
+      "router_fallback_base": 1.0,
+      "router_fallback_corrected": 1.0,
+      "fixed_delta": 0.0,
+      "cot_delta": 0.0,
+      "router_delta": 0.0,
+      "router_fallback_delta": 0.0,
+      "insight_tag": "Ceiling category"
+    }
+  ],
+  "error_rows": [
+    {
+      "sample_id": "row_12467_e9a95250a7f7",
+      "category": "Time Zone Conversion",
+      "workflow": "Fixed Prompt",
+      "gold": "6PMonMarch7,1322",
+      "pred_norm": "19:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7760_b4d5d665658b",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "09-22-1598",
+      "pred_norm": "1598-10-22",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5218_f3820ccb4a27",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "9-Sep",
+      "pred_norm": "1909-09",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5180_041af05d70ca",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "February1312",
+      "pred_norm": "1312-02-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7548_76af384a76a9",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "10/11/1902",
+      "pred_norm": "31moredays(Dec)→1902-",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12125_36698ab40fb6",
+      "category": "Time Zone Conversion",
+      "workflow": "Fixed Prompt",
+      "gold": "6PMonMarch31,1264",
+      "pred_norm": "18:00",
+      "corrected_match": true,
+      "error_type": "fix_tz_hhmm_equiv"
+    },
+    {
+      "sample_id": "row_6590_9af0465951ee",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "09-10-1061",
+      "pred_norm": "1061-05-14",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5152_5ad9a914c6ec",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "October1128",
+      "pred_norm": "1128-10-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9964_1495f6dd4b52",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "3/27/2002",
+      "pred_norm": "2001-12-28",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5417_1e04c78c7bb8",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "November1299",
+      "pred_norm": "1299-11-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_8725_88a2363967ee",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "8/9/1980",
+      "pred_norm": "1980-05-12",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9473_c0176e8c4b18",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "12-12-1825",
+      "pred_norm": "1825-12-13",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12225_48d6c66de104",
+      "category": "Time Zone Conversion",
+      "workflow": "Fixed Prompt",
+      "gold": "11PMonDecember3,1639",
+      "pred_norm": "23:00",
+      "corrected_match": true,
+      "error_type": "fix_tz_hhmm_equiv"
+    },
+    {
+      "sample_id": "row_10277_eb243061ae89",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "06-19-1578",
+      "pred_norm": "July1578:31",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5415_7e1308425b8d",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "November1644",
+      "pred_norm": "1644-11-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_8285_662c9a39585e",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "10-08-1151",
+      "pred_norm": "2021-10-08",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9694_cad8d566a2cb",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "09-28-1441",
+      "pred_norm": "1441-06-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7189_0aee20df75e6",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "05-07-1268",
+      "pred_norm": "1268-05-08",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5365_e190266f2a6e",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "Apr-84",
+      "pred_norm": "1984-04-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12359_9b78a331e7bd",
+      "category": "Time Zone Conversion",
+      "workflow": "Fixed Prompt",
+      "gold": "3PMonNovember13,1041",
+      "pred_norm": "17:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6161_f626dbad0f56",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "08-26-1273",
+      "pred_norm": "1272-12-16",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12107_bc3e166e8930",
+      "category": "Time Zone Conversion",
+      "workflow": "Fixed Prompt",
+      "gold": "4PMonMay10,1926",
+      "pred_norm": "16:00",
+      "corrected_match": true,
+      "error_type": "fix_tz_hhmm_equiv"
+    },
+    {
+      "sample_id": "row_7818_64008f7fdd80",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "02-16-1520",
+      "pred_norm": "1520-11-07",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7662_a9842eb83d65",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "12-04-1362",
+      "pred_norm": "1362-07-09",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10104_77b9dddded2a",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "10-17-1553",
+      "pred_norm": "1553-10-18",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6534_104ff6f4ba03",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "01-15-1644",
+      "pred_norm": "1644-03-14",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10324_b124777caef1",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "08-07-1895",
+      "pred_norm": "1895-03-12",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6504_407eaa4884b6",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "07-23-1075",
+      "pred_norm": "1075-10-20",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7129_756baf016824",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "05-01-1289",
+      "pred_norm": "1289-07-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9706_7810c2fb1302",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "01-19-1673",
+      "pred_norm": "1673-01-20",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9453_fbdc20d32ab4",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "07-17-1484",
+      "pred_norm": "1484-01-24",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10006_ef517dc55e27",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "12-30-1886",
+      "pred_norm": "1886-",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5525_628b3781d8ea",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "April1510",
+      "pred_norm": "1510-04-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6106_81367bb06d45",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "06-02-1614",
+      "pred_norm": "1615-01-30",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4688_037ba3c28267",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "November1635",
+      "pred_norm": "1635-11-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6384_4cc19c4a0ca7",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "05-01-1018",
+      "pred_norm": "1018-05-02",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6570_d93ee8976205",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "07-06-1160",
+      "pred_norm": "1160-07-07",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9938_dad6b2298fb9",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "10-07-1617",
+      "pred_norm": "Novhas30days,subtract30→161",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5544_3cb7806f24e0",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "January1482",
+      "pred_norm": "1482-01-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9349_1f8f80c1c6cb",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "01-12-1348",
+      "pred_norm": "1347-05-20",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6576_1cfe80c9f222",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "2/2/1973",
+      "pred_norm": "1973-11-26",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4779_f43f2ce8029e",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "December1427",
+      "pred_norm": "1427-12-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5294_bb9c97cda601",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "April1042",
+      "pred_norm": "1042-04-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6297_b0d3e661e81c",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "03-03-1010",
+      "pred_norm": "1010-03-04",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6443_92351e2edb65",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "08-09-1014",
+      "pred_norm": "Thus",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12161_ad6058e706d6",
+      "category": "Time Zone Conversion",
+      "workflow": "Fixed Prompt",
+      "gold": "2AMonAugust6,1211",
+      "pred_norm": "03:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10323_15eed2d14325",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "05-22-1794",
+      "pred_norm": "1794-07-12",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10225_212739efabf5",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "01-08-1246",
+      "pred_norm": "1246-06-05",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12284_45f2ec4ee623",
+      "category": "Time Zone Conversion",
+      "workflow": "Fixed Prompt",
+      "gold": "2AMonNovember17,1141",
+      "pred_norm": "02:00",
+      "corrected_match": true,
+      "error_type": "fix_tz_hhmm_equiv"
+    },
+    {
+      "sample_id": "row_1089_1bb11e1ef063",
+      "category": "Hour Adjustment (24h)",
+      "workflow": "Fixed Prompt",
+      "gold": "21:56",
+      "pred_norm": "02:04",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5276_98ca9cc8adcc",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "January1514",
+      "pred_norm": "1514-01-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_10059_a1a4c6b3c5de",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "01-14-1101",
+      "pred_norm": "Januaryhas31days,soFeb1→Jan14is18daysback(31-18=13?Let'scheck:Jan14toFeb1is18days:Jan14",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12571_d89932390fcc",
+      "category": "Time Zone Conversion",
+      "workflow": "Fixed Prompt",
+      "gold": "12AMonNovember2,1233",
+      "pred_norm": "01:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5512_e629edb412c7",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "March1887",
+      "pred_norm": "1887-03-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9844_4d943a1c4554",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "05-09-1402",
+      "pred_norm": "1402-08-05",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12414_7e3eb5a72a72",
+      "category": "Time Zone Conversion",
+      "workflow": "Fixed Prompt",
+      "gold": "5PMonJanuary12,1553",
+      "pred_norm": "18:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_339_737343a5629c",
+      "category": "Hour Adjustment (24h)",
+      "workflow": "Fixed Prompt",
+      "gold": "15:54",
+      "pred_norm": "08:06",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6809_78fdf678b460",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "05-05-1468",
+      "pred_norm": "1468-03-07",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8746_e7c3300469c1",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "06-17-1848",
+      "pred_norm": "1847-11-24",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10338_5082a4a641f1",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "05-11-1599",
+      "pred_norm": "1599-05-21",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6433_c43738b8a468",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "04-06-1011",
+      "pred_norm": "2.Oct31→Oct1:30days(Octhas31days,goingfrom31stto1stis30",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4748_9f340b3536e4",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "February1236",
+      "pred_norm": "1236-02-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9448_cb97c7e9e5e2",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "6/3/2013",
+      "pred_norm": "2013-06-02",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12462_f7e1a7d6ae2b",
+      "category": "Time Zone Conversion",
+      "workflow": "Fixed Prompt",
+      "gold": "12AMonFebruary28,1036",
+      "pred_norm": "01:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6008_ffa3f08d6f43",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "January1428",
+      "pred_norm": "1428-01-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9211_32ec989e4589",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "06-17-1441",
+      "pred_norm": "2019-09-27",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12418_7c099a97850b",
+      "category": "Time Zone Conversion",
+      "workflow": "Fixed Prompt",
+      "gold": "12AMonDecember13,1427",
+      "pred_norm": "00:30",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6238_1df8155f06bb",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "12-20-1506",
+      "pred_norm": "1506-11-19",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9289_795f9da87ebe",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "09-12-1205",
+      "pred_norm": "1205-09-11",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9888_a5a8c88b1469",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "07-30-1882",
+      "pred_norm": "1883-02-19",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12211_7bf711a4423c",
+      "category": "Time Zone Conversion",
+      "workflow": "Fixed Prompt",
+      "gold": "3PMonSeptember7,1498",
+      "pred_norm": "15:11",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7380_72d45a1edff3",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "09-28-1185",
+      "pred_norm": "1185-09-29",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6446_3ee78276ca1f",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "06-26-1872",
+      "pred_norm": "1872-04-28",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6114_7832a9351171",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "09-29-1803",
+      "pred_norm": "1803-08-30",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5206_7aa7ca6a67b4",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "January1125",
+      "pred_norm": "1125-01-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5339_f3bd40c4ea68",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "April1702",
+      "pred_norm": "1702-04-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6852_039fd13a76d2",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "03-09-1130",
+      "pred_norm": "1129-05-20",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7767_7ee022a2826f",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "03-01-1623",
+      "pred_norm": "1623-05-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4684_7477fe3e98f0",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "November1856",
+      "pred_norm": "1856-11-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9074_a2ae992fa06f",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "09-19-1797",
+      "pred_norm": "1797-08-21",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5564_d78cd14e7d2d",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "April1104",
+      "pred_norm": "1104-04-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12276_2a8832957680",
+      "category": "Time Zone Conversion",
+      "workflow": "Fixed Prompt",
+      "gold": "3AMonAugust1,1670",
+      "pred_norm": "03:30",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4965_9be57efe11ec",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "August1378",
+      "pred_norm": "1378-08-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7081_bf1710eca39a",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "11-12-1426",
+      "pred_norm": "1427-04-06",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7802_717cdfcfd788",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "12-03-1258",
+      "pred_norm": "1259-02-01",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12396_bace01f72cd4",
+      "category": "Time Zone Conversion",
+      "workflow": "Fixed Prompt",
+      "gold": "7AMonJanuary26,1589",
+      "pred_norm": "08:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12331_774f58c8049d",
+      "category": "Time Zone Conversion",
+      "workflow": "Fixed Prompt",
+      "gold": "6PMonDecember22,1333",
+      "pred_norm": "19:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4843_d2f041f6dea3",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "December1116",
+      "pred_norm": "1116-12-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7326_1340534312f8",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "11-29-1052",
+      "pred_norm": "1052-12-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6583_8bc203a3f7f4",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "09-25-1333",
+      "pred_norm": "1334-06-15",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7555_02cd704b95e0",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "01-07-1607",
+      "pred_norm": "1607-01-08",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_8701_36f9f09210a6",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "03-21-1273",
+      "pred_norm": "1272-06-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5914_1e45d20ecbb6",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "October1118",
+      "pred_norm": "1118-10-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5980_3896e812bf6a",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "October1788",
+      "pred_norm": "1788-10-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6414_8a69032e4ce7",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "08-17-1132",
+      "pred_norm": "1132-07-18",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6283_0d60b39faced",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "08-19-1766",
+      "pred_norm": "1766-06-22",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4993_36ace1543e6a",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "May1569",
+      "pred_norm": "1569-05-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6746_c6b6d67f96aa",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "04-13-1849",
+      "pred_norm": "1849-04-14",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7659_f4bcaa451c0f",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "04-05-1596",
+      "pred_norm": "1596-09-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8051_29fae24b9cdf",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "11/29/2018",
+      "pred_norm": "2019-05-24",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10437_4936073457a8",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "08-15-1370",
+      "pred_norm": "1369-11-24",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7460_4e6b76696188",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "03-01-1128",
+      "pred_norm": "2028-03-01",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6163_bf7d8bbbc875",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "10-17-1684",
+      "pred_norm": "2024-10-17",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4553_ebe70edc8235",
+      "category": "Month Shift",
+      "workflow": "Fixed Prompt",
+      "gold": "February",
+      "pred_norm": "2025-02",
+      "corrected_match": true,
+      "error_type": "fix_month_name_equiv"
+    },
+    {
+      "sample_id": "row_5897_19d669441f1c",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "January1512",
+      "pred_norm": "1512-01-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9227_28eb9f0a6b92",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "12-18-1023",
+      "pred_norm": "1024-09-09",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6631_34669c16efeb",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "10-17-1867",
+      "pred_norm": "1867-07-21",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9322_de661d20a13f",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "9/5/1900",
+      "pred_norm": "ContinuebackthroughMay(31days),April(30days),March(31days),February(28days),January(31days),December1900(31days),November1900(30days),October1900(31days),September1900(30days),August1900(31days),July1900(31days),June1900(30days),May1900(31days),April1900(30days),March1900(31days),February1900(28days—1900notleap),January1900(31days),December1899(31days),November1899(30days),October1899(31days),September1899(30days),August1899(31days),July1899(31days),June1899(30days),May1899(31days),April1899(30days),March1899(31days),February1899(28days),January1899(31days),December1898(31days),November1898(30days),October1898(31days),September1898(30days),August1898(31days),July1898(31days),June1898(30days),May1898(31days),April1898(30days),March1898(31days),February1898(28days),January1898(31days),December1897(31days),November1897(30days),October1897(31days),September1897(30days),August1897(31days),July1897(31days),June1897(30days),May1897(31days),April1897(30days),March1897(31days),February1897(",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7229_55d3bea6b658",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "12-27-1282",
+      "pred_norm": "1283-04-23",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7364_c96b68a65177",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "04-29-1338",
+      "pred_norm": "1338-01-30",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6226_22763827757b",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "04-27-1752",
+      "pred_norm": "1752-10-19",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8367_955bdcf0af3d",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "12-13-1710",
+      "pred_norm": "1711-06-13",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10506_d0c40cadffe1",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "07-28-1303",
+      "pred_norm": "1303-06-28",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6741_7e593e03327d",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "07-29-1153",
+      "pred_norm": "1153-10-26",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12488_9d6850ceb7ff",
+      "category": "Time Zone Conversion",
+      "workflow": "Fixed Prompt",
+      "gold": "7AMonMarch26,1162",
+      "pred_norm": "06:30",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12441_13470b50ca4a",
+      "category": "Time Zone Conversion",
+      "workflow": "Fixed Prompt",
+      "gold": "3PMonNovember5,1960",
+      "pred_norm": "14:30",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7009_0584bcfc1107",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "04-03-1486",
+      "pred_norm": "Aug1,1486:back31days→153",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7589_452db6ed230e",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "03-28-1287",
+      "pred_norm": "1287-08-23",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8437_20e8703e6862",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "09-12-1798",
+      "pred_norm": "1798-07-14",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8111_072cb73bfca1",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "03-02-1333",
+      "pred_norm": "1333-06-28",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12127_9c1e0f312479",
+      "category": "Time Zone Conversion",
+      "workflow": "Fixed Prompt",
+      "gold": "2AMonJune10,1784",
+      "pred_norm": "03:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5492_3ff54a5aed26",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "October1730",
+      "pred_norm": "1730-10-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_10187_6f6185574a16",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "12-17-1632",
+      "pred_norm": "1632-10-19",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9883_8c4b364e2e87",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "07-07-1659",
+      "pred_norm": "Remainingfrom298:",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6090_b0e6162d3c2c",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "08-02-1295",
+      "pred_norm": "2024-03-22",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9388_e473f3d4ae37",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "11-01-1136",
+      "pred_norm": "1136-08-07",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7669_2b8e09991279",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "5/1/1923",
+      "pred_norm": "1924-02-21",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9226_87a081984337",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "03-06-1858",
+      "pred_norm": "1858-03-04",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9447_02f140c7009c",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "04-18-1627",
+      "pred_norm": "July17is16daysbeforeAugust1(Julyhas31days:July16is16daysbeforeAug1?Let’scheck:July31→1daybeforeAug1,July30→2daysbefore,…July16→16daysbeforeAug1?That’swrong:Actually,July16toJuly31is15days,plus1daytoAug1=16daysdifference.SoJuly16is16daysbeforeAug1.Butweneed16daysbeforeAug1countedas:July16=datewhencountingbackfromAug1by16",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6804_923f95db9863",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "5/24/2013",
+      "pred_norm": "2013-08-31",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7584_ab44832cac10",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "1/25/1967",
+      "pred_norm": "Jan1967=31,Feb=28,Mar=31,Apr=30,May=31,Jun=30,Jul=31,Aug=31,Sep1–10=10",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8413_f3a24061765a",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "12-30-1318",
+      "pred_norm": "1319-01-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9141_af81c5a1ce1b",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "04-27-1067",
+      "pred_norm": "1067-07-25",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10182_236ec14ea329",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "08-26-1383",
+      "pred_norm": "1383-12-22",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4790_54a2c5503eb2",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "November1447",
+      "pred_norm": "1447-11-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12179_9b39d616f603",
+      "category": "Time Zone Conversion",
+      "workflow": "Fixed Prompt",
+      "gold": "2PMonMay10,1711",
+      "pred_norm": "14:30",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5468_0239f93e2a28",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "August1281",
+      "pred_norm": "1281-08-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6194_d0b5db7b004d",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "12-15-1436",
+      "pred_norm": "1437-06-14",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6349_2324757781c8",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "05-09-1763",
+      "pred_norm": "1763-04-18",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8833_aaa93ac87991",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "03-05-1424",
+      "pred_norm": "1423-12-08",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9762_09b72c99062a",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "09-03-1655",
+      "pred_norm": "1655-09-04",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7676_a8d0a99f95c2",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "06-27-1147",
+      "pred_norm": "1148-04-17",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8337_ec10373c2fdc",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "12/8/1934",
+      "pred_norm": "1934-06-13",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5970_b1dfbdb909c4",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "September1057",
+      "pred_norm": "1057-09-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7641_4067f5cbddc0",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "07-25-1331",
+      "pred_norm": "1330-12-31",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12507_f52dc3a5caf7",
+      "category": "Time Zone Conversion",
+      "workflow": "Fixed Prompt",
+      "gold": "9PMonMarch2,1258",
+      "pred_norm": "21:09",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5173_8927bd55d72d",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "March1876",
+      "pred_norm": "1876-03-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5573_5f4b6930bf1b",
+      "category": "Date Computation",
+      "workflow": "Fixed Prompt",
+      "gold": "November1748",
+      "pred_norm": "1748-11-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12467_e9a95250a7f7",
+      "category": "Time Zone Conversion",
+      "workflow": "CoT Prompt",
+      "gold": "6PMonMarch7,1322",
+      "pred_norm": "19:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7760_b4d5d665658b",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "09-22-1598",
+      "pred_norm": "1598-10-22",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5218_f3820ccb4a27",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "9-Sep",
+      "pred_norm": "1909-09",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5180_041af05d70ca",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "February1312",
+      "pred_norm": "1312-02-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7548_76af384a76a9",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "10/11/1902",
+      "pred_norm": "1902-10-02",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12125_36698ab40fb6",
+      "category": "Time Zone Conversion",
+      "workflow": "CoT Prompt",
+      "gold": "6PMonMarch31,1264",
+      "pred_norm": "18:25",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6590_9af0465951ee",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "09-10-1061",
+      "pred_norm": "1061-05-14",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9964_1495f6dd4b52",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "3/27/2002",
+      "pred_norm": "2001-12-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10469_87171fcf2e3c",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "08-17-1871",
+      "pred_norm": "1871-08-13",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5417_1e04c78c7bb8",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "November1299",
+      "pred_norm": "1299-11-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5507_123abae4098c",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "May1224",
+      "pred_norm": "1224-05-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5299_51cd5e1ce0ef",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "May1540",
+      "pred_norm": "1540-05-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9724_5f01f17c99fb",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "02-23-1584",
+      "pred_norm": "1584-02-24",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6793_1c2b73ea5864",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "10-08-1231",
+      "pred_norm": "1231-10-25",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_8725_88a2363967ee",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "8/9/1980",
+      "pred_norm": "1980-05-12",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12225_48d6c66de104",
+      "category": "Time Zone Conversion",
+      "workflow": "CoT Prompt",
+      "gold": "11PMonDecember3,1639",
+      "pred_norm": "23:00",
+      "corrected_match": true,
+      "error_type": "fix_tz_hhmm_equiv"
+    },
+    {
+      "sample_id": "row_10277_eb243061ae89",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "06-19-1578",
+      "pred_norm": "1578-07-14",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5415_7e1308425b8d",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "November1644",
+      "pred_norm": "1644-11-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9694_cad8d566a2cb",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "09-28-1441",
+      "pred_norm": "1441-09-29",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5365_e190266f2a6e",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "Apr-84",
+      "pred_norm": "1984-04-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12359_9b78a331e7bd",
+      "category": "Time Zone Conversion",
+      "workflow": "CoT Prompt",
+      "gold": "3PMonNovember13,1041",
+      "pred_norm": "17:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6161_f626dbad0f56",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "08-26-1273",
+      "pred_norm": "1273-08-27",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9481_bfbecbe8fa17",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "10-24-1792",
+      "pred_norm": "1792-09-23",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12107_bc3e166e8930",
+      "category": "Time Zone Conversion",
+      "workflow": "CoT Prompt",
+      "gold": "4PMonMay10,1926",
+      "pred_norm": "16:00",
+      "corrected_match": true,
+      "error_type": "fix_tz_hhmm_equiv"
+    },
+    {
+      "sample_id": "row_7818_64008f7fdd80",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "02-16-1520",
+      "pred_norm": "1520-11-07",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7662_a9842eb83d65",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "12-04-1362",
+      "pred_norm": "1362-07-09",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8518_784d6854eae7",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "05-01-1831",
+      "pred_norm": "1830-09-08",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10324_b124777caef1",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "08-07-1895",
+      "pred_norm": "1895-02-11",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8303_9966a244773a",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "11-08-1831",
+      "pred_norm": "1832-11-08",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9012_7a9e98306806",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "10-10-1417",
+      "pred_norm": "1418-10-10",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6504_407eaa4884b6",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "07-23-1075",
+      "pred_norm": "1075-10-20",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7566_490e3234756f",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "01-23-1505",
+      "pred_norm": "1505-01-17",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7129_756baf016824",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "05-01-1289",
+      "pred_norm": "1289-07-30",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9706_7810c2fb1302",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "01-19-1673",
+      "pred_norm": "1673-01-20",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9453_fbdc20d32ab4",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "07-17-1484",
+      "pred_norm": "1484-01-24",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6782_143f5fde09cf",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "01-25-1242",
+      "pred_norm": "1242-12-06",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10006_ef517dc55e27",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "12-30-1886",
+      "pred_norm": "1886-12-29",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5316_c32a817f9645",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "August1870",
+      "pred_norm": "1870-08-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5525_628b3781d8ea",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "April1510",
+      "pred_norm": "1510-04-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_4688_037ba3c28267",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "November1635",
+      "pred_norm": "1635-11-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6384_4cc19c4a0ca7",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "05-01-1018",
+      "pred_norm": "1018-05-02",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5544_3cb7806f24e0",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "January1482",
+      "pred_norm": "1482-01-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9349_1f8f80c1c6cb",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "01-12-1348",
+      "pred_norm": "1347-06-21",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6576_1cfe80c9f222",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "2/2/1973",
+      "pred_norm": "1973-11-23",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4779_f43f2ce8029e",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "December1427",
+      "pred_norm": "1427-12-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5294_bb9c97cda601",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "April1042",
+      "pred_norm": "1042-04-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6443_92351e2edb65",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "08-09-1014",
+      "pred_norm": "1014-11-02",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7187_c00dcf646048",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "05-18-1047",
+      "pred_norm": "2024-05-21",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12161_ad6058e706d6",
+      "category": "Time Zone Conversion",
+      "workflow": "CoT Prompt",
+      "gold": "2AMonAugust6,1211",
+      "pred_norm": "03:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10323_15eed2d14325",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "05-22-1794",
+      "pred_norm": "1794-04-21",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10225_212739efabf5",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "01-08-1246",
+      "pred_norm": "1246-06-05",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12284_45f2ec4ee623",
+      "category": "Time Zone Conversion",
+      "workflow": "CoT Prompt",
+      "gold": "2AMonNovember17,1141",
+      "pred_norm": "02:00",
+      "corrected_match": true,
+      "error_type": "fix_tz_hhmm_equiv"
+    },
+    {
+      "sample_id": "row_10059_a1a4c6b3c5de",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "01-14-1101",
+      "pred_norm": "1101-02-12",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12571_d89932390fcc",
+      "category": "Time Zone Conversion",
+      "workflow": "CoT Prompt",
+      "gold": "12AMonNovember2,1233",
+      "pred_norm": "01:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5512_e629edb412c7",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "March1887",
+      "pred_norm": "1887-03-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9844_4d943a1c4554",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "05-09-1402",
+      "pred_norm": "1402-08-05",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5396_eb24915396ff",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "August1857",
+      "pred_norm": "1857-08-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12414_7e3eb5a72a72",
+      "category": "Time Zone Conversion",
+      "workflow": "CoT Prompt",
+      "gold": "5PMonJanuary12,1553",
+      "pred_norm": "19:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6809_78fdf678b460",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "05-05-1468",
+      "pred_norm": "1468-03-07",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8746_e7c3300469c1",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "06-17-1848",
+      "pred_norm": "1847-11-24",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9448_cb97c7e9e5e2",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "6/3/2013",
+      "pred_norm": "2013-06-13",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_10125_6171ff0ea824",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "04-02-1897",
+      "pred_norm": "Step5:Back31days(May)→",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12462_f7e1a7d6ae2b",
+      "category": "Time Zone Conversion",
+      "workflow": "CoT Prompt",
+      "gold": "12AMonFebruary28,1036",
+      "pred_norm": "01:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6008_ffa3f08d6f43",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "January1428",
+      "pred_norm": "1428-01-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9211_32ec989e4589",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "06-17-1441",
+      "pred_norm": "1441-01-20",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12418_7c099a97850b",
+      "category": "Time Zone Conversion",
+      "workflow": "CoT Prompt",
+      "gold": "12AMonDecember13,1427",
+      "pred_norm": "01:30",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7572_b67a6ddad33d",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "09-03-1852",
+      "pred_norm": "1852-09-02",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9514_b67a8a1d20f9",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "01-07-1763",
+      "pred_norm": "1762-10-10",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9888_a5a8c88b1469",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "07-30-1882",
+      "pred_norm": "1883-01-12",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12211_7bf711a4423c",
+      "category": "Time Zone Conversion",
+      "workflow": "CoT Prompt",
+      "gold": "3PMonSeptember7,1498",
+      "pred_norm": "16:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7380_72d45a1edff3",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "09-28-1185",
+      "pred_norm": "1185-08-02",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6114_7832a9351171",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "09-29-1803",
+      "pred_norm": "1803-09-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5206_7aa7ca6a67b4",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "January1125",
+      "pred_norm": "1125-01-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5339_f3bd40c4ea68",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "April1702",
+      "pred_norm": "1702-04-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6048_dbd2952cc00b",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "December1634",
+      "pred_norm": "1634-12-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6852_039fd13a76d2",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "03-09-1130",
+      "pred_norm": "1129-05-21",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7767_7ee022a2826f",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "03-01-1623",
+      "pred_norm": "1623-05-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4684_7477fe3e98f0",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "November1856",
+      "pred_norm": "1856-11-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9074_a2ae992fa06f",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "09-19-1797",
+      "pred_norm": "1797-08-21",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5564_d78cd14e7d2d",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "April1104",
+      "pred_norm": "1104-04-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12276_2a8832957680",
+      "category": "Time Zone Conversion",
+      "workflow": "CoT Prompt",
+      "gold": "3AMonAugust1,1670",
+      "pred_norm": "03:30",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7081_bf1710eca39a",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "11-12-1426",
+      "pred_norm": "1427-04-06",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7802_717cdfcfd788",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "12-03-1258",
+      "pred_norm": "1259-02-01",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6884_38f332a22d79",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "06-03-1361",
+      "pred_norm": "1361-09-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12396_bace01f72cd4",
+      "category": "Time Zone Conversion",
+      "workflow": "CoT Prompt",
+      "gold": "7AMonJanuary26,1589",
+      "pred_norm": "08:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12331_774f58c8049d",
+      "category": "Time Zone Conversion",
+      "workflow": "CoT Prompt",
+      "gold": "6PMonDecember22,1333",
+      "pred_norm": "19:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4843_d2f041f6dea3",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "December1116",
+      "pred_norm": "1116-12-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7326_1340534312f8",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "11-29-1052",
+      "pred_norm": "1052-11-30",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9512_484b0a146691",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "10-11-1729",
+      "pred_norm": "1729-10-12",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6583_8bc203a3f7f4",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "09-25-1333",
+      "pred_norm": "2024-09-24",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5414_14cf565483a3",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "January1262",
+      "pred_norm": "1262-01-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5110_8d30b140b679",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "May1769",
+      "pred_norm": "1769-05-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7555_02cd704b95e0",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "01-07-1607",
+      "pred_norm": "1606-12-18",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8701_36f9f09210a6",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "03-21-1273",
+      "pred_norm": "1272-06-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5914_1e45d20ecbb6",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "October1118",
+      "pred_norm": "1118-10-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5980_3896e812bf6a",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "October1788",
+      "pred_norm": "1788-10-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7097_13bd6c94c224",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "03-23-1474",
+      "pred_norm": "1474-03-24",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6414_8a69032e4ce7",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "08-17-1132",
+      "pred_norm": "1132-07-19",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6283_0d60b39faced",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "08-19-1766",
+      "pred_norm": "1766-06-20",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9839_e2fdbfa1c748",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "05-04-1440",
+      "pred_norm": "1440-04-04",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6746_c6b6d67f96aa",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "04-13-1849",
+      "pred_norm": "1849-03-14",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6496_f23ae4469cd6",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "03-30-1149",
+      "pred_norm": "1149-03-31",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7659_f4bcaa451c0f",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "04-05-1596",
+      "pred_norm": "1596-09-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8051_29fae24b9cdf",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "11/29/2018",
+      "pred_norm": "2019-05-24",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10437_4936073457a8",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "08-15-1370",
+      "pred_norm": "1369-11-23",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6352_24ac3c71f1d2",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "04-04-1335",
+      "pred_norm": "1335-04-05",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5897_19d669441f1c",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "January1512",
+      "pred_norm": "1512-01-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9227_28eb9f0a6b92",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "12-18-1023",
+      "pred_norm": "1024-09-09",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6631_34669c16efeb",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "10-17-1867",
+      "pred_norm": "1867-07-21",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6971_9b2f02ecbd5c",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "06-24-1389",
+      "pred_norm": "Thusdateis",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7229_55d3bea6b658",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "12-27-1282",
+      "pred_norm": "1283-04-22",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7364_c96b68a65177",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "04-29-1338",
+      "pred_norm": "1338-01-30",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6226_22763827757b",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "04-27-1752",
+      "pred_norm": "1752-10-20",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6741_7e593e03327d",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "07-29-1153",
+      "pred_norm": "1153-10-27",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12488_9d6850ceb7ff",
+      "category": "Time Zone Conversion",
+      "workflow": "CoT Prompt",
+      "gold": "7AMonMarch26,1162",
+      "pred_norm": "06:53",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9023_0892fd5f3202",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "1/8/1996",
+      "pred_norm": "1995-01-08",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12441_13470b50ca4a",
+      "category": "Time Zone Conversion",
+      "workflow": "CoT Prompt",
+      "gold": "3PMonNovember5,1960",
+      "pred_norm": "15:00",
+      "corrected_match": true,
+      "error_type": "fix_tz_hhmm_equiv"
+    },
+    {
+      "sample_id": "row_7009_0584bcfc1107",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "04-03-1486",
+      "pred_norm": "1486-04-17",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7589_452db6ed230e",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "03-28-1287",
+      "pred_norm": "1287-08-23",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_1229_d72f4d6b6830",
+      "category": "Hour Adjustment (24h)",
+      "workflow": "CoT Prompt",
+      "gold": "18:48",
+      "pred_norm": "18:50",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8437_20e8703e6862",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "09-12-1798",
+      "pred_norm": "1798-07-14",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6245_85aaa7f9ef43",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "02-03-1842",
+      "pred_norm": "Sum:31+30=61,+31=92,+30=122,+31=153,+31=184,+30=214,+31=245,+30=275,+31=306,+28=334,+31=365totaldays",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8111_072cb73bfca1",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "03-02-1333",
+      "pred_norm": "1333-06-28",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12127_9c1e0f312479",
+      "category": "Time Zone Conversion",
+      "workflow": "CoT Prompt",
+      "gold": "2AMonJune10,1784",
+      "pred_norm": "03:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5492_3ff54a5aed26",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "October1730",
+      "pred_norm": "1730-10-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7780_1de0d838a78b",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "07-21-1070",
+      "pred_norm": "1070-04-24",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5986_aae4e04fe776",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "Aug-92",
+      "pred_norm": "1992-08-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_10187_6f6185574a16",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "12-17-1632",
+      "pred_norm": "1632-10-19",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9883_8c4b364e2e87",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "07-07-1659",
+      "pred_norm": "Jul:30days(Jul2toAug",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6090_b0e6162d3c2c",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "08-02-1295",
+      "pred_norm": "1295-11-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9388_e473f3d4ae37",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "11-01-1136",
+      "pred_norm": "5Janto5Dec1136is31days(Dec31)→",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7669_2b8e09991279",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "5/1/1923",
+      "pred_norm": "1924-02-21",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9447_02f140c7009c",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "04-18-1627",
+      "pred_norm": "1627-07-14",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7584_ab44832cac10",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "1/25/1967",
+      "pred_norm": "1966-12-28",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8413_f3a24061765a",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "12-30-1318",
+      "pred_norm": "1319-01-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9141_af81c5a1ce1b",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "04-27-1067",
+      "pred_norm": "1067-07-25",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10182_236ec14ea329",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "08-26-1383",
+      "pred_norm": "1383-12-22",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5649_d4e9e14d87a5",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "January1655",
+      "pred_norm": "1655-01-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12179_9b39d616f603",
+      "category": "Time Zone Conversion",
+      "workflow": "CoT Prompt",
+      "gold": "2PMonMay10,1711",
+      "pred_norm": "14:30",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5468_0239f93e2a28",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "August1281",
+      "pred_norm": "1281-08-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6121_0cc75325a97e",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "10-28-1599",
+      "pred_norm": "1599-10-29",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9827_c569a741b3b2",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "10-02-1238",
+      "pred_norm": "1238-06-05",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6654_5c21e94bb50e",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "5/5/1921",
+      "pred_norm": "1921-05-27",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_4546_e3701320e22c",
+      "category": "Month Shift",
+      "workflow": "CoT Prompt",
+      "gold": "July",
+      "pred_norm": "2023-07",
+      "corrected_match": true,
+      "error_type": "fix_month_name_equiv"
+    },
+    {
+      "sample_id": "row_6194_d0b5db7b004d",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "12-15-1436",
+      "pred_norm": "2016-03-23",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7676_a8d0a99f95c2",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "06-27-1147",
+      "pred_norm": "1148-04-17",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8337_ec10373c2fdc",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "12/8/1934",
+      "pred_norm": "1934-06-13",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5970_b1dfbdb909c4",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "September1057",
+      "pred_norm": "1057-09-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7641_4067f5cbddc0",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "07-25-1331",
+      "pred_norm": "1331-01-01",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12507_f52dc3a5caf7",
+      "category": "Time Zone Conversion",
+      "workflow": "CoT Prompt",
+      "gold": "9PMonMarch2,1258",
+      "pred_norm": "21:09",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5173_8927bd55d72d",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "March1876",
+      "pred_norm": "1876-03-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5573_5f4b6930bf1b",
+      "category": "Date Computation",
+      "workflow": "CoT Prompt",
+      "gold": "November1748",
+      "pred_norm": "1748-11-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12467_e9a95250a7f7",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router",
+      "gold": "6PMonMarch7,1322",
+      "pred_norm": "18:00",
+      "corrected_match": true,
+      "error_type": "fix_tz_hhmm_equiv"
+    },
+    {
+      "sample_id": "row_7760_b4d5d665658b",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "09-22-1598",
+      "pred_norm": "1598-10-22",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5218_f3820ccb4a27",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "9-Sep",
+      "pred_norm": "1909-09",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5180_041af05d70ca",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "February1312",
+      "pred_norm": "1312-02-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7537_3618fa16f050",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "09-17-1477",
+      "pred_norm": "Aug:",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7548_76af384a76a9",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "10/11/1902",
+      "pred_norm": "1902-10-21",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12125_36698ab40fb6",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router",
+      "gold": "6PMonMarch31,1264",
+      "pred_norm": "18:00",
+      "corrected_match": true,
+      "error_type": "fix_tz_hhmm_equiv"
+    },
+    {
+      "sample_id": "row_5417_1e04c78c7bb8",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "November1299",
+      "pred_norm": "1299-11-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5507_123abae4098c",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "May1224",
+      "pred_norm": "1224-05-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5299_51cd5e1ce0ef",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "May1540",
+      "pred_norm": "1540-05-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6793_1c2b73ea5864",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "10-08-1231",
+      "pred_norm": "1231-10-07",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_8725_88a2363967ee",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "8/9/1980",
+      "pred_norm": "1980-05-12",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_1260_750bfb23cbd7",
+      "category": "Hour Adjustment (24h)",
+      "workflow": "Classifier Router",
+      "gold": "10:38",
+      "pred_norm": "10:40",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12225_48d6c66de104",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router",
+      "gold": "11PMonDecember3,1639",
+      "pred_norm": "23:00",
+      "corrected_match": true,
+      "error_type": "fix_tz_hhmm_equiv"
+    },
+    {
+      "sample_id": "row_10277_eb243061ae89",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "06-19-1578",
+      "pred_norm": "1578-07-15",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5415_7e1308425b8d",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "November1644",
+      "pred_norm": "1644-11-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6465_62d5499ec4ee",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "01-04-1672",
+      "pred_norm": "1671-06-06",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9694_cad8d566a2cb",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "09-28-1441",
+      "pred_norm": "Remaining:94−92=2",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5365_e190266f2a6e",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "Apr-84",
+      "pred_norm": "1984-04-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12359_9b78a331e7bd",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router",
+      "gold": "3PMonNovember13,1041",
+      "pred_norm": "17:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6161_f626dbad0f56",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "08-26-1273",
+      "pred_norm": "1273-08-27",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12107_bc3e166e8930",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router",
+      "gold": "4PMonMay10,1926",
+      "pred_norm": "16:00",
+      "corrected_match": true,
+      "error_type": "fix_tz_hhmm_equiv"
+    },
+    {
+      "sample_id": "row_7818_64008f7fdd80",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "02-16-1520",
+      "pred_norm": "1520-11-07",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7662_a9842eb83d65",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "12-04-1362",
+      "pred_norm": "1362-07-09",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8518_784d6854eae7",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "05-01-1831",
+      "pred_norm": "1830-09-08",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10324_b124777caef1",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "08-07-1895",
+      "pred_norm": "1895-02-11",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9012_7a9e98306806",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "10-10-1417",
+      "pred_norm": "1418-10-10",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6504_407eaa4884b6",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "07-23-1075",
+      "pred_norm": "1075-10-20",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7129_756baf016824",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "05-01-1289",
+      "pred_norm": "Jun30(181total)→29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9453_fbdc20d32ab4",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "07-17-1484",
+      "pred_norm": "1484-01-25",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6782_143f5fde09cf",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "01-25-1242",
+      "pred_norm": "1242-02-21",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10006_ef517dc55e27",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "12-30-1886",
+      "pred_norm": "1886-12-29",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_10256_e1e81327e7cc",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "08-30-1056",
+      "pred_norm": "1056-08-29",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5525_628b3781d8ea",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "April1510",
+      "pred_norm": "1510-04-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6106_81367bb06d45",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "06-02-1614",
+      "pred_norm": "We’vegone:14+31+28+31+31+30+31+30+31+31+30+31+30=sum:",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4688_037ba3c28267",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "November1635",
+      "pred_norm": "1635-11-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6570_d93ee8976205",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "07-06-1160",
+      "pred_norm": "1160-07-05",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9938_dad6b2298fb9",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "10-07-1617",
+      "pred_norm": "1617-10-08",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5381_34a2218288f5",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "June1206",
+      "pred_norm": "1206-06-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9349_1f8f80c1c6cb",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "01-12-1348",
+      "pred_norm": "1347-06-19",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6576_1cfe80c9f222",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "2/2/1973",
+      "pred_norm": "1973-11-23",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4779_f43f2ce8029e",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "December1427",
+      "pred_norm": "1427-12-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5294_bb9c97cda601",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "April1042",
+      "pred_norm": "1042-04-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6443_92351e2edb65",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "08-09-1014",
+      "pred_norm": "1014-11-03",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12161_ad6058e706d6",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router",
+      "gold": "2AMonAugust6,1211",
+      "pred_norm": "02:35",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10323_15eed2d14325",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "05-22-1794",
+      "pred_norm": "1794-02-11",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10225_212739efabf5",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "01-08-1246",
+      "pred_norm": "1246-06-05",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12284_45f2ec4ee623",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router",
+      "gold": "2AMonNovember17,1141",
+      "pred_norm": "02:00",
+      "corrected_match": true,
+      "error_type": "fix_tz_hhmm_equiv"
+    },
+    {
+      "sample_id": "row_1089_1bb11e1ef063",
+      "category": "Hour Adjustment (24h)",
+      "workflow": "Classifier Router",
+      "gold": "21:56",
+      "pred_norm": "02:04",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5276_98ca9cc8adcc",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "January1514",
+      "pred_norm": "1514-01-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_10059_a1a4c6b3c5de",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "01-14-1101",
+      "pred_norm": "1101-02-09",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12571_d89932390fcc",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router",
+      "gold": "12AMonNovember2,1233",
+      "pred_norm": "01:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5512_e629edb412c7",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "March1887",
+      "pred_norm": "1887-03-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9844_4d943a1c4554",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "05-09-1402",
+      "pred_norm": "1402-08-04",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5396_eb24915396ff",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "August1857",
+      "pred_norm": "1857-08-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12414_7e3eb5a72a72",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router",
+      "gold": "5PMonJanuary12,1553",
+      "pred_norm": "18:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_339_737343a5629c",
+      "category": "Hour Adjustment (24h)",
+      "workflow": "Classifier Router",
+      "gold": "15:54",
+      "pred_norm": "08:06",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6809_78fdf678b460",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "05-05-1468",
+      "pred_norm": "1468-03-07",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8746_e7c3300469c1",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "06-17-1848",
+      "pred_norm": "1847-11-24",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6433_c43738b8a468",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "04-06-1011",
+      "pred_norm": "1011-02-10",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9448_cb97c7e9e5e2",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "6/3/2013",
+      "pred_norm": "2013-06-10",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_10125_6171ff0ea824",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "04-02-1897",
+      "pred_norm": "1897-03-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12462_f7e1a7d6ae2b",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router",
+      "gold": "12AMonFebruary28,1036",
+      "pred_norm": "01:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6008_ffa3f08d6f43",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "January1428",
+      "pred_norm": "1428-01-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9211_32ec989e4589",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "06-17-1441",
+      "pred_norm": "2020-01-22",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12418_7c099a97850b",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router",
+      "gold": "12AMonDecember13,1427",
+      "pred_norm": "01:30",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7572_b67a6ddad33d",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "09-03-1852",
+      "pred_norm": "1852-09-02",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9514_b67a8a1d20f9",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "01-07-1763",
+      "pred_norm": "1762-10-10",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9888_a5a8c88b1469",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "07-30-1882",
+      "pred_norm": "1883-02-21",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12211_7bf711a4423c",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router",
+      "gold": "3PMonSeptember7,1498",
+      "pred_norm": "15:11",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5757_f5c220b72c71",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "September1478",
+      "pred_norm": "1478-09-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7380_72d45a1edff3",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "09-28-1185",
+      "pred_norm": "Back3days→",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6446_3ee78276ca1f",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "06-26-1872",
+      "pred_norm": "1872-04-28",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6114_7832a9351171",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "09-29-1803",
+      "pred_norm": "1803-07-03",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5206_7aa7ca6a67b4",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "January1125",
+      "pred_norm": "1125-01-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5339_f3bd40c4ea68",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "April1702",
+      "pred_norm": "1702-04-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6048_dbd2952cc00b",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "December1634",
+      "pred_norm": "1634-12-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6852_039fd13a76d2",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "03-09-1130",
+      "pred_norm": "1129-05-20",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10135_c646a608e38c",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "03-17-1456",
+      "pred_norm": "1456-03-18",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7767_7ee022a2826f",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "03-01-1623",
+      "pred_norm": "1623-05-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4684_7477fe3e98f0",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "November1856",
+      "pred_norm": "1856-11-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9074_a2ae992fa06f",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "09-19-1797",
+      "pred_norm": "1797-08-21",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5564_d78cd14e7d2d",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "April1104",
+      "pred_norm": "1104-04-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12276_2a8832957680",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router",
+      "gold": "3AMonAugust1,1670",
+      "pred_norm": "03:30",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9482_1b2376629612",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "12-20-1781",
+      "pred_norm": "1781-12-21",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7081_bf1710eca39a",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "11-12-1426",
+      "pred_norm": "1427-04-11",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7802_717cdfcfd788",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "12-03-1258",
+      "pred_norm": "1259-02-01",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6884_38f332a22d79",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "06-03-1361",
+      "pred_norm": "1361-09-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5048_3bd7954ee360",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "May1536",
+      "pred_norm": "1536-05-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12396_bace01f72cd4",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router",
+      "gold": "7AMonJanuary26,1589",
+      "pred_norm": "08:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12331_774f58c8049d",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router",
+      "gold": "6PMonDecember22,1333",
+      "pred_norm": "19:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4843_d2f041f6dea3",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "December1116",
+      "pred_norm": "1116-12-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6583_8bc203a3f7f4",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "09-25-1333",
+      "pred_norm": "2024-09-24",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_84_81acb2845c1e",
+      "category": "Hour Adjustment (24h)",
+      "workflow": "Classifier Router",
+      "gold": "16:55",
+      "pred_norm": "07:05",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9441_b54af2cf3b9d",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "03-31-1404",
+      "pred_norm": "1404-04-01",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5414_14cf565483a3",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "January1262",
+      "pred_norm": "1262-01-31",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5110_8d30b140b679",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "May1769",
+      "pred_norm": "1769-05-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_8701_36f9f09210a6",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "03-21-1273",
+      "pred_norm": "1272-06-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5914_1e45d20ecbb6",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "October1118",
+      "pred_norm": "1118-10-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5980_3896e812bf6a",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "October1788",
+      "pred_norm": "1788-10-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7097_13bd6c94c224",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "03-23-1474",
+      "pred_norm": "1473-10-10",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6414_8a69032e4ce7",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "08-17-1132",
+      "pred_norm": "1132-07-19",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6283_0d60b39faced",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "08-19-1766",
+      "pred_norm": "1766-06-20",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9839_e2fdbfa1c748",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "05-04-1440",
+      "pred_norm": "1440-04-04",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6746_c6b6d67f96aa",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "04-13-1849",
+      "pred_norm": "1849-03-14",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6496_f23ae4469cd6",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "03-30-1149",
+      "pred_norm": "1149-02-28",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7659_f4bcaa451c0f",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "04-05-1596",
+      "pred_norm": "1596-09-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8051_29fae24b9cdf",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "11/29/2018",
+      "pred_norm": "2019-05-24",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10437_4936073457a8",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "08-15-1370",
+      "pred_norm": "1369-11-23",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6352_24ac3c71f1d2",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "04-04-1335",
+      "pred_norm": "1335-04-05",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5897_19d669441f1c",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "January1512",
+      "pred_norm": "1512-01-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9227_28eb9f0a6b92",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "12-18-1023",
+      "pred_norm": "1024-09-09",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6631_34669c16efeb",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "10-17-1867",
+      "pred_norm": "1867-07-21",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9322_de661d20a13f",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "9/5/1900",
+      "pred_norm": "1900-08-06",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7229_55d3bea6b658",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "12-27-1282",
+      "pred_norm": "1283-04-22",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7364_c96b68a65177",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "04-29-1338",
+      "pred_norm": "1338-01-31",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5611_c3af81d0201e",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "August1600",
+      "pred_norm": "1600-08-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6226_22763827757b",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "04-27-1752",
+      "pred_norm": "1752-10-19",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10506_d0c40cadffe1",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "07-28-1303",
+      "pred_norm": "1303-07-29",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6741_7e593e03327d",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "07-29-1153",
+      "pred_norm": "1153-10-26",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12488_9d6850ceb7ff",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router",
+      "gold": "7AMonMarch26,1162",
+      "pred_norm": "06:53",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12441_13470b50ca4a",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router",
+      "gold": "3PMonNovember5,1960",
+      "pred_norm": "15:00",
+      "corrected_match": true,
+      "error_type": "fix_tz_hhmm_equiv"
+    },
+    {
+      "sample_id": "row_7589_452db6ed230e",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "03-28-1287",
+      "pred_norm": "1287-08-23",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9308_95ace14c79f4",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "02-23-1336",
+      "pred_norm": "1336-03-25",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_1229_d72f4d6b6830",
+      "category": "Hour Adjustment (24h)",
+      "workflow": "Classifier Router",
+      "gold": "18:48",
+      "pred_norm": "05:12",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8437_20e8703e6862",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "09-12-1798",
+      "pred_norm": "1798-07-14",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8111_072cb73bfca1",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "03-02-1333",
+      "pred_norm": "1333-06-28",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12127_9c1e0f312479",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router",
+      "gold": "2AMonJune10,1784",
+      "pred_norm": "03:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7780_1de0d838a78b",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "07-21-1070",
+      "pred_norm": "1070-04-24",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10187_6f6185574a16",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "12-17-1632",
+      "pred_norm": "1632-10-18",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9883_8c4b364e2e87",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "07-07-1659",
+      "pred_norm": "1659-07-25",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6090_b0e6162d3c2c",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "08-02-1295",
+      "pred_norm": "1295-11-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9388_e473f3d4ae37",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "11-01-1136",
+      "pred_norm": "1136-08-07",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7669_2b8e09991279",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "5/1/1923",
+      "pred_norm": "1924-02-21",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6804_923f95db9863",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "5/24/2013",
+      "pred_norm": "2013-06-03",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7584_ab44832cac10",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "1/25/1967",
+      "pred_norm": "1966-12-28",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8413_f3a24061765a",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "12-30-1318",
+      "pred_norm": "1319-01-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9141_af81c5a1ce1b",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "04-27-1067",
+      "pred_norm": "1067-07-25",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10259_df42986b5474",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "07-03-1251",
+      "pred_norm": "1251-07-04",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_10182_236ec14ea329",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "08-26-1383",
+      "pred_norm": "1384-01-22",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4790_54a2c5503eb2",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "November1447",
+      "pred_norm": "1447-11-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9433_beee258652f2",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "08-19-1138",
+      "pred_norm": "1138-08-20",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5649_d4e9e14d87a5",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "January1655",
+      "pred_norm": "1655-01-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12179_9b39d616f603",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router",
+      "gold": "2PMonMay10,1711",
+      "pred_norm": "14:30",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5468_0239f93e2a28",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "August1281",
+      "pred_norm": "1281-08-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9827_c569a741b3b2",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "10-02-1238",
+      "pred_norm": "1238-05-08",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6654_5c21e94bb50e",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "5/5/1921",
+      "pred_norm": "Sep:",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4546_e3701320e22c",
+      "category": "Month Shift",
+      "workflow": "Classifier Router",
+      "gold": "July",
+      "pred_norm": "2023-07",
+      "corrected_match": true,
+      "error_type": "fix_month_name_equiv"
+    },
+    {
+      "sample_id": "row_6194_d0b5db7b004d",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "12-15-1436",
+      "pred_norm": "2016-03-23",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8833_aaa93ac87991",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "03-05-1424",
+      "pred_norm": "1424-03-08",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7676_a8d0a99f95c2",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "06-27-1147",
+      "pred_norm": "1148-04-17",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8337_ec10373c2fdc",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "12/8/1934",
+      "pred_norm": "1934-06-24",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5970_b1dfbdb909c4",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "September1057",
+      "pred_norm": "1057-09-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7641_4067f5cbddc0",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "07-25-1331",
+      "pred_norm": "1330-12-31",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12507_f52dc3a5caf7",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router",
+      "gold": "9PMonMarch2,1258",
+      "pred_norm": "21:09",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5173_8927bd55d72d",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "March1876",
+      "pred_norm": "1876-03-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5573_5f4b6930bf1b",
+      "category": "Date Computation",
+      "workflow": "Classifier Router",
+      "gold": "November1748",
+      "pred_norm": "1748-11-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12467_e9a95250a7f7",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "6PMonMarch7,1322",
+      "pred_norm": "19:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7760_b4d5d665658b",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "09-22-1598",
+      "pred_norm": "1598-10-22",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5218_f3820ccb4a27",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "9-Sep",
+      "pred_norm": "1909-09",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5180_041af05d70ca",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "February1312",
+      "pred_norm": "1312-02-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12125_36698ab40fb6",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "6PMonMarch31,1264",
+      "pred_norm": "18:00",
+      "corrected_match": true,
+      "error_type": "fix_tz_hhmm_equiv"
+    },
+    {
+      "sample_id": "row_5417_1e04c78c7bb8",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "November1299",
+      "pred_norm": "1299-11-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5507_123abae4098c",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "May1224",
+      "pred_norm": "1224-05-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9724_5f01f17c99fb",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "02-23-1584",
+      "pred_norm": "1584-02-24",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_10491_6d6af3fcd87b",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "11-03-1387",
+      "pred_norm": "1387-11-02",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6793_1c2b73ea5864",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "10-08-1231",
+      "pred_norm": "1231-09-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8725_88a2363967ee",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "8/9/1980",
+      "pred_norm": "1980-05-12",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12225_48d6c66de104",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "11PMonDecember3,1639",
+      "pred_norm": "23:00",
+      "corrected_match": true,
+      "error_type": "fix_tz_hhmm_equiv"
+    },
+    {
+      "sample_id": "row_10277_eb243061ae89",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "06-19-1578",
+      "pred_norm": "1578-07-16",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5415_7e1308425b8d",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "November1644",
+      "pred_norm": "1644-11-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6465_62d5499ec4ee",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "01-04-1672",
+      "pred_norm": "1671-12-25",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5365_e190266f2a6e",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "Apr-84",
+      "pred_norm": "1984-04-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12359_9b78a331e7bd",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "3PMonNovember13,1041",
+      "pred_norm": "17:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6161_f626dbad0f56",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "08-26-1273",
+      "pred_norm": "1273-08-27",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12107_bc3e166e8930",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "4PMonMay10,1926",
+      "pred_norm": "16:00",
+      "corrected_match": true,
+      "error_type": "fix_tz_hhmm_equiv"
+    },
+    {
+      "sample_id": "row_7818_64008f7fdd80",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "02-16-1520",
+      "pred_norm": "1520-11-07",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7662_a9842eb83d65",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "12-04-1362",
+      "pred_norm": "1362-07-09",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8518_784d6854eae7",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "05-01-1831",
+      "pred_norm": "1830-09-08",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6534_104ff6f4ba03",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "01-15-1644",
+      "pred_norm": "1644-03-15",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10324_b124777caef1",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "08-07-1895",
+      "pred_norm": "1895-03-11",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9012_7a9e98306806",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "10-10-1417",
+      "pred_norm": "1418-10-10",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6504_407eaa4884b6",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "07-23-1075",
+      "pred_norm": "1075-10-20",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7372_256f4ca82605",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "10/28/1923",
+      "pred_norm": "1923-10-27",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7129_756baf016824",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "05-01-1289",
+      "pred_norm": "1289-07-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9453_fbdc20d32ab4",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "07-17-1484",
+      "pred_norm": "1483-12-04",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6782_143f5fde09cf",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "01-25-1242",
+      "pred_norm": "FINAL",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6106_81367bb06d45",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "06-02-1614",
+      "pred_norm": "1614-07-31",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4688_037ba3c28267",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "November1635",
+      "pred_norm": "1635-11-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6570_d93ee8976205",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "07-06-1160",
+      "pred_norm": "1159-11-14",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10118_13c3c4d3023a",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "10-14-1841",
+      "pred_norm": "1841-10-15",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5544_3cb7806f24e0",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "January1482",
+      "pred_norm": "1482-01-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9349_1f8f80c1c6cb",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "01-12-1348",
+      "pred_norm": "1347-06-20",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6576_1cfe80c9f222",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "2/2/1973",
+      "pred_norm": "1973-11-23",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4779_f43f2ce8029e",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "December1427",
+      "pred_norm": "1427-12-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5294_bb9c97cda601",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "April1042",
+      "pred_norm": "1042-04-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6443_92351e2edb65",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "08-09-1014",
+      "pred_norm": "1014-11-03",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12161_ad6058e706d6",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "2AMonAugust6,1211",
+      "pred_norm": "02:00",
+      "corrected_match": true,
+      "error_type": "fix_tz_hhmm_equiv"
+    },
+    {
+      "sample_id": "row_10323_15eed2d14325",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "05-22-1794",
+      "pred_norm": "1794-06-21",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10225_212739efabf5",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "01-08-1246",
+      "pred_norm": "1246-06-05",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12284_45f2ec4ee623",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "2AMonNovember17,1141",
+      "pred_norm": "12:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_1089_1bb11e1ef063",
+      "category": "Hour Adjustment (24h)",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "21:56",
+      "pred_norm": "02:04",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5276_98ca9cc8adcc",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "January1514",
+      "pred_norm": "1514-01-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_10059_a1a4c6b3c5de",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "01-14-1101",
+      "pred_norm": "1101-01-06",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12571_d89932390fcc",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "12AMonNovember2,1233",
+      "pred_norm": "01:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5512_e629edb412c7",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "March1887",
+      "pred_norm": "1887-03-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9844_4d943a1c4554",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "05-09-1402",
+      "pred_norm": "1402-05-10",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5396_eb24915396ff",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "August1857",
+      "pred_norm": "1857-08-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9591_fd16275fbf8f",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "08-23-1817",
+      "pred_norm": "1817-08-24",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12414_7e3eb5a72a72",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "5PMonJanuary12,1553",
+      "pred_norm": "18:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6809_78fdf678b460",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "05-05-1468",
+      "pred_norm": "1468-03-07",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8746_e7c3300469c1",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "06-17-1848",
+      "pred_norm": "1847-11-25",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8808_63de2d1e1ce0",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "01-04-1345",
+      "pred_norm": "1344-12-05",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9448_cb97c7e9e5e2",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "6/3/2013",
+      "pred_norm": "June30→Jun1(17-30goesnegative,soin",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12462_f7e1a7d6ae2b",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "12AMonFebruary28,1036",
+      "pred_norm": "01:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6008_ffa3f08d6f43",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "January1428",
+      "pred_norm": "1428-01-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9211_32ec989e4589",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "06-17-1441",
+      "pred_norm": "1441-01-20",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12418_7c099a97850b",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "12AMonDecember13,1427",
+      "pred_norm": "01:30",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9514_b67a8a1d20f9",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "01-07-1763",
+      "pred_norm": "1762-10-10",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9888_a5a8c88b1469",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "07-30-1882",
+      "pred_norm": "1883-02-20",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12211_7bf711a4423c",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "3PMonSeptember7,1498",
+      "pred_norm": "15:14",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7380_72d45a1edff3",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "09-28-1185",
+      "pred_norm": "1185-09-27",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_4495_3eaabf242b3f",
+      "category": "Month Shift",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "August",
+      "pred_norm": "2024-08",
+      "corrected_match": true,
+      "error_type": "fix_month_name_equiv"
+    },
+    {
+      "sample_id": "row_5206_7aa7ca6a67b4",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "January1125",
+      "pred_norm": "1125-01-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5339_f3bd40c4ea68",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "April1702",
+      "pred_norm": "1702-04-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5577_437632854c98",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "April1507",
+      "pred_norm": "1507-04-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6852_039fd13a76d2",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "03-09-1130",
+      "pred_norm": "1129-05-20",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7767_7ee022a2826f",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "03-01-1623",
+      "pred_norm": "1623-05-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4684_7477fe3e98f0",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "November1856",
+      "pred_norm": "1856-11-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9074_a2ae992fa06f",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "09-19-1797",
+      "pred_norm": "1797-08-21",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12276_2a8832957680",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "3AMonAugust1,1670",
+      "pred_norm": "03:30",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6343_70e405965edc",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "05-08-1218",
+      "pred_norm": "1218-04-28",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7081_bf1710eca39a",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "11-12-1426",
+      "pred_norm": "1427-04-06",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7802_717cdfcfd788",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "12-03-1258",
+      "pred_norm": "1259-01-03",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6884_38f332a22d79",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "06-03-1361",
+      "pred_norm": "1361-09-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12396_bace01f72cd4",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "7AMonJanuary26,1589",
+      "pred_norm": "08:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12331_774f58c8049d",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "6PMonDecember22,1333",
+      "pred_norm": "19:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4843_d2f041f6dea3",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "December1116",
+      "pred_norm": "1116-12-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6583_8bc203a3f7f4",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "09-25-1333",
+      "pred_norm": "2024-09-23",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_84_81acb2845c1e",
+      "category": "Hour Adjustment (24h)",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "16:55",
+      "pred_norm": "07:05",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9441_b54af2cf3b9d",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "03-31-1404",
+      "pred_norm": "1404-03-30",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5414_14cf565483a3",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "January1262",
+      "pred_norm": "1262-01-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5110_8d30b140b679",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "May1769",
+      "pred_norm": "1769-05-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_8701_36f9f09210a6",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "03-21-1273",
+      "pred_norm": "1272-06-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5914_1e45d20ecbb6",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "October1118",
+      "pred_norm": "1118-10-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5980_3896e812bf6a",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "October1788",
+      "pred_norm": "1788-10-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7097_13bd6c94c224",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "03-23-1474",
+      "pred_norm": "Startingdate:1475-01",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6414_8a69032e4ce7",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "08-17-1132",
+      "pred_norm": "1132-07-19",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6283_0d60b39faced",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "08-19-1766",
+      "pred_norm": "1766-07-20",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9839_e2fdbfa1c748",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "05-04-1440",
+      "pred_norm": "1440-05-05",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6746_c6b6d67f96aa",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "04-13-1849",
+      "pred_norm": "1849-03-14",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6496_f23ae4469cd6",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "03-30-1149",
+      "pred_norm": "Dec:30,Nov:30(total60),Oct:31(91),Sep:30(121),Aug:31(152),Jul:31(183),Jun:30(213),",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7659_f4bcaa451c0f",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "04-05-1596",
+      "pred_norm": "1596-09-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8051_29fae24b9cdf",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "11/29/2018",
+      "pred_norm": "2019-05-24",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10437_4936073457a8",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "08-15-1370",
+      "pred_norm": "1369-11-24",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7460_4e6b76696188",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "03-01-1128",
+      "pred_norm": "1129-03-02",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4553_ebe70edc8235",
+      "category": "Month Shift",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "February",
+      "pred_norm": "2025-02",
+      "corrected_match": true,
+      "error_type": "fix_month_name_equiv"
+    },
+    {
+      "sample_id": "row_6352_24ac3c71f1d2",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "04-04-1335",
+      "pred_norm": "1335-04-05",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5897_19d669441f1c",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "January1512",
+      "pred_norm": "1512-01-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9227_28eb9f0a6b92",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "12-18-1023",
+      "pred_norm": "1024-09-10",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6631_34669c16efeb",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "10-17-1867",
+      "pred_norm": "1867-07-21",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9322_de661d20a13f",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "9/5/1900",
+      "pred_norm": "October1900:31days→backtoOct1:30",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6971_9b2f02ecbd5c",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "06-24-1389",
+      "pred_norm": "1389-06-25",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7229_55d3bea6b658",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "12-27-1282",
+      "pred_norm": "1283-04-22",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7364_c96b68a65177",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "04-29-1338",
+      "pred_norm": "1338-01-30",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6226_22763827757b",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "04-27-1752",
+      "pred_norm": "1752-10-19",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10506_d0c40cadffe1",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "07-28-1303",
+      "pred_norm": "1303-07-22",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12488_9d6850ceb7ff",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "7AMonMarch26,1162",
+      "pred_norm": "06:53",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12441_13470b50ca4a",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "3PMonNovember5,1960",
+      "pred_norm": "15:00",
+      "corrected_match": true,
+      "error_type": "fix_tz_hhmm_equiv"
+    },
+    {
+      "sample_id": "row_7589_452db6ed230e",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "03-28-1287",
+      "pred_norm": "1287-08-23",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9308_95ace14c79f4",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "02-23-1336",
+      "pred_norm": "1336-02-22",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_8437_20e8703e6862",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "09-12-1798",
+      "pred_norm": "1798-07-14",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8111_072cb73bfca1",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "03-02-1333",
+      "pred_norm": "1333-06-28",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12127_9c1e0f312479",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "2AMonJune10,1784",
+      "pred_norm": "03:00",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5986_aae4e04fe776",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "Aug-92",
+      "pred_norm": "1992-08-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_10187_6f6185574a16",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "12-17-1632",
+      "pred_norm": "1632-10-20",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9883_8c4b364e2e87",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "07-07-1659",
+      "pred_norm": "1659-07-25",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6090_b0e6162d3c2c",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "08-02-1295",
+      "pred_norm": "1295-11-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9388_e473f3d4ae37",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "11-01-1136",
+      "pred_norm": "1136leapyear:Feb",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7669_2b8e09991279",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "5/1/1923",
+      "pred_norm": "1924-02-21",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5017_b35dbba3fc27",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "October1715",
+      "pred_norm": "1715-10-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9226_87a081984337",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "03-06-1858",
+      "pred_norm": "Subtract31days→1858-",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_9447_02f140c7009c",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "04-18-1627",
+      "pred_norm": "1627-07-15",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6804_923f95db9863",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "5/24/2013",
+      "pred_norm": "2013-11-08",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7584_ab44832cac10",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "1/25/1967",
+      "pred_norm": "1966-12-27",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8413_f3a24061765a",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "12-30-1318",
+      "pred_norm": "1319-01-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4716_5e1c66c85481",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "August1065",
+      "pred_norm": "1065-08-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9141_af81c5a1ce1b",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "04-27-1067",
+      "pred_norm": "1067-07-25",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_10259_df42986b5474",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "07-03-1251",
+      "pred_norm": "1251-07-04",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_10182_236ec14ea329",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "08-26-1383",
+      "pred_norm": "1383-12-22",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_4790_54a2c5503eb2",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "November1447",
+      "pred_norm": "1447-11-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9433_beee258652f2",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "08-19-1138",
+      "pred_norm": "1138-08-18",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_12179_9b39d616f603",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "2PMonMay10,1711",
+      "pred_norm": "14:30",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5468_0239f93e2a28",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "August1281",
+      "pred_norm": "1281-08-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6121_0cc75325a97e",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "10-28-1599",
+      "pred_norm": "1599-10-29",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_9827_c569a741b3b2",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "10-02-1238",
+      "pred_norm": "1238-06-25",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_6654_5c21e94bb50e",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "5/5/1921",
+      "pred_norm": "1921-05-06",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_6194_d0b5db7b004d",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "12-15-1436",
+      "pred_norm": "2016-03-29",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_7676_a8d0a99f95c2",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "06-27-1147",
+      "pred_norm": "1148-04-17",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_8337_ec10373c2fdc",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "12/8/1934",
+      "pred_norm": "1934-06-13",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5970_b1dfbdb909c4",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "September1057",
+      "pred_norm": "1057-09-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_7641_4067f5cbddc0",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "07-25-1331",
+      "pred_norm": "1331-01-01",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_12507_f52dc3a5caf7",
+      "category": "Time Zone Conversion",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "9PMonMarch2,1258",
+      "pred_norm": "21:00",
+      "corrected_match": true,
+      "error_type": "fix_tz_hhmm_equiv"
+    },
+    {
+      "sample_id": "row_10117_c461c3984073",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "01-19-1508",
+      "pred_norm": "1507-12-22",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_885_1b14f9d300be",
+      "category": "Hour Adjustment (24h)",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "13:43",
+      "pred_norm": "10:17",
+      "corrected_match": false,
+      "error_type": "unchanged_wrong"
+    },
+    {
+      "sample_id": "row_5173_8927bd55d72d",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "March1876",
+      "pred_norm": "1876-03-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    },
+    {
+      "sample_id": "row_5573_5f4b6930bf1b",
+      "category": "Date Computation",
+      "workflow": "Classifier Router + Fallback",
+      "gold": "November1748",
+      "pred_norm": "1748-11-01",
+      "corrected_match": true,
+      "error_type": "fix_date_equiv"
+    }
+  ],
+  "correction_breakdown": {
+    "base_correct": 993,
+    "fix_date_equiv": 206,
+    "fix_month_name_equiv": 5,
+    "fix_tz_hhmm_equiv": 20,
+    "unchanged_wrong": 376
+  },
+  "oracle": {
+    "name": "Oracle Prompt Upper Bound",
+    "accuracy": 0.6325,
+    "definition": "Upper bound under category-best prompt selection",
+    "interpretation": "Not a deployable online policy"
+  }
+}

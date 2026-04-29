@@ -1,0 +1,28 @@
+{
+  "59f4559cb44276b5": {
+    "cache_key": "59f4559cb44276b5",
+    "created_at": "2026-04-24T20:36:03.822950",
+    "model_path": "/Volumes/Mikuu-ultra/Git/Finalthesis/temporal-reasoning-benchmark/outputs/workbench_train/59f4559cb44276b5/task_clf.joblib",
+    "report_path": "/Volumes/Mikuu-ultra/Git/Finalthesis/temporal-reasoning-benchmark/outputs/workbench_train/59f4559cb44276b5/classifier_report.json",
+    "eval_report_path": "/Volumes/Mikuu-ultra/Git/Finalthesis/temporal-reasoning-benchmark/outputs/workbench_train/59f4559cb44276b5/eval/eval_report.json",
+    "confusion_matrix_path": "/Volumes/Mikuu-ultra/Git/Finalthesis/temporal-reasoning-benchmark/outputs/workbench_train/59f4559cb44276b5/confusion_matrix.csv",
+    "metrics": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "n_train": 6709,
+      "n_test": 1918
+    },
+    "config": {
+      "categories": [
+        "Date Computation",
+        "Hour Adjustment (24h)",
+        "Month Shift",
+        "Time Zone Conversion",
+        "Year Shift"
+      ],
+      "min_samples_per_class": 20,
+      "seed": 42
+    },
+    "eval_predictions_path": "/Volumes/Mikuu-ultra/Git/Finalthesis/temporal-reasoning-benchmark/outputs/workbench_train/59f4559cb44276b5/eval/eval_predictions.csv"
+  }
+}

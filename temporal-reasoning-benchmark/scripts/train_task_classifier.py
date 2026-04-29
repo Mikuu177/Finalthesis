@@ -138,7 +138,8 @@ def main():
 
     clf = Pipeline([
         ('tfidf', TfidfVectorizer(ngram_range=(1, 2), min_df=2, max_features=50000)),
-        ('lr', LogisticRegression(max_iter=1200, n_jobs=None, multi_class='auto')),
+        # Keep constructor compatible across sklearn versions.
+        ('lr', LogisticRegression(max_iter=1200, n_jobs=None)),
     ])
     clf.fit(X_train, y_train)
 

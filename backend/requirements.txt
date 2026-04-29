@@ -2,11 +2,6 @@ fastapi
 uvicorn[standard]
 python-dotenv
 openai
-
-
-
-
-
-
-
-
+scikit-learn
+joblib
+PyYAML

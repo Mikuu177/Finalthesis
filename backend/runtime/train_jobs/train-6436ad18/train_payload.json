@@ -1,0 +1,12 @@
+{
+  "categories": [
+    "Date Computation",
+    "Hour Adjustment (24h)",
+    "Time Zone Conversion",
+    "Year Shift",
+    "Month Shift"
+  ],
+  "threshold": null,
+  "min_samples_per_class": 20,
+  "seed": 42
+}

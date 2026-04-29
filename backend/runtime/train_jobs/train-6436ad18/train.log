@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Volumes/Mikuu-ultra/Git/Finalthesis/temporal-reasoning-benchmark/scripts/train_task_classifier.py", line 204, in <module>
+    main()
+  File "/Volumes/Mikuu-ultra/Git/Finalthesis/temporal-reasoning-benchmark/scripts/train_task_classifier.py", line 141, in main
+    ('lr', LogisticRegression(max_iter=1200, n_jobs=None, multi_class='auto')),
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: LogisticRegression.__init__() got an unexpected keyword argument 'multi_class'
